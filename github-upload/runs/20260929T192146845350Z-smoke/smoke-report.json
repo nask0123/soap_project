@@ -1,0 +1,32 @@
+{
+  "status": "FAILED",
+  "output": "/content/soup_takehome/20260929T192146845350Z-smoke",
+  "scope": "two optimizer steps; not a ship verdict",
+  "gpu": "Tesla T4",
+  "started_utc": "2026-09-29T19:21:53.531490+00:00",
+  "budget": "Existing memory-budget-before.txt: estimated 3-7 GiB, not a bound. Add frozen ref LoRA (~4.16 MiB FP32).",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "train_sha256": "d43f24aebcdfed198dbfe5b7c2264aab13cca5c3e804105abb91a772058bf917",
+  "test_sha256": "3eed9c45e23455d71dac705d7cac6078df203d1118420a7bbab7c4f3637e0397",
+  "stream_runtime": {
+    "n_layers": 28,
+    "buffers": 2,
+    "buffer_bytes": 187191296,
+    "large_buffer_bytes": 0,
+    "store_bytes": 2620678144,
+    "pinned": false,
+    "tier": "ram",
+    "disk_bytes": 0,
+    "layer_loads": 0,
+    "large_loads": 0,
+    "device": "cuda",
+    "total_params": 1543714304
+  },
+  "trainer_token_audit": "PASS: 500 pairs, exact template IDs, EOS and no truncation",
+  "trainable_params": 1089536,
+  "repeat_logit_noise": 0.0,
+  "initial_adapter_effect": 0.0,
+  "setup_and_probe_peak_allocated": 686235648,
+  "error": "AssertionError('No finite nonzero gradients')",
+  "finished_utc": "2026-09-29T19:24:13.462772+00:00"
+}

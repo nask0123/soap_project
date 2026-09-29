@@ -1,0 +1,47 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dataset": "trl-lib/ultrafeedback_binarized",
+  "dataset_revision": "47124cb5778f5d50de1c7676a412828f3ea7c555",
+  "seed": 42,
+  "max_full_tokens": 512,
+  "max_prompt_tokens": 256,
+  "selection": "streaming shuffle, buffer_size=2000; short single-turn pairs",
+  "splits": {
+    "train": {
+      "accepted": 500,
+      "counts": {
+        "scanned": 1115,
+        "too_long": 464,
+        "non_strict_or_invalid_preference": 135,
+        "identical_answers": 13,
+        "empty_or_invalid": 3
+      },
+      "sha256": "cf10ef39e260838c6a2aa3b5f27a1a70b836cf1bcd3a978aedafb66e8f56a5c9",
+      "mean_tokens": {
+        "prompt": 97.33,
+        "chosen": 162.96,
+        "rejected": 136.07
+      },
+      "max_full_tokens": 510,
+      "chosen_longer_fraction": 0.56
+    },
+    "test": {
+      "accepted": 100,
+      "counts": {
+        "scanned": 184,
+        "too_long": 65,
+        "identical_answers": 1,
+        "non_strict_or_invalid_preference": 18
+      },
+      "sha256": "54e7aa6c02730cad09f56b9365b594938e652f28669df10283b1915fe700073d",
+      "mean_tokens": {
+        "prompt": 106.72,
+        "chosen": 161.39,
+        "rejected": 139.45
+      },
+      "max_full_tokens": 509,
+      "chosen_longer_fraction": 0.51
+    }
+  }
+}

@@ -1,0 +1,11 @@
+START 2026-09-29T18:21:57.414020+00:00
+COMMAND ['/usr/bin/python3', '-m', 'uv', 'venv', '--python', '3.12', '/content/soup-py312']
+2026-09-29T18:21:57.477469+00:00 warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?
+2026-09-29T18:21:57.557696+00:00 Using CPython 3.12.3 interpreter at: /usr/bin/python3.12
+2026-09-29T18:21:57.557729+00:00 Creating virtual environment at: soup-py312
+2026-09-29T18:21:57.558155+00:00 error: Failed to create virtual environment
+2026-09-29T18:21:57.558180+00:00   cause: A virtual environment already exists at: soup-py312
+2026-09-29T18:21:57.558191+00:00 
+2026-09-29T18:21:57.558201+00:00 hint: Use the `--clear` flag or set `UV_VENV_CLEAR=1` to replace the existing virtual environment
+
+END exit_code=2

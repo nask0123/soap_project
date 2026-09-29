@@ -1,0 +1,30 @@
+# The runner resolves data/output paths and pins a regular-file model snapshot.
+base: Qwen/Qwen2.5-1.5B-Instruct
+task: dpo
+backend: transformers
+data:
+  train: data/train.jsonl
+  format: dpo
+  val_split: 0.0
+  max_length: 512
+training:
+  epochs: 1
+  lr: 0.00001
+  batch_size: 1
+  gradient_accumulation_steps: 8
+  quantization: none
+  stream_layers: true
+  stream_source: ram
+  stream_buffers: 2
+  stream_pin: false
+  gradient_checkpointing: true
+  optimizer: adamw_torch
+  seed: 42
+  dpo_beta: 0.1
+  logging_steps: 1
+  lora:
+    r: 8
+    alpha: 16
+    dropout: 0.0
+    target_modules: [q_proj, v_proj]
+output: runs/adapter

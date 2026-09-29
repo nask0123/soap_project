@@ -1,0 +1,141 @@
+START 2026-09-29T19:21:46.800368+00:00
+COMMAND ['/content/soup-py312/bin/python', '-u', '/content/soup_takehome/20260929T192146799766Z-smoke-retry/smoke_dpo.py']
+2026-09-29T19:21:53.740524+00:00 Downloading pinned model snapshot (approximately 3 GB)...
+2026-09-29T19:21:53.740558+00:00 
+2026-09-29T19:21:53.757257+00:00 Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]
+2026-09-29T19:21:53.757314+00:00 Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 404.55it/s]
+2026-09-29T19:22:38.915421+00:00 Verified regular-file snapshot: /content/soup_models/qwen-1.5b-989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+2026-09-29T19:22:41.910436+00:00 Loading tokenizer: 
+2026-09-29T19:22:41.910472+00:00 /content/soup_models/qwen-1.5b-989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+2026-09-29T19:22:42.272051+00:00 ╭────────────────────── Layer streaming disk pre-flight ───────────────────────╮
+2026-09-29T19:22:42.272088+00:00 │ HF/local source: 3.09 GB                                                     │
+2026-09-29T19:22:42.272102+00:00 │ Soup materialized copy: 0.00 GB (no write required)                          │
+2026-09-29T19:22:42.272113+00:00 │ Layer-shard cache: 3.09 GB (write required)                                  │
+2026-09-29T19:22:42.272123+00:00 │ Projected total on disk: 6.17 GB                                             │
+2026-09-29T19:22:42.272133+00:00 │ Additional writes before training: 3.09 GB                                   │
+2026-09-29T19:22:42.272142+00:00 │ Free on target volume (layer-shard cache): 57.52 GB                          │
+2026-09-29T19:22:42.272154+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-09-29T19:22:42.272853+00:00 Preparing layer shards -> 
+2026-09-29T19:22:42.272877+00:00 /root/.soup/layer-stream/content__soup_models__qwen-1.5b-989aa7980e4cf806f80c7fe
+2026-09-29T19:22:42.272889+00:00 f2b1adb7bc71aa306
+2026-09-29T19:22:42.273547+00:00 Re-sharding layer cache: cache index is missing or unreadable.
+2026-09-29T19:23:07.309151+00:00 ╭─────────────────────────── training.stream_layers ───────────────────────────╮
+2026-09-29T19:23:07.309192+00:00 │ Layer streaming BETA — arch qwen2, tier ram                                  │
+2026-09-29T19:23:07.309207+00:00 │   base store   2.62 GB across 28 layers (pageable)                           │
+2026-09-29T19:23:07.309221+00:00 │   VRAM buffers 2 x 94 MB + 1 x 0 MB large-layer slot = 187 MB                │
+2026-09-29T19:23:07.309234+00:00 │   resident     467 MB extras + adapters                                      │
+2026-09-29T19:23:07.309249+00:00 │   peak VRAM    ~3.00 GB at batch 1 x seq 512 (2 rows — chosen+rejected are   │
+2026-09-29T19:23:07.309262+00:00 │ one concatenated tensor) (logits 2.18 GB)                                    │
+2026-09-29T19:23:07.309275+00:00 │   free VRAM    15.51 GB                                                      │
+2026-09-29T19:23:07.309286+00:00 │   forecast     1852-2723 tok/s — a compute-bound bound, not a promise        │
+2026-09-29T19:23:07.309297+00:00 │                (from 25.22 TFLOPS measured on this card now using float16 @  │
+2026-09-29T19:23:07.309310+00:00 │ 705 MHz)                                                                     │
+2026-09-29T19:23:07.309322+00:00 │   ! accumulating 8x at batch 1: the base is re-read once per micro-batch.    │
+2026-09-29T19:23:07.309333+00:00 │ Per token that is free, but reaching effective batch 8 by raising            │
+2026-09-29T19:23:07.309347+00:00 │ training.batch_size instead measured ~2.5x faster. Accumulation holds peak   │
+2026-09-29T19:23:07.309359+00:00 │ VRAM flat, so raise batch_size while the budget above allows, then           │
+2026-09-29T19:23:07.309370+00:00 │ accumulate for the rest.                                                     │
+2026-09-29T19:23:07.309380+00:00 │   ! training.stream_pin=false forces a pageable RAM store. Host-to-device    │
+2026-09-29T19:23:07.309393+00:00 │ copies become synchronous, which costs overlap: measured GPU utilisation     │
+2026-09-29T19:23:07.309403+00:00 │ drops from ~97% to ~79%, and page-locking is worth up to 6.56x measured      │
+2026-09-29T19:23:07.309414+00:00 │ throughput (Qwen2.5-32B NF4), 7.41x on a synthetic. Unset stream_pin to let  │
+2026-09-29T19:23:07.309423+00:00 │ the box page-lock when it can.                                               │
+2026-09-29T19:23:07.309434+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-09-29T19:23:07.309877+00:00 Layer streaming is BETA: slower than resident training, but this model may not 
+2026-09-29T19:23:07.309903+00:00 run resident on this card at all.
+2026-09-29T19:23:07.310715+00:00 expandable_segments allocator hint not enabled: CUDA was already initialised 
+2026-09-29T19:23:07.310738+00:00 before Soup could set it — the allocator reads PYTORCH_CUDA_ALLOC_CONF once, at 
+2026-09-29T19:23:07.310749+00:00 context creation
+2026-09-29T19:23:07.339041+00:00 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+2026-09-29T19:23:18.452983+00:00 Layer streaming ready: 28 layers, 2.62 GB pageable RAM store, 2 x 94 MB decoder 
+2026-09-29T19:23:18.453022+00:00 buffers + 1 x 0 MB large-layer slot
+2026-09-29T19:23:18.456189+00:00 LoRA applied: 1,089,536 trainable / 1,543,714,304 total (0.07%)
+2026-09-29T19:23:20.988251+00:00 
+2026-09-29T19:23:21.090731+00:00 Tokenizing train dataset:   0%|          | 0/500 [00:00<?, ? examples/s]
+2026-09-29T19:23:21.195315+00:00 Tokenizing train dataset:   7%|▋         | 34/500 [00:00<00:01, 332.20 examples/s]
+2026-09-29T19:23:21.348341+00:00 Tokenizing train dataset:  14%|█▎        | 68/500 [00:00<00:01, 328.68 examples/s]
+2026-09-29T19:23:21.503020+00:00 Tokenizing train dataset:  23%|██▎       | 113/500 [00:00<00:01, 309.06 examples/s]
+2026-09-29T19:23:21.608984+00:00 Tokenizing train dataset:  32%|███▏      | 160/500 [00:00<00:01, 306.83 examples/s]
+2026-09-29T19:23:21.767982+00:00 Tokenizing train dataset:  39%|███▉      | 195/500 [00:00<00:00, 314.53 examples/s]
+2026-09-29T19:23:21.868918+00:00 Tokenizing train dataset:  48%|████▊     | 240/500 [00:00<00:00, 303.53 examples/s]
+2026-09-29T19:23:21.971036+00:00 Tokenizing train dataset:  54%|█████▍    | 271/500 [00:00<00:00, 303.71 examples/s]
+2026-09-29T19:23:22.125925+00:00 Tokenizing train dataset:  61%|██████    | 306/500 [00:00<00:00, 313.21 examples/s]
+2026-09-29T19:23:22.226719+00:00 Tokenizing train dataset:  70%|███████   | 351/500 [00:01<00:00, 305.75 examples/s]
+2026-09-29T19:23:22.330600+00:00 Tokenizing train dataset:  76%|███████▋  | 382/500 [00:01<00:00, 305.06 examples/s]
+2026-09-29T19:23:22.438157+00:00 Tokenizing train dataset:  83%|████████▎ | 415/500 [00:01<00:00, 308.51 examples/s]
+2026-09-29T19:23:22.540329+00:00 Tokenizing train dataset:  89%|████████▉ | 447/500 [00:01<00:00, 305.37 examples/s]
+2026-09-29T19:23:22.772052+00:00 Tokenizing train dataset:  96%|█████████▌| 480/500 [00:01<00:00, 310.30 examples/s]
+2026-09-29T19:23:22.772089+00:00 Tokenizing train dataset: 100%|██████████| 500/500 [00:01<00:00, 280.50 examples/s]
+2026-09-29T19:23:22.789907+00:00 [transformers] The model is already on multiple devices. Skipping the move to device specified in `args`.
+2026-09-29T19:23:22.803468+00:00 
+2026-09-29T19:23:22.905951+00:00 Map:   0%|          | 0/500 [00:00<?, ? examples/s]
+2026-09-29T19:23:23.024736+00:00 Map:  63%|██████▎   | 316/500 [00:00<00:00, 3091.74 examples/s]
+2026-09-29T19:23:23.024806+00:00 Map: 100%|██████████| 500/500 [00:00<00:00, 2264.53 examples/s]
+2026-09-29T19:23:36.351895+00:00 Starting TWO optimizer steps, accumulation=8. This is a smoke run.
+2026-09-29T19:23:36.351959+00:00 [transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+2026-09-29T19:23:36.718530+00:00 
+2026-09-29T19:23:55.448059+00:00   0%|          | 0/2 [00:00<?, ?it/s]
+2026-09-29T19:23:55.450468+00:00  50%|█████     | 1/2 [00:18<00:18, 18.73s/it]
+2026-09-29T19:23:55.450509+00:00                                              
+2026-09-29T19:23:55.450523+00:00 {'loss': '0.6931', 'grad_norm': '2.778', 'learning_rate': '0', 'entropy': '1.236', 'num_tokens': '4179', 'logits/chosen': '-1.233', 'logits/rejected': '-0.843', 'mean_token_accuracy': '0.7169', 'rewards/chosen': '0', 'rewards/rejected': '0', 'rewards/accuracies': '0', 'rewards/margins': '0', 'logps/chosen': '-252.6', 'logps/rejected': '-190.5', 'epoch': '0.016'}
+2026-09-29T19:23:55.450596+00:00 
+2026-09-29T19:24:13.463814+00:00  50%|█████     | 1/2 [00:18<00:18, 18.73s/it]{
+2026-09-29T19:24:13.463870+00:00   "status": "FAILED",
+2026-09-29T19:24:13.463901+00:00   "output": "/content/soup_takehome/20260929T192146845350Z-smoke",
+2026-09-29T19:24:13.463913+00:00   "scope": "two optimizer steps; not a ship verdict",
+2026-09-29T19:24:13.463924+00:00   "gpu": "Tesla T4",
+2026-09-29T19:24:13.463936+00:00   "started_utc": "2026-09-29T19:21:53.531490+00:00",
+2026-09-29T19:24:13.463948+00:00   "budget": "Existing memory-budget-before.txt: estimated 3-7 GiB, not a bound. Add frozen ref LoRA (~4.16 MiB FP32).",
+2026-09-29T19:24:13.463960+00:00   "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+2026-09-29T19:24:13.463973+00:00   "train_sha256": "d43f24aebcdfed198dbfe5b7c2264aab13cca5c3e804105abb91a772058bf917",
+2026-09-29T19:24:13.463984+00:00   "test_sha256": "3eed9c45e23455d71dac705d7cac6078df203d1118420a7bbab7c4f3637e0397",
+2026-09-29T19:24:13.463994+00:00   "stream_runtime": {
+2026-09-29T19:24:13.464004+00:00     "n_layers": 28,
+2026-09-29T19:24:13.464019+00:00     "buffers": 2,
+2026-09-29T19:24:13.464031+00:00     "buffer_bytes": 187191296,
+2026-09-29T19:24:13.464041+00:00     "large_buffer_bytes": 0,
+2026-09-29T19:24:13.464051+00:00     "store_bytes": 2620678144,
+2026-09-29T19:24:13.464061+00:00     "pinned": false,
+2026-09-29T19:24:13.464073+00:00     "tier": "ram",
+2026-09-29T19:24:13.464083+00:00     "disk_bytes": 0,
+2026-09-29T19:24:13.464095+00:00     "layer_loads": 0,
+2026-09-29T19:24:13.464105+00:00     "large_loads": 0,
+2026-09-29T19:24:13.464115+00:00     "device": "cuda",
+2026-09-29T19:24:13.464126+00:00     "total_params": 1543714304
+2026-09-29T19:24:13.464136+00:00   },
+2026-09-29T19:24:13.464147+00:00   "trainer_token_audit": "PASS: 500 pairs, exact template IDs, EOS and no truncation",
+2026-09-29T19:24:13.464158+00:00   "trainable_params": 1089536,
+2026-09-29T19:24:13.464172+00:00   "repeat_logit_noise": 0.0,
+2026-09-29T19:24:13.464182+00:00   "initial_adapter_effect": 0.0,
+2026-09-29T19:24:13.464193+00:00   "setup_and_probe_peak_allocated": 686235648,
+2026-09-29T19:24:13.464203+00:00   "error": "AssertionError('No finite nonzero gradients')",
+2026-09-29T19:24:13.464213+00:00   "finished_utc": "2026-09-29T19:24:13.462772+00:00"
+2026-09-29T19:24:13.464231+00:00 }
+2026-09-29T19:24:13.464242+00:00 Traceback (most recent call last):
+2026-09-29T19:24:13.464257+00:00   File "/content/soup_takehome/20260929T192146799766Z-smoke-retry/smoke_dpo.py", line 204, in <module>
+2026-09-29T19:24:13.466928+00:00     main()
+2026-09-29T19:24:13.466953+00:00   File "/content/soup_takehome/20260929T192146799766Z-smoke-retry/smoke_dpo.py", line 174, in main
+2026-09-29T19:24:13.466963+00:00     result = trainer.train()
+2026-09-29T19:24:13.466974+00:00              ^^^^^^^^^^^^^^^
+2026-09-29T19:24:13.466983+00:00   File "/content/soup-py312/lib/python3.12/site-packages/transformers/trainer.py", line 1520, in train
+2026-09-29T19:24:13.466991+00:00     return inner_training_loop(
+2026-09-29T19:24:13.467000+00:00            ^^^^^^^^^^^^^^^^^^^^
+2026-09-29T19:24:13.467014+00:00   File "/content/soup-py312/lib/python3.12/site-packages/transformers/trainer.py", line 1602, in _inner_training_loop
+2026-09-29T19:24:13.467053+00:00     self._run_epoch(
+2026-09-29T19:24:13.467092+00:00   File "/content/soup-py312/lib/python3.12/site-packages/transformers/trainer.py", line 1867, in _run_epoch
+2026-09-29T19:24:13.467897+00:00     self.control = self.callback_handler.on_pre_optimizer_step(self.args, self.state, self.control)
+2026-09-29T19:24:13.468789+00:00                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-29T19:24:13.468820+00:00   File "/content/soup-py312/lib/python3.12/site-packages/transformers/trainer_callback.py", line 511, in on_pre_optimizer_step
+2026-09-29T19:24:13.469244+00:00     return self.call_event("on_pre_optimizer_step", args, state, control, **kwargs)
+2026-09-29T19:24:13.469959+00:00            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-29T19:24:13.469989+00:00   File "/content/soup-py312/lib/python3.12/site-packages/transformers/trainer_callback.py", line 545, in call_event
+2026-09-29T19:24:13.470295+00:00     result = getattr(callback, event)(
+2026-09-29T19:24:13.470481+00:00              ^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-29T19:24:13.470494+00:00   File "/content/soup_takehome/20260929T192146799766Z-smoke-retry/smoke_dpo.py", line 169, in on_pre_optimizer_step
+2026-09-29T19:24:13.470577+00:00     assert finite and nonzero, 'No finite nonzero gradients'
+2026-09-29T19:24:13.470867+00:00            ^^^^^^^^^^^^^^^^^^
+2026-09-29T19:24:13.470882+00:00 AssertionError: No finite nonzero gradients
+2026-09-29T19:24:13.889886+00:00 
+2026-09-29T19:24:13.889952+00:00  50%|█████     | 1/2 [00:37<00:37, 37.17s/it]
+
+END exit_code=1

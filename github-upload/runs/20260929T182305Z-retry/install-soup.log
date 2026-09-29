@@ -1,0 +1,6 @@
+START 2026-09-29T18:23:08.223986+00:00
+COMMAND ['/usr/bin/python3', '-m', 'uv', 'pip', 'install', '--python', '/content/soup-py312/bin/python', 'soup-cli[train]==0.75.1']
+2026-09-29T18:23:08.278739+00:00 Using Python 3.12.3 environment at: soup-py312
+2026-09-29T18:23:08.289544+00:00 Checked 1 package in 11ms
+
+END exit_code=0

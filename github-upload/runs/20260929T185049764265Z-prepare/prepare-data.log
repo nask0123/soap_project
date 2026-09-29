@@ -1,0 +1,24 @@
+START 2026-09-29T18:50:49.765264+00:00
+COMMAND ['/content/soup-py312/bin/python', '/content/soup_takehome/20260929T185049764265Z-prepare/prepare_data.py', '/content/soup_takehome/20260929T185049764265Z-prepare']
+2026-09-29T18:50:57.489175+00:00 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-29T18:52:21.029930+00:00 train {
+2026-09-29T18:52:21.029973+00:00   "accepted": 0,
+2026-09-29T18:52:21.029984+00:00   "counts": {
+2026-09-29T18:52:21.029994+00:00     "scanned": 20000,
+2026-09-29T18:52:21.030003+00:00     "template_prefix_mismatch": 17422,
+2026-09-29T18:52:21.030013+00:00     "non_strict_or_invalid_preference": 2410,
+2026-09-29T18:52:21.030022+00:00     "identical_answers": 138,
+2026-09-29T18:52:21.030032+00:00     "empty_or_invalid": 30
+2026-09-29T18:52:21.030041+00:00   },
+2026-09-29T18:52:21.030050+00:00   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+2026-09-29T18:52:21.030059+00:00   "mean_tokens": {},
+2026-09-29T18:52:21.030068+00:00   "max_full_tokens": 0,
+2026-09-29T18:52:21.030078+00:00   "chosen_longer_fraction": null
+2026-09-29T18:52:21.030086+00:00 }
+2026-09-29T18:52:21.030094+00:00 Traceback (most recent call last):
+2026-09-29T18:52:21.030103+00:00   File "/content/soup_takehome/20260929T185049764265Z-prepare/prepare_data.py", line 141, in <module>
+2026-09-29T18:52:21.030111+00:00     assert len(rows) == target, (
+2026-09-29T18:52:21.030119+00:00            ^^^^^^^^^^^^^^^^^^^
+2026-09-29T18:52:21.030128+00:00 AssertionError: Only 0/500 pairs collected. Inspect filters first.
+
+END exit_code=1

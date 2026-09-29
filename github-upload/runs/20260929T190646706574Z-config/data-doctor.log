@@ -1,0 +1,47 @@
+START 2026-09-29T19:06:46.772895+00:00
+COMMAND ['/content/soup-py312/bin/soup', 'data', 'doctor', '/content/soup_takehome/20260929T190646706574Z-config/train_chats.jsonl', '--model', 'Qwen/Qwen2.5-1.5B-Instruct', '--output', '/content/soup_takehome/20260929T190646706574Z-config/data-doctor.json']
+2026-09-29T19:06:52.286590+00:00 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-29T19:06:53.913982+00:00 [transformers] return_assistant_tokens_mask==True but chat template does not contain `{% generation %}` keyword.
+2026-09-29T19:06:54.880526+00:00                                 soup data doctor                                
+2026-09-29T19:06:54.880564+00:00 ┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┓
+2026-09-29T19:06:54.880580+00:00 ┃ Check              ┃ Verdict ┃ Message               ┃ Evidence              ┃
+2026-09-29T19:06:54.880592+00:00 ┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━┩
+2026-09-29T19:06:54.880603+00:00 │ chat_template      │ OK      │ tokenizer has a       │ 2507 chars            │
+2026-09-29T19:06:54.880616+00:00 │                    │         │ chat_template         │                       │
+2026-09-29T19:06:54.880627+00:00 │ template_render    │ OK      │ 0/200 rows failed to  │                       │
+2026-09-29T19:06:54.880638+00:00 │                    │         │ render through the    │                       │
+2026-09-29T19:06:54.880648+00:00 │                    │         │ chat template         │                       │
+2026-09-29T19:06:54.880657+00:00 │ generation_markers │ MINOR   │ template lacks {%     │                       │
+2026-09-29T19:06:54.880668+00:00 │                    │         │ generation %} markers │                       │
+2026-09-29T19:06:54.880678+00:00 │                    │         │ — assistant-only      │                       │
+2026-09-29T19:06:54.880689+00:00 │                    │         │ masking falls back to │                       │
+2026-09-29T19:06:54.880700+00:00 │                    │         │ a heuristic that may  │                       │
+2026-09-29T19:06:54.880710+00:00 │                    │         │ include role-prefix   │                       │
+2026-09-29T19:06:54.880732+00:00 │                    │         │ tokens in the loss    │                       │
+2026-09-29T19:06:54.880742+00:00 │ eos_in_labels      │ OK      │ 0/200 rows (0.0%)     │ eos_token_id=[151645] │
+2026-09-29T19:06:54.880753+00:00 │                    │         │ never train an        │                       │
+2026-09-29T19:06:54.880763+00:00 │                    │         │ EOS/EOT token — the   │                       │
+2026-09-29T19:06:54.880773+00:00 │                    │         │ model will not learn  │                       │
+2026-09-29T19:06:54.880782+00:00 │                    │         │ to stop generating    │                       │
+2026-09-29T19:06:54.880792+00:00 │ bos_duplication    │ OK      │ tokenizer has no      │                       │
+2026-09-29T19:06:54.880804+00:00 │                    │         │ bos_token_id          │                       │
+2026-09-29T19:06:54.880815+00:00 │ system_role        │ OK      │ no rows use a system  │                       │
+2026-09-29T19:06:54.880824+00:00 │                    │         │ message               │                       │
+2026-09-29T19:06:54.880852+00:00 │ unknown_roles      │ OK      │ 0/200 rows (0.0%)     │                       │
+2026-09-29T19:06:54.880861+00:00 │                    │         │ contain a message     │                       │
+2026-09-29T19:06:54.880870+00:00 │                    │         │ role outside          │                       │
+2026-09-29T19:06:54.880882+00:00 │                    │         │ ['assistant',         │                       │
+2026-09-29T19:06:54.880892+00:00 │                    │         │ 'function', 'system', │                       │
+2026-09-29T19:06:54.880901+00:00 │                    │         │ 'tool', 'user']       │                       │
+2026-09-29T19:06:54.880910+00:00 │ truncation_risk    │ OK      │ p95 length = 472      │ p50=226, max=510      │
+2026-09-29T19:06:54.880919+00:00 │                    │         │ tokens vs             │                       │
+2026-09-29T19:06:54.880928+00:00 │                    │         │ max_length=2048;      │                       │
+2026-09-29T19:06:54.880938+00:00 │                    │         │ 0/200 rows (0.0%)     │                       │
+2026-09-29T19:06:54.880947+00:00 │                    │         │ would be truncated    │                       │
+2026-09-29T19:06:54.880959+00:00 └────────────────────┴─────────┴───────────────────────┴───────────────────────┘
+2026-09-29T19:06:54.881250+00:00 ╭─────────── overall ───────────╮
+2026-09-29T19:06:54.881271+00:00 │ MINOR — 200/1000 rows scanned │
+2026-09-29T19:06:54.881283+00:00 ╰───────────────────────────────╯
+2026-09-29T19:06:54.884272+00:00 Wrote /content/soup_takehome/20260929T190646706574Z-config/data-doctor.json
+
+END exit_code=0

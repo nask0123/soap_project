@@ -1,0 +1,8 @@
+START 2026-09-29T17:48:45.994453+00:00
+COMMAND ['/usr/bin/python3', '-m', 'uv', 'venv', '--python', '3.12', '/content/soup-py312']
+2026-09-29T17:48:46.051566+00:00 warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?
+2026-09-29T17:48:46.367339+00:00 Using CPython 3.12.3 interpreter at: /usr/bin/python3.12
+2026-09-29T17:48:46.367371+00:00 Creating virtual environment at: soup-py312
+2026-09-29T17:48:46.368127+00:00 Activate with: source soup-py312/bin/activate
+
+END exit_code=0

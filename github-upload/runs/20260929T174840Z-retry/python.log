@@ -1,0 +1,5 @@
+START 2026-09-29T17:48:46.369485+00:00
+COMMAND ['/content/soup-py312/bin/python', '--version']
+2026-09-29T17:48:46.370585+00:00 Python 3.12.3
+
+END exit_code=0

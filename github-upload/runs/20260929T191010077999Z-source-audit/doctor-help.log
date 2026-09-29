@@ -1,0 +1,72 @@
+START 2026-09-29T19:10:10.378226+00:00
+COMMAND ['/content/soup-py312/bin/soup', 'data', 'doctor', '--help']
+2026-09-29T19:10:11.018783+00:00                                                                                 
+2026-09-29T19:10:11.018855+00:00  Usage: soup data doctor [OPTIONS] PATH                                         
+2026-09-29T19:10:11.018876+00:00                                                                                 
+2026-09-29T19:10:11.022937+00:00  Chat-template compatibility report + loss-mask X-ray.                          
+2026-09-29T19:10:11.022964+00:00                                                                                 
+2026-09-29T19:10:11.022978+00:00  Catches the top *silent* fine-tune failures before a single training           
+2026-09-29T19:10:11.022990+00:00  step: missing/incompatible chat_template, missing EOS in the trained           
+2026-09-29T19:10:11.023002+00:00  span (the #1 "model never stops generating" bug), duplicated BOS,              
+2026-09-29T19:10:11.023012+00:00  unsupported system role, unknown message roles, and truncation risk.           
+2026-09-29T19:10:11.023034+00:00  Pass --show-mask N to render N sample rows with per-token                      
+2026-09-29T19:10:11.023044+00:00  trained/masked colouring through the real answer-only / per-message /          
+2026-09-29T19:10:11.023054+00:00  RAFT span-mask collator path.                                                  
+2026-09-29T19:10:11.023063+00:00                                                                                 
+2026-09-29T19:10:11.027001+00:00 ╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+2026-09-29T19:10:11.027025+00:00 │ *    path      TEXT  [required]                                              │
+2026-09-29T19:10:11.027038+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-09-29T19:10:11.042542+00:00 ╭─ Options ────────────────────────────────────────────────────────────────────╮
+2026-09-29T19:10:11.042567+00:00 │ *  --model             -m                        TEXT     Tokenizer id or    │
+2026-09-29T19:10:11.042579+00:00 │                                                           local path to      │
+2026-09-29T19:10:11.042589+00:00 │                                                           check              │
+2026-09-29T19:10:11.042597+00:00 │                                                           chat-template      │
+2026-09-29T19:10:11.042606+00:00 │                                                           compatibility      │
+2026-09-29T19:10:11.042617+00:00 │                                                           against.           │
+2026-09-29T19:10:11.042626+00:00 │                                                           [required]         │
+2026-09-29T19:10:11.042634+00:00 │    --format            -f                        TEXT     Dataset format     │
+2026-09-29T19:10:11.042643+00:00 │                                                           (auto-detects by   │
+2026-09-29T19:10:11.042653+00:00 │                                                           default).          │
+2026-09-29T19:10:11.042662+00:00 │                                                           [default: auto]    │
+2026-09-29T19:10:11.042674+00:00 │    --max-length                                  INTEGER  Training           │
+2026-09-29T19:10:11.042683+00:00 │                                                           max_length — used  │
+2026-09-29T19:10:11.042691+00:00 │                                                           for the            │
+2026-09-29T19:10:11.042700+00:00 │                                                           truncation-risk    │
+2026-09-29T19:10:11.042710+00:00 │                                                           check.             │
+2026-09-29T19:10:11.042729+00:00 │                                                           [default: 2048]    │
+2026-09-29T19:10:11.042739+00:00 │    --sample                                      INTEGER  Number of rows to  │
+2026-09-29T19:10:11.042747+00:00 │                                                           sample for the     │
+2026-09-29T19:10:11.042758+00:00 │                                                           checks.            │
+2026-09-29T19:10:11.042768+00:00 │                                                           [default: 200]     │
+2026-09-29T19:10:11.042777+00:00 │    --show-mask                                   INTEGER  Render N sample    │
+2026-09-29T19:10:11.042786+00:00 │                                                           rows with          │
+2026-09-29T19:10:11.042795+00:00 │                                                           per-token          │
+2026-09-29T19:10:11.042805+00:00 │                                                           trained/masked     │
+2026-09-29T19:10:11.042814+00:00 │                                                           colouring (the     │
+2026-09-29T19:10:11.042824+00:00 │                                                           real collator      │
+2026-09-29T19:10:11.042848+00:00 │                                                           path).             │
+2026-09-29T19:10:11.042858+00:00 │    --train-on-respon…      --no-train-on-res…             Mask non-assistant │
+2026-09-29T19:10:11.042869+00:00 │                                                           tokens (mirrors    │
+2026-09-29T19:10:11.042878+00:00 │                                                           data.train_on_res… │
+2026-09-29T19:10:11.042887+00:00 │                                                           [default:          │
+2026-09-29T19:10:11.042896+00:00 │                                                           train-on-response… │
+2026-09-29T19:10:11.042906+00:00 │    --train-on-messag…                                     Per-message        │
+2026-09-29T19:10:11.042914+00:00 │                                                           train:bool field   │
+2026-09-29T19:10:11.042923+00:00 │                                                           masking (mirrors   │
+2026-09-29T19:10:11.042933+00:00 │                                                           the same soup.yaml │
+2026-09-29T19:10:11.042942+00:00 │                                                           flag).             │
+2026-09-29T19:10:11.042951+00:00 │    --train-on-eot                                         Extend the trained │
+2026-09-29T19:10:11.042960+00:00 │                                                           span through the   │
+2026-09-29T19:10:11.042968+00:00 │                                                           trailing EOS/EOT   │
+2026-09-29T19:10:11.042983+00:00 │                                                           token.             │
+2026-09-29T19:10:11.042992+00:00 │    --trust-remote-co…                                     Allow loading a    │
+2026-09-29T19:10:11.043001+00:00 │                                                           tokenizer that     │
+2026-09-29T19:10:11.043010+00:00 │                                                           ships custom code. │
+2026-09-29T19:10:11.043019+00:00 │    --output            -o                        TEXT     Write the report   │
+2026-09-29T19:10:11.043028+00:00 │                                                           JSON to this path. │
+2026-09-29T19:10:11.043037+00:00 │    --help                                                 Show this message  │
+2026-09-29T19:10:11.043047+00:00 │                                                           and exit.          │
+2026-09-29T19:10:11.043056+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-09-29T19:10:11.043128+00:00 
+
+END exit_code=0

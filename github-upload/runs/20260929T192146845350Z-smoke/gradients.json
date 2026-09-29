@@ -1,0 +1,12 @@
+[
+  {
+    "step": 0,
+    "finite": true,
+    "nonzero": true
+  },
+  {
+    "step": 1,
+    "finite": false,
+    "nonzero": false
+  }
+]

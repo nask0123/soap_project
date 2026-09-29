@@ -1,0 +1,9 @@
+START 2026-09-29T18:29:31.815576+00:00
+COMMAND ['/content/soup-py312/bin/python', '-c', '\nimport torch\n\nprint("GPU:", torch.cuda.get_device_name(0))\nprint("Compute capability:", torch.cuda.get_device_capability(0))\n\ntorch.manual_seed(42)\nx = torch.randn(256, 256, device="cuda", dtype=torch.float16)\nw = torch.randn(\n    256, 256, device="cuda", dtype=torch.float16, requires_grad=True\n)\nloss = (x @ w).float().square().mean()\nloss.backward()\ntorch.cuda.synchronize()\n\nassert torch.isfinite(loss), "Loss is not finite"\nassert w.grad is not None, "Gradient is missing"\nassert torch.isfinite(w.grad).all(), "Gradient is not finite"\nassert w.grad.abs().max() > 0, "Gradient is zero"\n\nprint("FP16 forward/backward: PASS")\nprint("Loss:", loss.item())\nprint("Max absolute gradient:", w.grad.abs().max().item())\n']
+2026-09-29T18:29:33.982955+00:00 GPU: Tesla T4
+2026-09-29T18:29:33.982989+00:00 Compute capability: (7, 5)
+2026-09-29T18:29:33.983002+00:00 FP16 forward/backward: PASS
+2026-09-29T18:29:33.983014+00:00 Loss: 259.2191162109375
+2026-09-29T18:29:33.983027+00:00 Max absolute gradient: 0.05145263671875
+
+END exit_code=0

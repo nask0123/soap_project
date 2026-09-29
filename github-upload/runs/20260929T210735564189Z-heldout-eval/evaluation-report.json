@@ -1,0 +1,37 @@
+{
+  "status": "EVALUATION_COMPLETE",
+  "output": "/content/soup_takehome/20260929T210735564189Z-heldout-eval",
+  "source": "/content/soup_takehome/20260929T202553230689Z-full-dpo",
+  "test_sha256": "3eed9c45e23455d71dac705d7cac6078df203d1118420a7bbab7c4f3637e0397",
+  "metric": "Preference ranking accuracy: chosen completion sum log-probability > rejected; ties count as 0. Not human-judged generation quality.",
+  "precision": "FP16 base and CUDA FP16 autocast for BOTH baseline and tuned; log_softmax in FP32; no truncation",
+  "base_accuracy": 0.56,
+  "tuned_accuracy": 0.56,
+  "accuracy_delta": 0.0,
+  "paired_bootstrap_95ci": [
+    0.0,
+    0.0
+  ],
+  "wrong_to_right": 0,
+  "right_to_wrong": 0,
+  "base_length_normalized_accuracy": 0.71,
+  "tuned_length_normalized_accuracy": 0.71,
+  "mean_preference_margin_change": 0.037703236527740956,
+  "fraction_positive_margin_change": 0.58,
+  "length_strata": {
+    "chosen_longer": {
+      "n": 51,
+      "base_accuracy": 0.27450980392156865,
+      "tuned_accuracy": 0.27450980392156865
+    },
+    "chosen_not_longer": {
+      "n": 49,
+      "base_accuracy": 0.8571428571428571,
+      "tuned_accuracy": 0.8571428571428571
+    }
+  },
+  "ship_evidence_limitations": "No independent general-capability/forgetting benchmark measured; empty benchmarks is intentional missing evidence, not zero regression.",
+  "ship_exit_code": 2,
+  "limitations": "100 length-filtered general preference pairs; one seed; no Russian-support evaluation, no broad forgetting evaluation, no gradient parity. Bootstrap covers pair sampling only, not training randomness.",
+  "finished_utc": "2026-09-29T21:08:30.560375+00:00"
+}

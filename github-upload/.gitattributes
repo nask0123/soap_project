@@ -1,0 +1,8 @@
+# Preserve exact evidence bytes and checksums on Windows and Linux.
+runs/** -text
+data/** -text
+*.py text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.ipynb text eol=lf
+*.pdf binary

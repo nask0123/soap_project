@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/content/soup_takehome/20260929T192146799766Z-smoke-retry/smoke_dpo.py", line 204, in <module>
+    main()
+  File "/content/soup_takehome/20260929T192146799766Z-smoke-retry/smoke_dpo.py", line 174, in main
+    result = trainer.train()
+             ^^^^^^^^^^^^^^^
+  File "/content/soup-py312/lib/python3.12/site-packages/transformers/trainer.py", line 1520, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/content/soup-py312/lib/python3.12/site-packages/transformers/trainer.py", line 1602, in _inner_training_loop
+    self._run_epoch(
+  File "/content/soup-py312/lib/python3.12/site-packages/transformers/trainer.py", line 1867, in _run_epoch
+    self.control = self.callback_handler.on_pre_optimizer_step(self.args, self.state, self.control)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/soup-py312/lib/python3.12/site-packages/transformers/trainer_callback.py", line 511, in on_pre_optimizer_step
+    return self.call_event("on_pre_optimizer_step", args, state, control, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/soup-py312/lib/python3.12/site-packages/transformers/trainer_callback.py", line 545, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/soup_takehome/20260929T192146799766Z-smoke-retry/smoke_dpo.py", line 169, in on_pre_optimizer_step
+    assert finite and nonzero, 'No finite nonzero gradients'
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: No finite nonzero gradients

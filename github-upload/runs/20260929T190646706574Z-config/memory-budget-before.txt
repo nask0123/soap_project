@@ -1,0 +1,22 @@
+PRE-TRAIN ESTIMATE — not measured
+Assumptions: Qwen2.5-1.5B; FP16 frozen base; no quantization;
+2 streaming buffers; pair batch=1 (2 sequences); max length=512;
+LoRA rank=8 on q_proj/v_proj; FP32 adapter/grad/Adam states.
+
+h=1536, intermediate=8960, kv_width=256, layers=28, vocab=151936.
+Embedding: vocab*h*2 = 445.125 MiB; tied output assumed shared.
+Decoder: approximately 46.8M parameters/layer.
+Two FP16 layer buffers: approximately 178.5 MiB.
+Whole base FP16: approximately 2.88 GiB (primarily host memory).
+LoRA: 28*8*((1536+1536)+(1536+256)) = 1,089,536 parameters.
+Weights+grad+Adam m/v at 4 bytes each = 16.625 MiB.
+Checkpoint inputs: 28*2*512*1536*2 = 84 MiB (partial activation estimate).
+One FP32 logits tensor: 2*512*151936*4 = 593.5 MiB.
+FP16 logits, FP32 conversion and log-probability intermediates may coexist.
+Reference shares base weights; its temporaries can overlap saved policy graph.
+Additional consumers: layer recomputation, attention/MLP temporaries,
+CUDA context/workspaces, allocator reservation/fragmentation.
+Planning peak: 3-7 GiB, NOT a guaranteed bound.
+Confirm actual checkpointing, tensor lifetimes, dtype and weight sharing.
+Measure torch allocated/reserved and nvidia-smi separately.
+Host peak exceeds base storage during checkpoint loading and conversion.

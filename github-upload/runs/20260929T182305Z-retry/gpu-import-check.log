@@ -1,0 +1,14 @@
+START 2026-09-29T18:23:09.268525+00:00
+COMMAND ['/content/soup-py312/bin/python', '-c', '\nimport sys\nimport torch\nfrom importlib.metadata import version\nfrom trl import DPOTrainer\nfrom peft import LoraConfig\n\nprint("Python:", sys.version)\nfor name in ("soup-cli", "torch", "transformers", "trl", "peft"):\n    print(name, version(name))\nprint("PyTorch CUDA:", torch.version.cuda)\nprint("CUDA available:", torch.cuda.is_available())\nassert torch.cuda.is_available(), "PyTorch не видит GPU"\nprint("GPU:", torch.cuda.get_device_name(0))\nx = torch.ones(8, device="cuda")\nprint("GPU computation:", (x + x).sum().item())\ntorch.cuda.synchronize()\n']
+2026-09-29T18:23:17.946364+00:00 Python: 3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]
+2026-09-29T18:23:17.946401+00:00 soup-cli 0.75.1
+2026-09-29T18:23:17.946414+00:00 torch 2.14.0
+2026-09-29T18:23:17.946426+00:00 transformers 5.17.0
+2026-09-29T18:23:17.946438+00:00 trl 0.29.1
+2026-09-29T18:23:17.946449+00:00 peft 0.21.1
+2026-09-29T18:23:17.946460+00:00 PyTorch CUDA: 13.0
+2026-09-29T18:23:17.946470+00:00 CUDA available: True
+2026-09-29T18:23:17.946481+00:00 GPU: Tesla T4
+2026-09-29T18:23:17.946492+00:00 GPU computation: 16.0
+
+END exit_code=0

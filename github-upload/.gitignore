@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+evidence/
+full_evidence/
+eval_evidence/
+**/installed_source/
+*.zip
+tmp/
+.venv/
+.ipynb_checkpoints/

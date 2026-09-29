@@ -1,0 +1,26 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dataset": "trl-lib/ultrafeedback_binarized",
+  "dataset_revision": "47124cb5778f5d50de1c7676a412828f3ea7c555",
+  "seed": 42,
+  "max_full_tokens": 512,
+  "max_prompt_tokens": 256,
+  "selection": "streaming shuffle, buffer_size=2000; short single-turn pairs",
+  "splits": {
+    "train": {
+      "accepted": 0,
+      "counts": {
+        "scanned": 20000,
+        "template_prefix_mismatch": 17422,
+        "non_strict_or_invalid_preference": 2410,
+        "identical_answers": 138,
+        "empty_or_invalid": 30
+      },
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mean_tokens": {},
+      "max_full_tokens": 0,
+      "chosen_longer_fraction": null
+    }
+  }
+}

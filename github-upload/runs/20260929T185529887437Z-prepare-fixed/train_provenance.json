@@ -1,0 +1,3002 @@
+[
+  {
+    "shuffled_index": 0,
+    "prompt_sha256": "16b1ec2271aff472382d07509ffe6bfbef6b41039a1d143ebf65c44a70e972dc",
+    "score_chosen": 9.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 4,
+    "prompt_sha256": "4a723044bddf773dfc642ead226ccbc8e9dfe22a0564a33bd6377f69a2c672ae",
+    "score_chosen": 7.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 6,
+    "prompt_sha256": "61615b2d011b53008ba8a66e36d4cb0e88e1beae3dbf7875a09da364cc1c2589",
+    "score_chosen": 8.0,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 9,
+    "prompt_sha256": "9ea9a03149fa539fcc2d5c7820fe2449a1445609b4442bff107a646c5a13d805",
+    "score_chosen": 6.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 11,
+    "prompt_sha256": "b3137d6b697ae4667be09cb401084fbb23fa214b04147ed531b034f91fbfa8f0",
+    "score_chosen": 8.0,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 16,
+    "prompt_sha256": "26667f029b453c236e91941b4e2937e8914dab6ced03ad104033020762fafa5d",
+    "score_chosen": 8.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 19,
+    "prompt_sha256": "945139ca9dfb5907dfc8695ed247d3506cdb55c4ecf59fce1fa47ee1dce8a27a",
+    "score_chosen": 7.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 20,
+    "prompt_sha256": "187112c0353a51d37e25c3f4e5e757b46eaae81a09beaa1ad3ea5431bd8686f2",
+    "score_chosen": 7.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 21,
+    "prompt_sha256": "dac75e0a100eefc622f4e20deaf802a816b5829fbe0a0d8561140ce85d75c4f5",
+    "score_chosen": 9.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 22,
+    "prompt_sha256": "ea38d70ef5c1841e0bc71f45105ae45986d4d7edd6fd7dd6b3206942da83526f",
+    "score_chosen": 9.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 24,
+    "prompt_sha256": "74225e0212875d9e0ece7a9c5f85ea8c4b652837a4716e212498cfcda0760533",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 27,
+    "prompt_sha256": "9d4e84423feaf58747440346fe8f3eba21323124508ef8e618dfee88a74dd273",
+    "score_chosen": 8.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 30,
+    "prompt_sha256": "8b90f2d2dbb24e8a78c46210d58d518a619bb5ae07c5d11dbaae9de9227c736c",
+    "score_chosen": 7.0,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 35,
+    "prompt_sha256": "66c54e0f83d80aea962662df883e0892edf041c381dcf01d8e10d7e06bb5bde5",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 42,
+    "prompt_sha256": "7d921d1fd153996354f2c6f9834edaa0c3522448a263a482884677907007275b",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 43,
+    "prompt_sha256": "c5c7861e4707a22fce4bf8f272095b1daa462af29df87a5e2c2fd54f15aa4e8c",
+    "score_chosen": 5.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 44,
+    "prompt_sha256": "6a5c3b80198ad100fd83c68d0fbc362fa844e6beba84a04e322340086430505f",
+    "score_chosen": 7.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 45,
+    "prompt_sha256": "e380249d529944308742f763f1543c78a4e01b1b4244ce3901d8435a0456e992",
+    "score_chosen": 7.5,
+    "score_rejected": 1.0
+  },
+  {
+    "shuffled_index": 47,
+    "prompt_sha256": "476264e99d0167d50fc26a0bcffefed35b6a391e6476d2b6a972439f252bd1c6",
+    "score_chosen": 9.0,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 48,
+    "prompt_sha256": "80d3f5049c55c66331c1701267968864d6213aba797bc1090378fcea087207c7",
+    "score_chosen": 9.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 50,
+    "prompt_sha256": "7dce3f2a96f4f8e1782a9fd1914775d1c112754819e2328bf1bcc2270775aacd",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 52,
+    "prompt_sha256": "8e91469cf7cca268874915dbcb9b633356a08229dd99d92dce9c254e0c657ea3",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 53,
+    "prompt_sha256": "45eacebfb8007c8bea564bd60589412a0143fa48fe494f39123991c02ec9ae66",
+    "score_chosen": 7.5,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 56,
+    "prompt_sha256": "c7e48f4569af581731539b3737f50e8593cdbdc83aa199279ba0d7317957ed51",
+    "score_chosen": 8.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 58,
+    "prompt_sha256": "9186970c1913c2cb35d1a5ec61e71b0a9ad4b583667d650ba9c43594198fd8c7",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 64,
+    "prompt_sha256": "6e5e64e18dee6859c3dc0d0ae86e37632b412dde2e60ad99d11b04f7a9dbbd86",
+    "score_chosen": 7.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 66,
+    "prompt_sha256": "5ef707a803e6bf774bfd11b09e60e42669587557af31f6cbd824cc4004835dbf",
+    "score_chosen": 7.0,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 70,
+    "prompt_sha256": "1f9afd09a5ce469ed247c3da1c413197f106b4d75cf45825c439d4989c839447",
+    "score_chosen": 7.5,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 71,
+    "prompt_sha256": "9e9116444eb4c50157eaa21f82e1e576d9e28fb1cfefac9a747510317e9b2a77",
+    "score_chosen": 8.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 72,
+    "prompt_sha256": "1992efa7330b1d2e10d91e5050630f13c08c60e46ada92ee197f20d93c838f6d",
+    "score_chosen": 7.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 73,
+    "prompt_sha256": "66e57dfb46fcfb131152ee854fc9abbaee3c19ba480353edd689797abd356c6f",
+    "score_chosen": 9.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 74,
+    "prompt_sha256": "cae46033021ea014ee421153c72dbbe58823b1bae1e267d385577c4c2c1f4944",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 76,
+    "prompt_sha256": "f03289a9d74dc316da3030f6cd2d273f0cf1751ef25966dc8ed19c7bf5015837",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 78,
+    "prompt_sha256": "f5d0050dccab120d8849cb711738361ec679893866bb1c925c9461aacb272363",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 79,
+    "prompt_sha256": "c546d4007de2861ba0e4d9dbe3d605d94a2ac3080cf12bad473ecda7db1abbda",
+    "score_chosen": 6.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 84,
+    "prompt_sha256": "d50c7c9372fd6d02042422b295e5a37e07b2e55a3c80b0b07097ba2dbd596070",
+    "score_chosen": 8.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 86,
+    "prompt_sha256": "e486218451c5f71fd216e7b5271a0f8c9a63e2e6bdfbf85f862233176da069c7",
+    "score_chosen": 9.0,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 90,
+    "prompt_sha256": "55cfa7b14fd66ce686f7da324260f9c9a7cbb0a8ab1012126e6142b528976674",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 94,
+    "prompt_sha256": "c2ae8e1aae8dde9d02bb346bb4b2a62190e8205a47869d7f46cf6e9649c53b9d",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 97,
+    "prompt_sha256": "8d0ed632c5d52f5540815b9e4d68a4fd0e7b5fe92ce52d1556e2b3035fda8771",
+    "score_chosen": 8.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 98,
+    "prompt_sha256": "727a9a222b48312a0804694cc203a2cd5149144fb078a35395b0ffe835a900a8",
+    "score_chosen": 9.0,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 100,
+    "prompt_sha256": "6b4aa411757e38ae69e719b0428b697194498061790d7879295537de8fd075c5",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 101,
+    "prompt_sha256": "8e5e5d039dfe2c1be847de564bbce72e29dae8f6fe448502e672691953b98dea",
+    "score_chosen": 9.0,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 102,
+    "prompt_sha256": "29677a93062c8d0b7871b633fedbf662628d215017a77568e7a868dcff57a5c0",
+    "score_chosen": 7.0,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 103,
+    "prompt_sha256": "46c8c00638c61b9eb7fedfa8b14a86294323b85cd9e40ec1e3c2952bd7e96fc6",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 105,
+    "prompt_sha256": "58c61bc9f898fb85174700a390b31ca796140359c9634b0cd55f1becdbc715ee",
+    "score_chosen": 8.0,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 106,
+    "prompt_sha256": "9b2d0111eed92d8f68c9d47e583afb0db2d96f6255dd3a052874a3c2d20bb315",
+    "score_chosen": 9.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 107,
+    "prompt_sha256": "5096e9e99e485d0a17402d2155301ab48b85d7bfcb203a365ca956cf10e67966",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 110,
+    "prompt_sha256": "aa1c4a5521ca2eb3f1f2b045ba1e19cf59f3aeb0336293bbe481c4a8296b2926",
+    "score_chosen": 7.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 111,
+    "prompt_sha256": "30d87ed8bd7499d24e86469bcfa4cc8846d1761db45a2ad207cd527d6bea763d",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 112,
+    "prompt_sha256": "39c7a8e207e31691e13db30f5976cfaa24b21e09facaf08f7e8765d01f0f13a2",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 114,
+    "prompt_sha256": "e1ee8f69aacd0dc31307220caf21bcab12014c00e66db4c5417e78fc741d9969",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 115,
+    "prompt_sha256": "7f6f939400bb14e81d33d3acd4c62e335f37570e30c7053a2979aceec8636073",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 117,
+    "prompt_sha256": "82ccfac4d0582d91ddbceb59f2773c93a797f91ad67a5e52b6100b71db62fdeb",
+    "score_chosen": 7.5,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 120,
+    "prompt_sha256": "c316e6c77460efee288d0166fd3fd3801da22c6f8554762287895c5dfa558b0f",
+    "score_chosen": 7.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 121,
+    "prompt_sha256": "3ed6df65d850798501bfc680afd16a6686e70d9361ac238b8da175ea0d445780",
+    "score_chosen": 7.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 123,
+    "prompt_sha256": "acc0029ec8e5c9ae01752df94811ccb9beacedf15c50a0fa7f66123df2e26606",
+    "score_chosen": 9.0,
+    "score_rejected": 8.5
+  },
+  {
+    "shuffled_index": 127,
+    "prompt_sha256": "0a8aacf9d739d8e6827ba663cd2f0014f2fff87ee0343ccfbdc67a639cb406e8",
+    "score_chosen": 9.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 128,
+    "prompt_sha256": "9dc9fa1ff23ff50a736038c4cb96b3376ace61b192ea35dacef7035686a09a54",
+    "score_chosen": 7.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 129,
+    "prompt_sha256": "b80005cc43734b4b7396fdd6acd118173364f448bd2ff4f1d8d28f97fb078c52",
+    "score_chosen": 9.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 131,
+    "prompt_sha256": "d18cc88b7a249cbb073cb02cec6994a64427d899c29a91819cf772e3ad7bf710",
+    "score_chosen": 9.5,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 134,
+    "prompt_sha256": "855eb0e359ed85f7f27427deba549f7e59077229ed4f9f4c21fdcb91a4df40a7",
+    "score_chosen": 4.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 135,
+    "prompt_sha256": "ef0b2d8c03b214f0b7c1f059658bf0a200c7c2a21be26e9002c422d672f46ac3",
+    "score_chosen": 7.0,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 136,
+    "prompt_sha256": "f9faa54b315eecbab7cb542d19017a984e706527e2b30e9802e430dab336103c",
+    "score_chosen": 6.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 139,
+    "prompt_sha256": "2b3827dcff90884255f2f01d6ef93f8e7b7dbd4cef15ae0670a704a49e6c42d4",
+    "score_chosen": 6.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 143,
+    "prompt_sha256": "9f1cae2c2600a6993e9ea893141a910d5d5b77c8024c3f08b6ef39dc3f5a1320",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 144,
+    "prompt_sha256": "3eaa2242e917bacb24676f68b757ebc017c83525fa8410d6104c98a41c0b86e9",
+    "score_chosen": 6.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 148,
+    "prompt_sha256": "985986e0da1c4a4af6fa99439dd863e7ca9c6677bccf72db0291d76325236771",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 150,
+    "prompt_sha256": "176a83369b9cf486dba706fda679f55c299ae6ca66aaa7070b84ed44d5dd28d2",
+    "score_chosen": 8.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 151,
+    "prompt_sha256": "8233bbae0d7366aba16bbbec902116048ea69984e09466f424e2009433fcfa44",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 153,
+    "prompt_sha256": "109aa371b40bd728e59de695208651fb14492924f0b21d41c34b74a3536d8826",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 156,
+    "prompt_sha256": "3b93524edca14d2f9b8073ca14da1026b775c496f15fb9c0c1aba55e42195d3e",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 159,
+    "prompt_sha256": "585160413669cf11b8e2d432fef6bc7f81ba7856bb085d6f38d0d02871d69ad7",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 162,
+    "prompt_sha256": "b8f333b043992f23f00d2c033267bd69a4d6c892ecab358d736911e2dc688728",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 165,
+    "prompt_sha256": "902ead9498acf921394449f525e7748084a714a1bfb01a18eb64d9d8b6f68d64",
+    "score_chosen": 8.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 166,
+    "prompt_sha256": "40060a8dcaa971352a4ff40a1119f8ad16ebea46e0570165f21359e48ea6a60a",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 167,
+    "prompt_sha256": "5e55dfe8d84c188f9c8635a12f4b1950be211c28e436a1e8ab5dc64f1c406b3d",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 170,
+    "prompt_sha256": "296deb7d63998a872952db7468f716d8cff422f67dbfb61f7b82bec821c2a791",
+    "score_chosen": 9.0,
+    "score_rejected": 8.5
+  },
+  {
+    "shuffled_index": 172,
+    "prompt_sha256": "7757948d04730741b80f72d13546ab54d0795f15d9d07f2a68daab5e95efde7f",
+    "score_chosen": 9.0,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 174,
+    "prompt_sha256": "44adde170c21fbf008a0c4c9ba491cad8431655f8d2f5087b76eb712a9b0eeec",
+    "score_chosen": 7.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 175,
+    "prompt_sha256": "172d9fdf19374f114892cb2a6967f6ddc90b1bc4fcf7f8a3eeea2596417e3869",
+    "score_chosen": 7.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 176,
+    "prompt_sha256": "4bdf34497830ac43a3a1e90012562e465227bb74df8824e4e6e389e38faf11d6",
+    "score_chosen": 9.0,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 177,
+    "prompt_sha256": "496bc0697b9d68929998d9a9bec694eb9051eb64c266e673794a4b67e32623eb",
+    "score_chosen": 8.0,
+    "score_rejected": 1.0
+  },
+  {
+    "shuffled_index": 179,
+    "prompt_sha256": "64f40f88a3c7fc0f5b68af406bf2444734e008da57477dd54f88e9c23b728d71",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 180,
+    "prompt_sha256": "a75943c9aab6abef3e2a4a661a027c07ae238d9298d79806d578207376ddff92",
+    "score_chosen": 7.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 181,
+    "prompt_sha256": "9e3db10e74babd8d903974532b7df0c23eddda771c168481e52d72e480696157",
+    "score_chosen": 9.0,
+    "score_rejected": 8.5
+  },
+  {
+    "shuffled_index": 182,
+    "prompt_sha256": "865564b312dff872a03d06155ee0fcf72e1e08ac68a5b0295711bf317f6c90e0",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 186,
+    "prompt_sha256": "3674a0216d05807b2b45adfdb6bcfe4d3c34451ce5c5bc61151e95f3900221de",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 188,
+    "prompt_sha256": "ad7d18c6453e8bf5b9a754741b2a56a3a5f2257c5e7e86f8153d50b92c697a5e",
+    "score_chosen": 7.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 189,
+    "prompt_sha256": "4b669af0e69ef79a0b9f6d67be5c1a06c97f3ca229ef19c1c6dd2ee7eed40907",
+    "score_chosen": 9.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 192,
+    "prompt_sha256": "c309315c652c2dc4a29ef524e985b9d59719d6791bf90d88ace5f93c1831e507",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 193,
+    "prompt_sha256": "1d21174e09e82c43a7012bffcfd000da4d9abd3e0b0e6ee0e9475870ed7958b6",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 196,
+    "prompt_sha256": "aa2869665a66054fb02d839f1a2fdbc5200495e269aad48ed7249e833fb8ba11",
+    "score_chosen": 9.0,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 208,
+    "prompt_sha256": "a020d533213d443cb196a1c8139f2d9c30bd8caf9f87ce04fb4f0342a81bc973",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 212,
+    "prompt_sha256": "864890e571195788a805ed513f40feb713e0119792573defd17c1b910e18fb22",
+    "score_chosen": 7.5,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 213,
+    "prompt_sha256": "1d5ce2c49f26ea50f5be573beb643eff962a616ad04e44fd5cb9107ea56e3c79",
+    "score_chosen": 8.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 215,
+    "prompt_sha256": "112e76f6542fb29821d4aac4a9b15687fef1410afe2a3871de4cd09e076c5b23",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 216,
+    "prompt_sha256": "0c15c0189d9ba05a33e349e94463e257a21608b9535eb8525a0415b962467090",
+    "score_chosen": 8.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 217,
+    "prompt_sha256": "d6d95f5d4ef02aff3b76ce76eb8625c1c297873b00b1ad0916ee351b09b46c70",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 218,
+    "prompt_sha256": "3a56b705c3762b4a6af2d807b72d2252cddedaa8d1dbedb45913372b110fcc10",
+    "score_chosen": 3.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 221,
+    "prompt_sha256": "cd4b17d525fc960d0ee579807ad160071b60e5c9e64543b500a617d4cfcb064e",
+    "score_chosen": 8.0,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 222,
+    "prompt_sha256": "6482330f3f137f653a127503b698e18296ff123c07ebaef7189f9473f97d4d52",
+    "score_chosen": 9.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 224,
+    "prompt_sha256": "8c31e311251901eff7745e978afa734cf7f3be32f3f2b08ceb0f439c822489d3",
+    "score_chosen": 4.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 225,
+    "prompt_sha256": "7ccbbf6f3280702a1ebd33b5a0e800c7d3c0b8d6627a79d81003de7d6d3217fa",
+    "score_chosen": 8.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 226,
+    "prompt_sha256": "2655d95a53b82ff83eadc6d602e9bf94ce286178830a25461ba047bf44012b8f",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 228,
+    "prompt_sha256": "497ff7e4814cfe4dabf248c931c86c25225cbf25bddbcc7a5891d5a12614623f",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 229,
+    "prompt_sha256": "81fa20d288767771e2be5b3c4653fe88cf3c074cb608d1215031ed8ad69a72d4",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 230,
+    "prompt_sha256": "db13f5afb8c475f00cdd229aff2cb1cc2f0400d48250ffc80b2b134733736d92",
+    "score_chosen": 6.0,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 231,
+    "prompt_sha256": "37de7af442bea5491fe2775c057b3cdae8f9276a0df1b5465ba921753e7ec34f",
+    "score_chosen": 7.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 234,
+    "prompt_sha256": "497036d61d8928b7117642a5847c98f3740db1e76780cce7596653ccbe39b52e",
+    "score_chosen": 9.0,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 240,
+    "prompt_sha256": "b91d471e005dee17d0cce1f5fc8c6beb2519b3553444e7aca9b1a1d4bece6923",
+    "score_chosen": 9.0,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 245,
+    "prompt_sha256": "039bcf7c1ad7da2597d289c7ba9b02819b136946d73c205ccd3feedc9405d757",
+    "score_chosen": 7.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 249,
+    "prompt_sha256": "4a877c1dcf9a154d7cc2bedbd430ff6766cde8c40a32f35c76475c6e0e5c8963",
+    "score_chosen": 7.0,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 250,
+    "prompt_sha256": "33c62d6f4c2fade401fc6c33cbe921c86100384cb2aaf4aacbaa38ceccd88b5a",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 252,
+    "prompt_sha256": "57870ff7d1c04cf98eb131fef20a5172235b2ebe54d0aa3fb2989ac730438ae5",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 253,
+    "prompt_sha256": "1d419e1e9412aba9ca0d8298a4db938a861396bf5e592a5f6012ed69d04f5fd6",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 254,
+    "prompt_sha256": "f590b213106db76f1bc7857aa180f843d3c7a514fcb70404d1ce9a366105dddc",
+    "score_chosen": 7.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 256,
+    "prompt_sha256": "f7b0a7b40955b5a2fe366071bf5a36d62e3217dda6676574b2cab2ef27860f9d",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 259,
+    "prompt_sha256": "8299e01ec8e9a83a19a3ce92e61672f89086a1959624121bf4bf3f936548971d",
+    "score_chosen": 7.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 260,
+    "prompt_sha256": "fc475ba82270c69d1f2cf45ecf27fbb41ad3060d7f9559eb1238612c006c3af6",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 263,
+    "prompt_sha256": "2d61786e910999806c1be03dc50e71fa5883444e7a269f4f119e4c6380896ed5",
+    "score_chosen": 9.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 264,
+    "prompt_sha256": "c55622621455533c53e2bc5e9faf03414bb1bff49e3c22e393182f770146c8ee",
+    "score_chosen": 8.0,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 265,
+    "prompt_sha256": "f15ab0dd373df8d5353ab75a611d8a76f35e8e97f02c16511fd421b3845250a3",
+    "score_chosen": 7.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 269,
+    "prompt_sha256": "2b937bfda2476716037d6973bb6f940331648f4fabc66608ff68a9bb4e0cb682",
+    "score_chosen": 6.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 271,
+    "prompt_sha256": "33adc2e73541df1e364e961ed66eb5a1844bb4459af198236493e401aee18cdc",
+    "score_chosen": 8.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 274,
+    "prompt_sha256": "c06db31be085d70b57921e6c70ddbdb4d947455ebd80661f8c9132f868a4943d",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 277,
+    "prompt_sha256": "1175d62acd6c83b87383e5fee3461f89a9434595d1afbaa1e74f0a74ef82b1a7",
+    "score_chosen": 9.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 278,
+    "prompt_sha256": "f5c7f9a0cc8950246655a49424c1848759db4f3d00b5cf3b4e7a9acdb208ccca",
+    "score_chosen": 8.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 279,
+    "prompt_sha256": "373b5397045b5e68578165fcf6e8c4250964e01634044dabd6b87f425e614544",
+    "score_chosen": 8.5,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 281,
+    "prompt_sha256": "5b07f62f352128579e6299a760af5e0851f8c575c055be500c9c0828c40a123f",
+    "score_chosen": 7.0,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 283,
+    "prompt_sha256": "b837e4b57d65de822e236af5e3674ceb8b7ddf42bd5551d1faa319370d447498",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 284,
+    "prompt_sha256": "c33ca87cbdae22dc65bf592435f973158d3279a8c2200e78a011187dc52c6e32",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 285,
+    "prompt_sha256": "2b66ba3e8a459fd2ebc419b7414e85fbace914ca0ee8d57c901679cb4eb3227d",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 288,
+    "prompt_sha256": "6c2f0cdafdd6b5672248791213f9fb7f52b0788b2fc85083afcbb8dfad03ef1e",
+    "score_chosen": 6.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 291,
+    "prompt_sha256": "a0a10147820a55bf49c838637601b1918359cb7c616dc79aa1d8db1bf046d8a8",
+    "score_chosen": 9.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 293,
+    "prompt_sha256": "a17de0b93d0fa0647bb76d321ca2c4c4992d694e08e6fc9b52ecd36ba11fec89",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 299,
+    "prompt_sha256": "7c07657164a05cf70e838d7d2e2c0c2aad26fa14da35b44b7218366b0a002bc3",
+    "score_chosen": 7.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 304,
+    "prompt_sha256": "c1b4a0220b8bdb11888470810835af826bfdded00dfa7005227e69ca61d7b433",
+    "score_chosen": 8.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 305,
+    "prompt_sha256": "4e09f11dc13590c87255081e61891bdfe9ac6586f66eef09497bd8b7c5d32519",
+    "score_chosen": 7.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 306,
+    "prompt_sha256": "561c7ecce415afe9b2ff4b05f8b9ecbae8ee8cc786b9094e1530ef891f5f1a1b",
+    "score_chosen": 9.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 307,
+    "prompt_sha256": "6d97cb9d376b75df07126f9e3661dcd60fdbb9d212a7bd4b1f4e65bda5be8c1b",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 309,
+    "prompt_sha256": "ec86f647e99955fbab3a0698433c823382564a976ef6712999d610d9ad890dd5",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 311,
+    "prompt_sha256": "ea57c1cff0563d378275f272cee6e2df9d4170c2deaaee21dd2ece02005c2e22",
+    "score_chosen": 7.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 312,
+    "prompt_sha256": "c22f1708c3fc6fd2fef8c9d1574a27b40a41211a43a134b2dd8ac6ff08dc08ba",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 317,
+    "prompt_sha256": "391f02d88360038703233ac0f3ffc1b2deac1ae4c311b0630476ada7d9d67b10",
+    "score_chosen": 6.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 322,
+    "prompt_sha256": "0ed249c2c718ec6aaeab74dc17bef607aaf7e38f40d9ebeebe1a54d60f58a531",
+    "score_chosen": 8.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 323,
+    "prompt_sha256": "14801acfa257278593fc901e8ec982dca6b4cede26d1541ccc94c82f87e8a3e3",
+    "score_chosen": 9.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 325,
+    "prompt_sha256": "af94441b273003bc4baf776cc5551285527bde285aa892c71235fca5b78dd98c",
+    "score_chosen": 9.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 326,
+    "prompt_sha256": "d9fbeaf4200b98c5f2cfeefb225bb24f694a5338659ff9cc99aabd4920add56a",
+    "score_chosen": 10.0,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 328,
+    "prompt_sha256": "b9aa7b1e45732ae315a73991ca04d6d2bd3faac3bca94ef5efb2861a485e305d",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 335,
+    "prompt_sha256": "571628a9e51f880d4c0f3a8d98b2037a27f3178ffa32866ee32cc0d4d00e7f6b",
+    "score_chosen": 8.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 336,
+    "prompt_sha256": "a51efbc974fef5369d153674a6efbaa80709547cfb59203d3bbfc85d707c7257",
+    "score_chosen": 7.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 337,
+    "prompt_sha256": "5c8f5ea7b13aa8913c535326e45b727cc2561a60b182971f75f81596a3430cd8",
+    "score_chosen": 8.5,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 340,
+    "prompt_sha256": "27175a6bb9456d80c3687cf5facbb4c0d536a696151af5cb1c4977e77a13784d",
+    "score_chosen": 8.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 341,
+    "prompt_sha256": "d4eec83ad051d89a08cf64374ca8c0edeac279c05b9c747ca3784d836d65307f",
+    "score_chosen": 9.0,
+    "score_rejected": 8.5
+  },
+  {
+    "shuffled_index": 343,
+    "prompt_sha256": "e24852f461f8bfc850f34cb4e353a13f1f94491e8e5ea0223e5f75d42fc5af62",
+    "score_chosen": 7.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 344,
+    "prompt_sha256": "e7fbabd1b70bc8bf344a1f6e1a668a7d1fb45b52858ab8294a25c743ce68a618",
+    "score_chosen": 9.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 346,
+    "prompt_sha256": "35e0aa113d19daa6912d9d822d259975bcd18fb96278a3bfc58a5581f56297f4",
+    "score_chosen": 5.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 348,
+    "prompt_sha256": "225a742f16b345021bff8f771450ac476d7848588278bab07f38ed91a7940561",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 349,
+    "prompt_sha256": "0c4c3e87a37ceb0d1e89e31edb5a9bee40b065c305af1d10b0829142bb8f3c69",
+    "score_chosen": 7.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 352,
+    "prompt_sha256": "3e65bf16f69de6d15bbd28be3353f42c49d8778cdb042e6e9a94860b6fd8423b",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 354,
+    "prompt_sha256": "3982c6ea1ee31bae06fbfceff6600272313c55f6738b6bcec1b96f60ef0f22e2",
+    "score_chosen": 8.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 356,
+    "prompt_sha256": "1fb778d1937f1f070220639952fd0947c6de41e1dec58c5643cfca487eebc84c",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 357,
+    "prompt_sha256": "f2302baa49821bdc130b8f0e5a21c67a40154aa747834f1d0f4d1da131a4732e",
+    "score_chosen": 9.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 358,
+    "prompt_sha256": "b7e0f044023baf451c453146697ada3735e828191e02ecde226ef930f43e3176",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 359,
+    "prompt_sha256": "da5be46ee0297de8621c0b22eee673f82884f362031b888436bc23317e9a99de",
+    "score_chosen": 7.5,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 360,
+    "prompt_sha256": "738d287bbba3dd9e3ce2dc4922d90e8b7e120bb6b1ae7a16fe6437694dd37ee9",
+    "score_chosen": 8.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 361,
+    "prompt_sha256": "1e70d9634afa09c85dffe04d99a232b29450eb63359148201b0a618e43e8d85f",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 362,
+    "prompt_sha256": "3fb2d5f9853e6a4fbd5b2a286db60b7c470e8e6fb84c8fb0a6fd7b0759f48195",
+    "score_chosen": 6.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 365,
+    "prompt_sha256": "3ad82160596ce0c956497041e231dfe355b73bc49e5e659417316cd9d08090d9",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 367,
+    "prompt_sha256": "63d16bb3a9001af4f5811e7a36c271f024c37d546e8205fac7666fad04904afa",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 373,
+    "prompt_sha256": "a10f9e0480d7a526f4136f78323453a23fb37c20bf78182ae8d88de3d9962b10",
+    "score_chosen": 9.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 376,
+    "prompt_sha256": "3ca6136fcd024a37aafc931c24902f1f3fc8d5aac5b50a2201042c7b77cbb6aa",
+    "score_chosen": 9.0,
+    "score_rejected": 8.5
+  },
+  {
+    "shuffled_index": 379,
+    "prompt_sha256": "ba2da8d7900cf8744665a32faf0830fd2aa1e93ecf89d6b290c637cf2408c839",
+    "score_chosen": 7.0,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 384,
+    "prompt_sha256": "96138c4385c5013d838018a22eec7e3a17ec3ad839cb81cfb5ccfac9e5e7e3db",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 390,
+    "prompt_sha256": "2d971c41d815211f131217b2491816da3df82a2e230791f626868b169b324588",
+    "score_chosen": 7.5,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 391,
+    "prompt_sha256": "78cf52883bad569c3100dbd80a7eb0152be472cfa2234fe0d2c2d39bdd81d704",
+    "score_chosen": 6.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 392,
+    "prompt_sha256": "2f1d84902ccf6e72a287f273b8f2536ada1ca8b80847ff860da21824d7ac1515",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 393,
+    "prompt_sha256": "8f56ae37d69b84419f50c583d0f4312aa8161f1f9ce1bb911fb107d5a86cc8e7",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 397,
+    "prompt_sha256": "1f0ce330bf15cdc94c510c0f2e62fb67c828881e5f0999d533c172070e420c71",
+    "score_chosen": 9.0,
+    "score_rejected": 8.5
+  },
+  {
+    "shuffled_index": 398,
+    "prompt_sha256": "0825576babd4ec4061e41acc57215229d20401c64f2e5b32f366329543fd78b3",
+    "score_chosen": 6.5,
+    "score_rejected": 3.5
+  },
+  {
+    "shuffled_index": 399,
+    "prompt_sha256": "d959f494b4bf3522fb091d221c3de49ef37f14a5629299c21f6c7f349c998abe",
+    "score_chosen": 6.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 400,
+    "prompt_sha256": "0d66fc2666ae738b98f312ec0d80a2ceea49afdf947f5b1258cc957cf6aebabc",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 401,
+    "prompt_sha256": "cf74b71d3597408e56d592aa639e64dab7b583a2be67dcacc9e30a8c35174bb5",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 403,
+    "prompt_sha256": "af07d382018fc9b143adf9e7049a4f76a855656c8720ff2b61b37366cda12f11",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 404,
+    "prompt_sha256": "0dda616de2b81a3b982837ab49e276ba1a51d8339260aaa58037da4dfe8a8b67",
+    "score_chosen": 9.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 405,
+    "prompt_sha256": "29c1651f96836090473a6be2ca06e1590cc66286283584483c9dac8df0140c04",
+    "score_chosen": 9.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 408,
+    "prompt_sha256": "7299011cc5833ceefa8ec30f0e4f08ad366a4642ec08f5b8e58a1333dda19a69",
+    "score_chosen": 8.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 417,
+    "prompt_sha256": "de23278861c1d095d77a48d572b789b0fe71265fc3635fb658a118af88160df0",
+    "score_chosen": 6.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 418,
+    "prompt_sha256": "cebba5643541515a10e64fb534e18e49563b8f96232b91348de919951d7eb1a9",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 419,
+    "prompt_sha256": "37619d5ed7fffeb4121c6e5777eb20b6939c8a8e09c93797b347969229650b73",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 423,
+    "prompt_sha256": "af2d3f64a2f1c1dc8193ed1a7f51bf522de6369ed031cec03d35dc2e6c6ae4fd",
+    "score_chosen": 8.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 429,
+    "prompt_sha256": "4f9e8ae6581d8547787b4a15417779e71c6b26ab66360d0ef5382b60546e07c1",
+    "score_chosen": 7.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 430,
+    "prompt_sha256": "2b767bac29fd53e23e38251a2706e0b24451acb022ccfcef0f36313d2b9cb9d0",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 431,
+    "prompt_sha256": "ef822a9ded261eac46c153c905754af7ee2f2c92091cc659087c7e633bcaaaa4",
+    "score_chosen": 8.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 433,
+    "prompt_sha256": "680eb94277a40ca3473dba9b1010661cacc80379a83e79e01e615562e4e90775",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 437,
+    "prompt_sha256": "852ca569bf61a82b5e81b0b4e67a4d8e21e8e70d42efc4954998b7658a3344b0",
+    "score_chosen": 7.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 439,
+    "prompt_sha256": "1f29f6dffeb1c8805d5ff2e8531a317469648b247c33342ff752ef3e846ce243",
+    "score_chosen": 8.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 441,
+    "prompt_sha256": "306f510d7c60d06c2b6d2f9cb53325872e9aa2593f851d9623ae291e3207c969",
+    "score_chosen": 9.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 443,
+    "prompt_sha256": "dea3dc66e5e74ecc243adb2bef6cb1955a9314465ebc7a53ee03b0f4908dfa5c",
+    "score_chosen": 9.0,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 444,
+    "prompt_sha256": "87e59124551877efde921607c746039cac42025dbb58d541d06ebac2a0bed0ae",
+    "score_chosen": 7.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 446,
+    "prompt_sha256": "d830f3fe59db4042157a2dfec01a566541fbe811f039d21c57050e7db7346de1",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 450,
+    "prompt_sha256": "5de4e31c1a4a68b22afa80c354cf2291e6054db4ef6686d441300061b7247f96",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 452,
+    "prompt_sha256": "39b0eb8a9f0945ddd5c9aebb4cc9f42c1b09c9901906075858edfcd42570eca6",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 453,
+    "prompt_sha256": "4dcfbc85652912b43d4be8422499da50eb8d5e1bc11af21537e009c4676a7b00",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 454,
+    "prompt_sha256": "5192345887f36bcf8e25f09d1ae3982eb09bcfe26302242b540b9da6ec8f67fc",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 455,
+    "prompt_sha256": "eb6988f99a332b6b362238c16f74ed8002d08446e081c139d9874a954486482f",
+    "score_chosen": 7.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 457,
+    "prompt_sha256": "e58754678a223a4e0417c235fe742a2dbcb380f5f234a0022e59f1e3eb34fc86",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 459,
+    "prompt_sha256": "30992f82d864ac1cdeab0c1a6c560c851f3a70eee7b822ac099da5563cd02837",
+    "score_chosen": 7.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 460,
+    "prompt_sha256": "caaa1f2d6b6c3f2f9c80e408e1d23c32dc4e6e96d5a7a7afe395437fa5afd5da",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 464,
+    "prompt_sha256": "30d61bc8c31e762b2094d51d5133b32c961e40aa9adf3f2dbf6be41796da9b95",
+    "score_chosen": 7.5,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 467,
+    "prompt_sha256": "6478701b1919ec40989568804d971598ce5422275988109dd62b59d9ba001191",
+    "score_chosen": 7.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 472,
+    "prompt_sha256": "cede9f3a5fbf2098cfdb8dc5d44379dc161bebe810f743cda1138385ecec8113",
+    "score_chosen": 7.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 479,
+    "prompt_sha256": "d3ede747227c5a2290263a9164f5e583d44d7c81504bad2feb416c4752a43caf",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 481,
+    "prompt_sha256": "7fc44f47395bc20689de31d72e8730656837aeec6cfc0a58d5da088c2eba8ec2",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 483,
+    "prompt_sha256": "a167dcd09c4be21147fba69dbe144b50073606f470a72a4195b86778aca1be29",
+    "score_chosen": 7.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 485,
+    "prompt_sha256": "86494177ac550f3cf1e595c571de23ac55425485ab0ae19ab3c8c937b129735a",
+    "score_chosen": 8.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 488,
+    "prompt_sha256": "088bf3e26824fbe7bf5be497f32a34f30a3eb702e0c92baf565aad3bcc3f5941",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 490,
+    "prompt_sha256": "2580425746feb6f1d2b1e02b7b28c202c3cbb90f6e2b1637eecc593f2eff1240",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 492,
+    "prompt_sha256": "6b7e4535d0c3461179155252da55cc7b2b8f0606ab91019ae0d985b560eff461",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 494,
+    "prompt_sha256": "bef1b487a03c00b7c1471a78715c2514fd4d9ef6e235ad2da388ae73eca37c19",
+    "score_chosen": 9.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 495,
+    "prompt_sha256": "2faa6a88f1ffc0a0cf1a69e047862a85145a8c31b8e7e8e2ff3f76ce2217531b",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 500,
+    "prompt_sha256": "cb24812a039a3cd35625a0eda4be8317c864ff6af13e98370e60092bbcce00e0",
+    "score_chosen": 8.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 504,
+    "prompt_sha256": "c2265993998be747d0e144e8f623e0814f56ceabf7766e1973892b64583da40a",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 509,
+    "prompt_sha256": "293f818c903c981ad72bac66e80024c8b21dcb5f97366a9eeeecd36b5a5888a4",
+    "score_chosen": 9.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 512,
+    "prompt_sha256": "e6ab43b2f28bd9523523c871c03a3655d3a00fc78503e1c20f309b6e4c9de80b",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 513,
+    "prompt_sha256": "d1a20d180994e6cd1b9776017894afb3707a5f82e0f18ad1430d8c5a4fd5b173",
+    "score_chosen": 6.0,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 514,
+    "prompt_sha256": "c0c62fa6161b75cccb906e0244bb195c2e2155aa580c95c02354c6cc223dc559",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 515,
+    "prompt_sha256": "e3420042c091d1781c1747e9fc62c81ea8b27315d1ee5b98b66ffdd085b9e4a5",
+    "score_chosen": 7.0,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 516,
+    "prompt_sha256": "7a84c1dc1443c0e1e35632209eabdb682b9f104a612e20389d127024c263ecbc",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 518,
+    "prompt_sha256": "0f55ce36c710539e0421a014b914268186912cae033dc839f6fd851be98ed11a",
+    "score_chosen": 8.0,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 519,
+    "prompt_sha256": "5b78e39cb55c668bd004bfa03c61e6aa26c79e02f45696faf8dac037f6c5e355",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 522,
+    "prompt_sha256": "25ade6f68bc4ac973112bdcfb476a766237bb941cb61e26aef870420465a7800",
+    "score_chosen": 8.0,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 525,
+    "prompt_sha256": "f094fd387774671f3b1b3f4ea67deb1e1248fc51df738a7e2ef520dc08557f04",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 526,
+    "prompt_sha256": "6e1ad4f050a8585ddff05c42f55b69a0acd27dce18446e0a267a7e080358f7a3",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 527,
+    "prompt_sha256": "16a237bd1ff2ecfa844ddea8153711443bb6f6f0d534a9d7171eaa4d9e62405d",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 530,
+    "prompt_sha256": "4fd6e1e94fbcb48129dcbb6005c33c76a3dc4620a0971d9e18182b0315f98c36",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 531,
+    "prompt_sha256": "e8fa549fd1d7b51a82ae0ad16ceedc6aa769735533537fb0c45d84f2aa510e06",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 532,
+    "prompt_sha256": "838805532fd3dacfefe64e18dc69e4674a7a72cda9e1f089ed7add9de36e73c8",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 534,
+    "prompt_sha256": "899263a40fd67e693905d1a6e5a5406424c9d023b48bf4d6dbb44eea17dcb091",
+    "score_chosen": 6.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 539,
+    "prompt_sha256": "023890dc7c82716cdd8a2c7ad049a0b60523a26e999032ae00406756650310df",
+    "score_chosen": 9.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 541,
+    "prompt_sha256": "4f9902b5c0f9de988dc6c24d62ac88227d3a13a2dc9b681efef9c1df3f179923",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 543,
+    "prompt_sha256": "900224a92755a975f2d54ebf7e5ea8d638ab3a3bb956aec2422f5e557f8c6e65",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 544,
+    "prompt_sha256": "22f2aac23def6dccc2b29c5a2acdb058a3cfffe8f13ee2b9e72b062dfb7fae65",
+    "score_chosen": 9.0,
+    "score_rejected": 8.5
+  },
+  {
+    "shuffled_index": 545,
+    "prompt_sha256": "9c45a07ee91d8b9f22392ba6dd710f226c776f941fb29999ae6a3b76114d7b3c",
+    "score_chosen": 9.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 546,
+    "prompt_sha256": "49160e06ac82347dff720fe30cd4ea5f367c189b1d0c9cdf3e7cee41d5baadac",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 550,
+    "prompt_sha256": "45459757aa4725490dbbfce5395759923dd1727872c67783ef81e0e0d74458c3",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 551,
+    "prompt_sha256": "2753794b6a259252040892f51ff56d839b5d09dc963c68725492d62e5dfb7556",
+    "score_chosen": 8.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 554,
+    "prompt_sha256": "e9b7e25d45fe4d55e20ef52aa1462a22aff8ffbc5cce81e86473746aff2bb554",
+    "score_chosen": 9.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 556,
+    "prompt_sha256": "fbfa23dbf3bddc130599837e9f831a6241b1582615b896b0c708d3d8c3ff28f1",
+    "score_chosen": 8.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 557,
+    "prompt_sha256": "04e43f3d9082faa2537926283bcffc6c7629f7134ca8f71e033c8c7cefdd861d",
+    "score_chosen": 9.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 559,
+    "prompt_sha256": "80329d847aa70d8d66ca0e2ba806568cbbfe4864d3688fbf87f9adc2720dd9b1",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 561,
+    "prompt_sha256": "5534f10679088cf9dffea70f5bc351a14c0feff324255da54d94b56a51c9ca03",
+    "score_chosen": 6.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 562,
+    "prompt_sha256": "f51ffa5939d418cf543e51bd52701c5b6b824c4d24b563324fbde04a80dd3c82",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 563,
+    "prompt_sha256": "c9d56b422bbc9407d10b8284b1f9b0b9ffaa2b88129f54d5c96eb52939aa55c8",
+    "score_chosen": 8.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 564,
+    "prompt_sha256": "c1c3bba07a0c87eedf893ed1f53524800de58df8eeca5af9a0778505076be28d",
+    "score_chosen": 7.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 565,
+    "prompt_sha256": "5d18c9fb45074c891911cda097afdb1c15a23bb43ee61ec0f8b2c96e8ce6ead8",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 567,
+    "prompt_sha256": "bc81af26e46f1b86d3b6b6a309d38d6ef6e892d04e7b35dceaf2f1e30c4b5f2c",
+    "score_chosen": 8.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 571,
+    "prompt_sha256": "034fccea53e7e2fba95c01f97f5e7275052527b9db95203acf884f38b7ee461b",
+    "score_chosen": 9.0,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 573,
+    "prompt_sha256": "81b42ea967ea7704ba445fea167c2446d8b31880dd3f5e50abe4706d41c46b2f",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 576,
+    "prompt_sha256": "cc049fd0ff6536bb9344f7f96b1f920ffcda0a3c29c0f58130087d97b7996d29",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 578,
+    "prompt_sha256": "a8030658b0cfc0d7975c84fbc18d1910d80c5ba3831944223bec0134b4f1147a",
+    "score_chosen": 6.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 579,
+    "prompt_sha256": "459ee825992aaa537a4278322c3b54452113038249053c614ecd32ab3c901030",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 582,
+    "prompt_sha256": "c00130e5f4aa70e03df045bf82df663cf27aeadd915768113c8d6b5ff2b62b40",
+    "score_chosen": 4.0,
+    "score_rejected": 1.0
+  },
+  {
+    "shuffled_index": 583,
+    "prompt_sha256": "3f19b23a0452c21435cd46d083a1015f2ee99765eb471baca6db4b0f61042586",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 584,
+    "prompt_sha256": "51b38b8444c737f986951a786d3ec1d8c5bd7f47d0ee873b0ab55161e009ecf2",
+    "score_chosen": 9.5,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 587,
+    "prompt_sha256": "36816c419da9a7b1d3e9c11beee0616e16bc4da485df6ec03ec3c8b6ac5916a3",
+    "score_chosen": 9.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 589,
+    "prompt_sha256": "df2f8c3f3994a8ba3901d7d9bb7e2fc7ba88de243d23180ba9c42cde49ef5f65",
+    "score_chosen": 8.0,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 590,
+    "prompt_sha256": "d56ac4f38f267d9c5664361dd9b559d474822a2b0e078ba378a7447cc64f032a",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 596,
+    "prompt_sha256": "7768680a23932f23d75a6ab183e25a3e1651b14a4100f679775eacce584e04f3",
+    "score_chosen": 6.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 599,
+    "prompt_sha256": "b7efb987e4663a0547dddb27716c8a1d1d7f0df9eb60d6acd7ce11f99f10d081",
+    "score_chosen": 8.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 601,
+    "prompt_sha256": "008ac775343d210fa22438d83ae77a26536afa136625a602f29d7790deb896a0",
+    "score_chosen": 6.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 602,
+    "prompt_sha256": "87e2d785e3be45ae8d4abeff668cebd98b40915ff2b3febf3752e5f5b8e11acd",
+    "score_chosen": 7.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 604,
+    "prompt_sha256": "e0f940fbb0badca3ea3763c833ab0d35e821651b2d90b7fd05f9c1598d992dc6",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 605,
+    "prompt_sha256": "3633892487be866b857e44e5b1b992b927f1e99cc2787b6e9b1b17453b0b95ac",
+    "score_chosen": 8.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 606,
+    "prompt_sha256": "5e874b35efb247e9b9446ff475c79384a69f77a7cdae4c7ac738f23e64408de9",
+    "score_chosen": 8.5,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 611,
+    "prompt_sha256": "6396615455b71927e95138790f1209af4eea19e33dc64429c46cc96c0d132270",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 612,
+    "prompt_sha256": "5aeffd3e879196c7d488df3ea5bd6527c9b6729669565fcc587f52a828da40ce",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 613,
+    "prompt_sha256": "bf311c89fd4abb788bc4ac9c5c90e1622077e31740a6791578dc42ac3aa3c1ce",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 614,
+    "prompt_sha256": "6157a3b273742f83472fd7807831cf6db8c0a18ef70b56b5ffe76868bee710b5",
+    "score_chosen": 8.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 622,
+    "prompt_sha256": "cdce1137e959679119332e62d11dd66a61b0eb3ebe42194dee8edcd03fd4a7ef",
+    "score_chosen": 8.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 625,
+    "prompt_sha256": "f028bc949466025d20037e83e66dec9214ee209599d3cc3d2bad3a83be2e52de",
+    "score_chosen": 9.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 626,
+    "prompt_sha256": "2d63914459c8ad7087993fea3d1b0ce392b623740a051c23e21a4f4bb45b8eff",
+    "score_chosen": 7.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 628,
+    "prompt_sha256": "7ea8fe5b5ecf19e5ebb0141b4d2708703d4cc8437195474e38a9158c864f479f",
+    "score_chosen": 8.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 631,
+    "prompt_sha256": "046e1cd68a941983c2730fe41cf9ea687864aee8a0c457131193ae8042a603f1",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 632,
+    "prompt_sha256": "b2d073c89cd62afdd5a8a527714f49276039a7221a3034be35106932fe1da4d2",
+    "score_chosen": 4.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 633,
+    "prompt_sha256": "523b27a6bf9eb754d49642b92fa9107f904066a335706ba474e570771ace12f7",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 634,
+    "prompt_sha256": "769702fec61b4d3d295dcc7c0e81b7edb28e8170e83d115110407df5cb984922",
+    "score_chosen": 7.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 635,
+    "prompt_sha256": "81605e3b173e8add95249c79bec38e3728e0283b4059d08ebeb865d0bbc1529e",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 638,
+    "prompt_sha256": "0eda1f71ca61de8a4d7c7b707661d95c726e7829f5f8405d34afe99c78db9b03",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 641,
+    "prompt_sha256": "5fcb04e87f37e52826eec14cdc901bca46bea6acf191935a502121033a8fd157",
+    "score_chosen": 7.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 642,
+    "prompt_sha256": "723cd9dd1710265c0426ad2e9c3a966c01d032228f8b14c2ee668c8f4435c1f3",
+    "score_chosen": 6.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 643,
+    "prompt_sha256": "57479572c232b86c002988138ca0a9329966b486b18e3a5940b51d4aa4cf11ae",
+    "score_chosen": 8.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 644,
+    "prompt_sha256": "2330ccdf8c4dd58718686a6e447f0d4c37725008f4b0f90fbc2da970a70c258e",
+    "score_chosen": 9.0,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 645,
+    "prompt_sha256": "2f4ed711e4b6dd4253b747b4ec049fc664d44c6049b11fb9d8c5e1447fc363e3",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 650,
+    "prompt_sha256": "67213d71715360598920480615f61406f7bb873c7256f2bcdb681c80c86557f4",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 652,
+    "prompt_sha256": "a25c14a3050670679294b80eea67b1f7abac7742db3c006755703daa4f0c0f6b",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 658,
+    "prompt_sha256": "922f44ed6fe9c717a27053aeceea7a9ffe72e934ab47090b557fb28b87adbec5",
+    "score_chosen": 8.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 659,
+    "prompt_sha256": "cc5efc84a57ffc45631101eb47fb5e3f0938108a10090ddf0f94fce643f96120",
+    "score_chosen": 9.0,
+    "score_rejected": 8.5
+  },
+  {
+    "shuffled_index": 661,
+    "prompt_sha256": "c9e84b0704d199026b175ec9f935f184f62e20a4b217d1bd58cc0418ce4d98e2",
+    "score_chosen": 8.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 663,
+    "prompt_sha256": "85376f65d82411a926753901791b02cecf27fefa8d4dd60e985e58fa2c3e6a9f",
+    "score_chosen": 8.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 668,
+    "prompt_sha256": "deae1085ed8a423bc1c6573fb2d6076ef79a6a960b95ffc983dd74799e0e2f43",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 675,
+    "prompt_sha256": "46d8b40975008189fcb39f7bb95854fb87e648827fed4433c53aa4d7ba6c7321",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 677,
+    "prompt_sha256": "02c357fb980f74ab78f50c7862c4f62755f1214e87b581f1a310e0f297c64592",
+    "score_chosen": 7.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 683,
+    "prompt_sha256": "22cb3464540580c62362bd5eae3ecfb1ade9d85e879aa5e21a1af180beff901b",
+    "score_chosen": 6.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 686,
+    "prompt_sha256": "c0ee4facd1b534f23e2c189ca7e2ff8246ef47493b2f29b5e51f21eeaca90b93",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 687,
+    "prompt_sha256": "38f1d0d893a9de106dc2d2aca1e9ba4e344758e7fa4e98fd33059d0067997081",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 689,
+    "prompt_sha256": "ca3c8d06f828697cba670fd8fb190eded31f6e6f825802c5e4ad7c4be964e2ab",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 695,
+    "prompt_sha256": "a15538bbee619aeb3104965c84be6d5bdbc6de16ae0ed58d2bbcf9bfce41d9c9",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 696,
+    "prompt_sha256": "277cd6745540692dca3d786846a1fec57af91ea21eefe842588ee90c68f0603e",
+    "score_chosen": 6.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 703,
+    "prompt_sha256": "ab16326178508f4491e3fc3813a769d2b8399bc84443579bfca5d6e3db60ac26",
+    "score_chosen": 8.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 705,
+    "prompt_sha256": "79ec6521f4e4ff4171c15c317fd440ba5746db3248b71983ec240fc7fdbafc0d",
+    "score_chosen": 7.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 706,
+    "prompt_sha256": "d22482184cc442ac4dd5ddb6dd6644f16a202bd104e09393b4ef3a78e95a8d5b",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 709,
+    "prompt_sha256": "3f6243c5c2f4fb4b03d2554042b9d2697d55c2a66f8a5a4262bed50b02ab3e75",
+    "score_chosen": 8.5,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 710,
+    "prompt_sha256": "bfe65bb599df435fbeecd316518cb17b1d53f87786f6a7eaa4d8f618bec72d83",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 712,
+    "prompt_sha256": "91a342c46ac8be5ce65779fe95093ff8968ea7a56046e650b69a2c7852f9221a",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 717,
+    "prompt_sha256": "8af1d829bcdd13a1a79da2cd11077beb995387f3765cff5f5699e6acdf8ca8cd",
+    "score_chosen": 9.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 718,
+    "prompt_sha256": "e97470c1aabb8c7d8724d2ff735f8941aad3370459bd493aeac0823b310cc92e",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 720,
+    "prompt_sha256": "9054ac9cc8c206995910c0e77dfc4fa37b1c0b80d74037efc828e7368796d839",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 721,
+    "prompt_sha256": "3caae969d76c9874be9f9a65849a59bac11ff5cd42d48ea7a39c2a1a43724bd5",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 722,
+    "prompt_sha256": "461f20c0dd7b2d907e9c6ad13baf6fa0317f7072701b07ff403699cf20db87bd",
+    "score_chosen": 9.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 725,
+    "prompt_sha256": "3013563a0676c8cce9eb34a761d5ce00ae349e2ad3c9356f4309381ff7a32679",
+    "score_chosen": 7.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 727,
+    "prompt_sha256": "6ed9bbced8a05aa65d8f89f44d49c16fb6e20d335f542fa7bdf0011534d16696",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 730,
+    "prompt_sha256": "355f43d1d5b5913cb449725147ed5cd5192b76ef224613e4b151fab4d2f6f102",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 732,
+    "prompt_sha256": "270d23c9760862090031a82b8cd5d978c28db4021f93164a6715be3a42ceeee6",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 733,
+    "prompt_sha256": "ab1fa72687962ed4a43a9b8d1b11ccd691330791f6032b675f908aaf6a866b70",
+    "score_chosen": 7.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 734,
+    "prompt_sha256": "fd8dcdfb1b23f25007c3e075727bea855bae0874aabf77b56621d7544bdff76a",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 735,
+    "prompt_sha256": "e0d3e8ce56cef43e10b6f412d55c04e040227e32ea7f5b2b998edcfee8ece57a",
+    "score_chosen": 8.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 736,
+    "prompt_sha256": "bd58ca085e281444a70d1e7a6939108eb26e57b1901b192a3750733f6353eedc",
+    "score_chosen": 8.0,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 737,
+    "prompt_sha256": "9275b89e0b91ecbbe3137a974bda7d057850e0c1079b513de3f47c8cd19767d8",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 742,
+    "prompt_sha256": "bf5be25e5ca6a69a2ea757b1620ee6ecc20727a1b1a98b7265c974881dddd53e",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 743,
+    "prompt_sha256": "042419e5a0b7857e26d9a299ba08daf47440ef0d66e56149431152296ec9dcf9",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 744,
+    "prompt_sha256": "d8cc66d241bde1f9c3424f31ad0212d0b85027657539f9fa16cc81cd061216a1",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 745,
+    "prompt_sha256": "ab251a2070b73e44c9586e4716e6efaab9ef85c5bdee1f3f502f7726284cb345",
+    "score_chosen": 9.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 748,
+    "prompt_sha256": "5479c9d77a9a93832455cf828a5798cec7401189c3cb354ecb3a666d3055beae",
+    "score_chosen": 7.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 750,
+    "prompt_sha256": "c59a4a1b5f9ed034cd2c3ea9c3d45565278f2e77cda8a4b16fe236d9d023707c",
+    "score_chosen": 7.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 751,
+    "prompt_sha256": "60c83480551ad55070ad5ff6ec6edc95b6e648bcb2b2314dacc2e40161bbd2e1",
+    "score_chosen": 8.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 752,
+    "prompt_sha256": "ae353dd8c2c28fbbfe2a55caeac654f482a42cc2e172f00241630d415a4dbd0f",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 753,
+    "prompt_sha256": "fdb1e7278acca9d1341bb4f4ba12a85c3f538d13e846a0ab4fbff9e2b80f0704",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 756,
+    "prompt_sha256": "a33624277081429e6b9ce93b60d6e0b46e12cdeb1bfb0e602b0b6a99e6c57d23",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 757,
+    "prompt_sha256": "413f2d37d041cef4584a2f8617b42e729c053619b2738c000c2d124c347a2469",
+    "score_chosen": 7.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 760,
+    "prompt_sha256": "0f5f2c4054fc0b85d6c5fa35fa731646e081793504456384dc213672d10d9628",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 763,
+    "prompt_sha256": "c8f7ba5a9e2b567fd0f502edee150e21c1518fc87861e10d6e2ecc69dce83a7a",
+    "score_chosen": 9.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 764,
+    "prompt_sha256": "a0dc2a0e158ff511f768f8932c9c15d41adc73f23bbbb224a59d12cf8f886f52",
+    "score_chosen": 7.0,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 766,
+    "prompt_sha256": "7e4c9a1b51ac0d99cbd3ce0d6fea4bc37438f95700419ec772851adbaafdb6f9",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 767,
+    "prompt_sha256": "bd0dc75df5301ee4fcc33d34068d27eaa56e295f1bfe101fb9c5a3c7236c6782",
+    "score_chosen": 7.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 768,
+    "prompt_sha256": "cabf680a0ee32eaa567fedaf950424d463ff55364924f0fc2388cbea51df1c87",
+    "score_chosen": 7.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 770,
+    "prompt_sha256": "e7756f0659166c096b58f79e7df49db6e707a62a4f405ba68e3c98e2b2331037",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 774,
+    "prompt_sha256": "3f73d31b65e1a4dc5f12a53b7dbae4d97556849002b4a9580781bda0e3f6894b",
+    "score_chosen": 7.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 775,
+    "prompt_sha256": "b515831fbfd7c582397b63aed26c058abb76d4062fbddee2f45e59430a0077e9",
+    "score_chosen": 5.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 778,
+    "prompt_sha256": "972f016c40c89baeb6d6fcc3c0c6b5b06ab4ddbd5b5fd0494bd617d42ec0710e",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 779,
+    "prompt_sha256": "59c12dd6d93b36ebc16ba6ebcb6217aafa89522190d346c4293bd89b87b588c7",
+    "score_chosen": 9.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 785,
+    "prompt_sha256": "8b86090d1ba4549b2cbcbbe48e86008ae351c55ceb1e0fc1b754fbeadd11a319",
+    "score_chosen": 9.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 786,
+    "prompt_sha256": "b13a829a90229d31575ed905340cd2ad8cab934ace72d41b9ddd8e4fbdb8d742",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 788,
+    "prompt_sha256": "c497f419c7ec7b0c63096fe4f2d93e82127044aa7df4d1ecc2978ac18d570c20",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 791,
+    "prompt_sha256": "c906dea9a1ac77926ff2869913ae1c666d5ee7bafcf3105f733de30b04c3730b",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 797,
+    "prompt_sha256": "bb19a2bd42e71a9a48ac412576f04243e6f93fbfa65cb2f3df0e87aa65f06ea6",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 799,
+    "prompt_sha256": "de4a7deeceff833eb6c58b6b11d63513d0aff9b509b830f5ccf7e6f0f0d2090b",
+    "score_chosen": 7.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 801,
+    "prompt_sha256": "e3e4f9c36424174ce28b253ed511663faae88a808bcffa91db26e6b645356925",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 802,
+    "prompt_sha256": "ac49c5f84641576e60ceeb016d42b4727ab5c5d068bc5ace8e0d7d47ccdb8018",
+    "score_chosen": 7.5,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 805,
+    "prompt_sha256": "e97c57a62f6ac121c773a14b40c8cb8a20ef604c2e30741de5ba5c6b5db096dd",
+    "score_chosen": 7.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 807,
+    "prompt_sha256": "7877f4cb9d5d3f08239fe9097445f8073c9889df721ea94cedf0b4555d9fe6b7",
+    "score_chosen": 6.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 809,
+    "prompt_sha256": "d9a1b6a54131486a0d2610d2ac4728988b41ae5a0bf1fdaccb98e2d90c12aa5c",
+    "score_chosen": 9.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 812,
+    "prompt_sha256": "d45e6271d569aa365beab094277e00d27bf70c5e3386932589151f0c8e722c89",
+    "score_chosen": 9.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 820,
+    "prompt_sha256": "fd5b6b0c2902b963fe36098de6d2919ba817fd28b5c832e36cd8452ae61ad581",
+    "score_chosen": 9.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 821,
+    "prompt_sha256": "a988b5433490fd8eccc4d20814425b0c57586ccaf09ec4cf7fb6e84a70f33811",
+    "score_chosen": 9.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 822,
+    "prompt_sha256": "4954d073d1aa834a9a785a5abba88044b7801b2f0893b263608e1172bd6973c0",
+    "score_chosen": 7.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 827,
+    "prompt_sha256": "e09904c65974c83f3da04d0c6206f35f2dfae9403cc3cb33ea1375c5342a01fa",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 828,
+    "prompt_sha256": "3ded97c4e9d256b688eca0a44e3ce558a7dc2f3c89fb0c9c96444ada1a1151a8",
+    "score_chosen": 6.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 831,
+    "prompt_sha256": "3d2958a3f989f2a84a1b01cb78cd8d6f1fcb10b0acc8da6066af9775aa436072",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 832,
+    "prompt_sha256": "21ddbf2aeb3006a2cdab15cbf6c11f1771eb78717263aba34e755202be86aef9",
+    "score_chosen": 9.0,
+    "score_rejected": 8.5
+  },
+  {
+    "shuffled_index": 833,
+    "prompt_sha256": "21ac505ff8970324136eeb006fd8d9b36687cbc5145c54a81e86ec8015c16f45",
+    "score_chosen": 8.5,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 834,
+    "prompt_sha256": "4638dc4ccf9c2dedd15ebe2968edf77988de2f743f479b45bb5f2d635ab60715",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 835,
+    "prompt_sha256": "b9780130a62cb062c4b65be5ed21272acacb732dacf7eec325f999b999010541",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 836,
+    "prompt_sha256": "39f9b04ff6251f6148647c056e0e39125e215d5120f8d7140eb90811ce4bf3b3",
+    "score_chosen": 7.5,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 840,
+    "prompt_sha256": "8f907083b8ef810475f8a0b5844d1ac652045be69798f04ed516ada2aed717df",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 843,
+    "prompt_sha256": "f658aeb72fa16a0ead438122bade4da2cb4149d3f0a243356cc195826674babf",
+    "score_chosen": 7.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 846,
+    "prompt_sha256": "737ffd9f8a5d9ec0a4779c4a62a39a3be34b330477bfa35e8137524c40619d48",
+    "score_chosen": 9.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 847,
+    "prompt_sha256": "6c4c4992e2aa6bd3ae0d4608a3af755ec9d0930e7a236ee5b730b94f89c9205b",
+    "score_chosen": 7.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 848,
+    "prompt_sha256": "71a6b3b76c40a54f648cce781bb370cb63fec22413be4fc8b155a9bb393aaea0",
+    "score_chosen": 8.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 853,
+    "prompt_sha256": "2d10c38cbdbce458d2496a6daa161165dcf9313aa16988aa1cc14a6fc94e43c3",
+    "score_chosen": 8.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 856,
+    "prompt_sha256": "7f3b47f8da9de6f9d7bd7131afe47efae5c212cc2d064c37aa22d53a264d463a",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 859,
+    "prompt_sha256": "9b911387ce1536cb3b4f4d14b6ae59d2129051fbc588efcc858f02a8dc8682bb",
+    "score_chosen": 8.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 860,
+    "prompt_sha256": "d31be52874828e37313b277a0e7f7ead2606c6f4d2ae69c15f42e7247330f6d9",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 861,
+    "prompt_sha256": "b66d3f3a2806b26178930bf6af50432fa68a9b646aebb0909c19b2c1f78013e9",
+    "score_chosen": 9.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 869,
+    "prompt_sha256": "1ae281a1ce0e457e8f3d61f7dba728a44cd0f792c3e017c686c07111d1ca1a77",
+    "score_chosen": 8.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 871,
+    "prompt_sha256": "d28bc091d5eaa1ac5b30c6d0714ee1e04fd4520cd7471ae75e6be0c5b052e787",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 873,
+    "prompt_sha256": "38c5d66295998f74704e486dd95d870945abe581bcd10ba86629dc2d3c298872",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 874,
+    "prompt_sha256": "a784c387592fd18ccead6d199a916d71318405237e0fcc49770a76b69186e4ae",
+    "score_chosen": 7.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 875,
+    "prompt_sha256": "a80d0944428ba6da04a36b5ca42147c7f7c04c50c027051800fd865595c63678",
+    "score_chosen": 9.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 876,
+    "prompt_sha256": "7ac90718efad92a3495bbc736de8d756c84200290e5be6966adf342040b9a31c",
+    "score_chosen": 9.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 879,
+    "prompt_sha256": "1095a7d8bae181b5b81bdb1c54edddcfaead3d54a105c526c70933934c7884dd",
+    "score_chosen": 8.5,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 881,
+    "prompt_sha256": "6b1f97a853a9dd179af645e00f22cab51f592a84a0801ff3ae4a3e0407c241d2",
+    "score_chosen": 9.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 883,
+    "prompt_sha256": "7ef83bdea4d122342d5be283d5dd858f7c8e1ae315b841060cba412f58662d19",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 884,
+    "prompt_sha256": "3c223e0590713fc297d1519951bd04b5a5449a7671ee930cb4a3477d7018e7c9",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 888,
+    "prompt_sha256": "88aa3f360667fbe903548d786a07d5fc581809e5a723b5ab5fc2633fbf0d3e9e",
+    "score_chosen": 8.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 891,
+    "prompt_sha256": "ee37fac4ec5fb8303fe3e22fa9a9f6763b137a19427589b57b2260cf64df6828",
+    "score_chosen": 7.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 892,
+    "prompt_sha256": "da4f07f753d6488d3f3dfde1e5377f97e0b4efb9ebebfd2ce3ea9e00909aef57",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 894,
+    "prompt_sha256": "b254d49edb4a8c1cb8c7e7554f4fae101947eff2099c07f56723f679ceee5de7",
+    "score_chosen": 9.0,
+    "score_rejected": 8.5
+  },
+  {
+    "shuffled_index": 896,
+    "prompt_sha256": "cd8204d8c3992ada77f81d99abd9cb043cff205fb613e09215b7eeacb20b5df9",
+    "score_chosen": 7.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 897,
+    "prompt_sha256": "bf2ec8affcaf0c59dee715bb329f0534b60661b7149322c2501e32e896ffcf4c",
+    "score_chosen": 8.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 900,
+    "prompt_sha256": "e9590aba62485172f70804c2dc428fb8e08feb68359eac254630868eb93f3549",
+    "score_chosen": 5.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 902,
+    "prompt_sha256": "a81a91ae3ba2b2790231ef84d625f1a17bdab1deffad2854cc9c310de1cd6d84",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 903,
+    "prompt_sha256": "1f3bc4422f70e7f910dae7e34d87d8c6d856b2bee6c75e783738ff38fd14b941",
+    "score_chosen": 8.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 905,
+    "prompt_sha256": "2a483d1e6cfe657effddfaf13f5b4df920d33d1f8a12f94f1446acf1771b87ef",
+    "score_chosen": 7.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 907,
+    "prompt_sha256": "2a919a9aa75b35e881872293bcf493d2a771e00e0b6d6335f104d4d2be358c1d",
+    "score_chosen": 7.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 909,
+    "prompt_sha256": "9c14c693bfdba3d998a74cbd9448760b1f607f924184245c1b4efbab23029a46",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 911,
+    "prompt_sha256": "f87ee5b59601e07dc52da3c6e4e265c32fcb76951dc7c54420717cf256c665d5",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 914,
+    "prompt_sha256": "ab9ebe38d90336a6e4049754c73fcce35c07fdbbd4cbba7a62c60e25ae915aea",
+    "score_chosen": 6.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 916,
+    "prompt_sha256": "3b018ee56f661bcd65f2fdcfecec5b28dcb1fce894d45e8465e15600143e4616",
+    "score_chosen": 6.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 918,
+    "prompt_sha256": "42dacdd6ce40357abef28b71e332ebd722706e66379bfa2a7463d9e0ea5c5289",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 919,
+    "prompt_sha256": "deecfa51da32ef38e50e1ed7575c4c7641236a7c87ec51da084bf752260f3c21",
+    "score_chosen": 9.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 922,
+    "prompt_sha256": "a871c9bf6eb4ca6c91b81a209ada0c7f7f07cbe8b5ffc42064b213a1746f4009",
+    "score_chosen": 9.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 924,
+    "prompt_sha256": "d3453c0c1ad981118c646acadab3f9cbff44e0d89072cf9bb7b5116dec62eb87",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 925,
+    "prompt_sha256": "b902d8ea9c7c20315f9db7e698a816f40aa459f2755f4d3af7e8ea7de4d0557d",
+    "score_chosen": 7.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 927,
+    "prompt_sha256": "f3231c73cd191f8d9e797c65d4ee4e38e1582bd3dd54365705126cd8a33cf3f9",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 929,
+    "prompt_sha256": "672ddb56ff3630903d216ea48925f2f65080dda859baaa50dc77016f17f6d244",
+    "score_chosen": 7.0,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 931,
+    "prompt_sha256": "e760e43c259a83de026cf42fa8821d1fba1bb83434996884cd08179770e757d4",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 935,
+    "prompt_sha256": "4b6ec958f8a069e17f91b9235bf6178e63476ccb852151811f17412373b59709",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 938,
+    "prompt_sha256": "89c985c80be27bd08233157b153e9f438f08ee9c73302854c9e44d2a018fe552",
+    "score_chosen": 6.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 939,
+    "prompt_sha256": "62d5c6c68126bf6d489545741a662074ee291abe9ce6b588098835cfc73de76c",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 940,
+    "prompt_sha256": "0aced51ccc6dc362126893078ceb59fb344979702a75408b9fb96912658ed585",
+    "score_chosen": 5.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 945,
+    "prompt_sha256": "72cde797a7b4905c9485c45962829d47641d3767a8b30472a31131670a3d1d8e",
+    "score_chosen": 8.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 946,
+    "prompt_sha256": "fc8147a4376249e194ff7116eb2f14e7311536a6e7bd8a58c7e3d1ce87479979",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 948,
+    "prompt_sha256": "5e57321e4cc76f3991290d35a59649c5d965b87f2af78c8bb4b9db77a40da97e",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 950,
+    "prompt_sha256": "9360e92a593d65398f0981c897262d9f8482d773aaccfe9978702e830d264d56",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 952,
+    "prompt_sha256": "6d91944b7508c57c91c54540d0043d8242bf9869ef8c961f725e0d50ea61ba70",
+    "score_chosen": 8.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 953,
+    "prompt_sha256": "d61f36bf3c5d1a95942942f2f02f94e2be643876871df7c3d36d2f77ee1dbf61",
+    "score_chosen": 6.0,
+    "score_rejected": 1.0
+  },
+  {
+    "shuffled_index": 954,
+    "prompt_sha256": "5aeb10009cb3dca036df750e1db41974409356e3ffdea57fe05310b1330ff7e2",
+    "score_chosen": 8.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 956,
+    "prompt_sha256": "029943619ea3c5083a52a38b814674220e1f48413c92fafd998819f09d266189",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 959,
+    "prompt_sha256": "48b63e83dbea8cb58567615dbbf33e0ab0658c94a9792300e08a6dcfed24deb1",
+    "score_chosen": 9.0,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 963,
+    "prompt_sha256": "748194ed2bb5e11d31f1ce5b9aaf10ab4c0a19d64fcd4c705f78779ac1de45ee",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 964,
+    "prompt_sha256": "d628b86975b6dc24bd88eff3bd5febf26426b83761ced7abeb19dd472ac7c7d0",
+    "score_chosen": 9.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 965,
+    "prompt_sha256": "143cbfaedd572d210849d8bddf335da5945c17b1af8ca0a0e653cbc2a88797d5",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 969,
+    "prompt_sha256": "7bf8f5331870415049838166c7369736cae0587e42a030326251bb68508644b0",
+    "score_chosen": 8.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 970,
+    "prompt_sha256": "bd37a07b1369c1224c5b2d94135f541ec8e40dd9c42bfa98bddedc32bab295ca",
+    "score_chosen": 9.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 971,
+    "prompt_sha256": "a88253cb1b879433fab113478bfef65d0b2a41c63a584a2915cc388dbc012d9f",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 974,
+    "prompt_sha256": "3e84610c5c7bd78c7655acad5ffd2d670084909af633b0d397c19263f44f1bf3",
+    "score_chosen": 4.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 976,
+    "prompt_sha256": "dea0f740cde94d32442e6352752777b17f3d674c2dc46a583640eb3bba5da5f1",
+    "score_chosen": 6.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 977,
+    "prompt_sha256": "edbb00d0b0cfdfb819e2e97767176f7e779ff1248c647591d5dc36d6b31c26f2",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 983,
+    "prompt_sha256": "5c7f82774c62a86b9f52d39a2c48f0cbd123407bc7ed0de80743168726f4c5ca",
+    "score_chosen": 7.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 984,
+    "prompt_sha256": "c6a6a9daba264204ee30379e7407ca39f9b709d79562efae1be5afc5135a7bc0",
+    "score_chosen": 8.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 985,
+    "prompt_sha256": "711edce4fd5d8875d13451debeaecf490d8422a8ff1548432856e3b9f86c2cd3",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 986,
+    "prompt_sha256": "16e985d0e9b13f7bf84dce389e208af3acf18d371f573db97c63d1916bdcbbe2",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 987,
+    "prompt_sha256": "e942ea7724d64c88ffe0cddb370def91e8a706eaf09a413d9851f0bf897f04ef",
+    "score_chosen": 10.0,
+    "score_rejected": 8.5
+  },
+  {
+    "shuffled_index": 988,
+    "prompt_sha256": "7bf44972025fd7f7ac87f00a715c46e7f03f3d8f7b295feaf8616ac5f91aff67",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 989,
+    "prompt_sha256": "3c1d238c2778310d9c34b36e0e8760a9c573de5e9d290b9fc3a79f4f07b6b2fb",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 991,
+    "prompt_sha256": "8f38de60066d709ca0701142f1f752d7515c4121612fbf339c7a1d3d5cec0b61",
+    "score_chosen": 8.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 994,
+    "prompt_sha256": "4f0f3baae6a75ab0de989912f4c7db4e48625c4004e34d4a7ce0a016f7600926",
+    "score_chosen": 9.0,
+    "score_rejected": 8.5
+  },
+  {
+    "shuffled_index": 995,
+    "prompt_sha256": "2f45c52d8dc32c4a22aa5e57c9df18b4ff1fb45e262fdd0e6646bcb51cd8fd9b",
+    "score_chosen": 8.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 1000,
+    "prompt_sha256": "fa7580a71a405008ea52b62d75cd8d206e548fd72b49a29b50f6caf82f43b968",
+    "score_chosen": 7.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 1001,
+    "prompt_sha256": "aa18e43d6a786bd53fe3249b0f013749730d391ecab4b439feb12f6957a35a39",
+    "score_chosen": 9.0,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 1006,
+    "prompt_sha256": "6395767acdb48206675504d8f0aa12e4deb106f2b9cf9aac946bad3abce94fc3",
+    "score_chosen": 7.0,
+    "score_rejected": 6.5
+  },
+  {
+    "shuffled_index": 1007,
+    "prompt_sha256": "d79b11d5869ac33d9def799799992a3974c9ced91a00c6065308bb43c09050d8",
+    "score_chosen": 7.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 1013,
+    "prompt_sha256": "f90498ff33a5d2350783cd73b48842aaeb39bb66b2d0540556fcb90bb4691031",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 1016,
+    "prompt_sha256": "f41b6cacdccdfdbeb6001960446607c8d51500e2041ba798c3db6d03c9d375d5",
+    "score_chosen": 8.5,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 1018,
+    "prompt_sha256": "012939599a15a0b9572591240b5a37a9ed7a19ad19e5428daf7fa860cfc97c07",
+    "score_chosen": 7.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 1019,
+    "prompt_sha256": "c3f7c14a72c83eae977f12d39a8efbac8bf4fa0bad724aa8379e049e5b7dcdca",
+    "score_chosen": 7.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 1025,
+    "prompt_sha256": "d47668f12e6a69ee71a8eb964a5e27ff8c69364ef475ef3e1c87b02777299152",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 1026,
+    "prompt_sha256": "5154523257fc2449ef72360d61fdca650dfa41096edf21f74f07d2f202ca13f7",
+    "score_chosen": 7.5,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 1030,
+    "prompt_sha256": "c6379d4e73f6cf384dc50fd0efb1a54abccf51953a745aedb86cfbb011193810",
+    "score_chosen": 9.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 1031,
+    "prompt_sha256": "3e49c35b23ad6d436453ef5b13e559e3673809c4de6fdd11178cdece92b7e296",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 1033,
+    "prompt_sha256": "fe2ac5a6c7e3079fd1b69f9022a964eb2e8e589173659e52ebed40c78f66fca2",
+    "score_chosen": 9.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 1039,
+    "prompt_sha256": "e3961491c3801cec476d1b0cdd3a838d70b8d68ba7d896e6fa610d3cd76955c7",
+    "score_chosen": 7.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 1040,
+    "prompt_sha256": "b1eed7b6a4acf9749c7121ba20e0185547e7cebca06549f579b04f1a327a76f8",
+    "score_chosen": 7.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 1041,
+    "prompt_sha256": "c685c8e20cfef21f23074a26ea8118e715ed185a104247b0f525e3030770feab",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 1042,
+    "prompt_sha256": "f767dd62e55179be2d6aae7bc848837f9a82745f30ea157ba0d7aa8e4756531e",
+    "score_chosen": 8.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 1045,
+    "prompt_sha256": "ff1f48e19defef4ba90e4d466f4d6420a0d6581e694f5594976ddf27f7f6c180",
+    "score_chosen": 6.0,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 1051,
+    "prompt_sha256": "ca1cc7570325e24eb4bfeaaeeb96df510f09134eab13a0dcf7c8eeee6b821848",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 1052,
+    "prompt_sha256": "f8ca09f998a8a7e84af52fe0c859225b45d94dd69b3dbe705993b8630fdd86fe",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 1055,
+    "prompt_sha256": "7d827afd9326b5ab67ae53f2ae402bc0d0a5d19dd4a7b14ea2824f54c588cac7",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 1059,
+    "prompt_sha256": "0f93ae39cc1811a66a41308d9e5180a84373f1424fed6e1bf62a776431e2b844",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 1060,
+    "prompt_sha256": "dea5ac2de5381d8b8cc886a556152454dd62322067ac3880fd1258c376cfc4de",
+    "score_chosen": 7.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 1065,
+    "prompt_sha256": "3c2354b378a342458c7ada8acbcd05940f2bde553ba65235bb97d8c458d72568",
+    "score_chosen": 8.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 1066,
+    "prompt_sha256": "0ad26704b3927cd243d53a8926e59438ef3f6b5abbb878b0d9f98cf231425ad2",
+    "score_chosen": 8.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 1069,
+    "prompt_sha256": "22f8920d0998e58c1f73638eec138c2153177110d9f3aa150b3332655053c5f5",
+    "score_chosen": 8.0,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 1072,
+    "prompt_sha256": "be23e7c9594fb5dca5a38c237d8e350f0bc842cda532e6f12901534dcca08f33",
+    "score_chosen": 7.0,
+    "score_rejected": 2.0
+  },
+  {
+    "shuffled_index": 1075,
+    "prompt_sha256": "ba0d73d0cb049df978b1dfc442ab1c301ae3534898de9653301c836e79ff3d98",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 1078,
+    "prompt_sha256": "87f73b5621fefd0c9bcd09cff46c89d1a214ce8672bb71019cb37c082c7a5a70",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 1081,
+    "prompt_sha256": "8b9f60c11aead0947a0229a4345520d6b08546d02e44833f3c4df24b5645811b",
+    "score_chosen": 8.0,
+    "score_rejected": 3.0
+  },
+  {
+    "shuffled_index": 1082,
+    "prompt_sha256": "8c09cf42281ec060493ac45f47a90f83bb4581771b40394086e56febb28a7aac",
+    "score_chosen": 8.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 1084,
+    "prompt_sha256": "171c42efdb150bd928f5be93725be79adf9dd2c72e34068dddfc8afbf99c259a",
+    "score_chosen": 7.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 1085,
+    "prompt_sha256": "918a73ab07f486317b0017a71bb37d90927551c0ace57553d420c50d456ac411",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  },
+  {
+    "shuffled_index": 1086,
+    "prompt_sha256": "62a60e7fd3e0c7b88c5719bce57bfc1633ef403f02af59fdc783b5a86460d4ea",
+    "score_chosen": 7.5,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 1090,
+    "prompt_sha256": "b8661e27ba0141a3e634023608185a9f71dd4b377e5a6c9ac80988ad7fda8f0b",
+    "score_chosen": 5.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 1093,
+    "prompt_sha256": "dae6f4a282f112507b5906a70e4d56af9644b8c474febe9af45b5cc3427d481e",
+    "score_chosen": 8.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 1095,
+    "prompt_sha256": "aaf2204922fa461b1515d5ee08471e5aa827faa18e579d1dc4697162c4dc3eaa",
+    "score_chosen": 8.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 1097,
+    "prompt_sha256": "f591bc9121cfd64a91fc4129362e38940a938dd952edc8f70c75f86747cd5d58",
+    "score_chosen": 8.0,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 1098,
+    "prompt_sha256": "a70b2ff6399a2819695b14f982fc43eee4ba8d715606ba10d81466ec2a630bea",
+    "score_chosen": 9.0,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 1099,
+    "prompt_sha256": "ab9cfdc0797b7612cb06f8d333c8323339493b56063dd858ed55f6a41a7eb261",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 1101,
+    "prompt_sha256": "24220782b783e0e27c888be104838c32aecdbb7c3bf5e50e7d1a1e61efa3cb34",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 1102,
+    "prompt_sha256": "757aaf1bc44f698c302b20336e0d9bc9e3f1c75bd9c121d4d1068ed38be5d224",
+    "score_chosen": 9.0,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 1103,
+    "prompt_sha256": "0ea59753f180de484062fb4e7a205a20c979cccb2c89c5a789c6968d6df6b26b",
+    "score_chosen": 6.5,
+    "score_rejected": 5.0
+  },
+  {
+    "shuffled_index": 1105,
+    "prompt_sha256": "c459c52140f633c7ebd3ec71b17931f24418fa056f100c109f802fd12f87bcec",
+    "score_chosen": 8.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 1106,
+    "prompt_sha256": "6c3ffdafae9ff9ebb9f789442f95b7122b6baecefefcd1c99f3d75fe561c87cb",
+    "score_chosen": 7.0,
+    "score_rejected": 6.0
+  },
+  {
+    "shuffled_index": 1107,
+    "prompt_sha256": "61b8e1ea10949e4376529aff15a696a91feb914cdc107f91089be36814d4fdeb",
+    "score_chosen": 7.5,
+    "score_rejected": 7.0
+  },
+  {
+    "shuffled_index": 1109,
+    "prompt_sha256": "1ed04c3dbcd51c4535344e2a5467e6c1c51fb85327e2db95daea216a8cd269aa",
+    "score_chosen": 8.5,
+    "score_rejected": 8.0
+  },
+  {
+    "shuffled_index": 1110,
+    "prompt_sha256": "c86b508bf88ddfe44c28bb02688b010915107b35f739b8d6ee0aeaa846629955",
+    "score_chosen": 5.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 1113,
+    "prompt_sha256": "9325b46e3bff9297547901e72c3c9bdc5ab5ab39f042c5591d20826cb9ff2020",
+    "score_chosen": 8.0,
+    "score_rejected": 4.0
+  },
+  {
+    "shuffled_index": 1114,
+    "prompt_sha256": "fb2da356cdcea769e7997984fab2a41d1e1a18be2fb800020eef23ecefd0ade1",
+    "score_chosen": 8.5,
+    "score_rejected": 7.5
+  }
+]

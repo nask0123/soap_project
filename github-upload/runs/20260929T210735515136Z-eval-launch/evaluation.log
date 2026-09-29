@@ -1,0 +1,127 @@
+START 2026-09-29T21:07:35.516453+00:00
+COMMAND ['/content/soup-py312/bin/python', '-u', '/content/soup_takehome/20260929T210735515136Z-eval-launch/evaluate_run.py']
+2026-09-29T21:07:44.595011+00:00 
+2026-09-29T21:07:45.474048+00:00 Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]
+2026-09-29T21:07:45.581434+00:00 Loading weights:   0%|          | 1/338 [00:00<04:55,  1.14it/s]
+2026-09-29T21:07:45.778968+00:00 Loading weights:  23%|██▎       | 77/338 [00:00<00:02, 106.03it/s]
+2026-09-29T21:07:45.988135+00:00 Loading weights:  35%|███▌      | 119/338 [00:01<00:01, 135.95it/s]
+2026-09-29T21:07:46.114372+00:00 Loading weights:  45%|████▍     | 152/338 [00:01<00:01, 142.44it/s]
+2026-09-29T21:07:46.257305+00:00 Loading weights:  53%|█████▎    | 178/338 [00:01<00:01, 155.43it/s]
+2026-09-29T21:07:46.400026+00:00 Loading weights:  60%|█████▉    | 202/338 [00:01<00:00, 158.69it/s]
+2026-09-29T21:07:46.517602+00:00 Loading weights:  66%|██████▋   | 224/338 [00:01<00:00, 157.89it/s]
+2026-09-29T21:07:46.637594+00:00 Loading weights:  72%|███████▏  | 244/338 [00:01<00:00, 160.16it/s]
+2026-09-29T21:07:46.792123+00:00 Loading weights:  78%|███████▊  | 263/338 [00:02<00:00, 159.67it/s]
+2026-09-29T21:07:46.913210+00:00 Loading weights:  83%|████████▎ | 281/338 [00:02<00:00, 147.06it/s]
+2026-09-29T21:07:47.016162+00:00 Loading weights:  90%|█████████ | 305/338 [00:02<00:00, 159.26it/s]
+2026-09-29T21:07:47.042659+00:00 Loading weights:  97%|█████████▋| 328/338 [00:02<00:00, 174.80it/s]
+2026-09-29T21:07:47.042741+00:00 Loading weights: 100%|██████████| 338/338 [00:02<00:00, 138.06it/s]
+2026-09-29T21:07:50.430546+00:00 {
+2026-09-29T21:07:50.430975+00:00   "status": "RELOAD_PASS_MATCHED_AUTOCAST",
+2026-09-29T21:07:50.431037+00:00   "source": "/content/soup_takehome/20260929T202553230689Z-full-dpo",
+2026-09-29T21:07:50.431078+00:00   "output": "/content/soup_takehome/20260929T210735599570Z-reload-check",
+2026-09-29T21:07:50.431109+00:00   "exact_saved_tensor_matches": 112,
+2026-09-29T21:07:50.431139+00:00   "no_autocast_control": {
+2026-09-29T21:07:50.431166+00:00     "active_max_error": 0.05859375,
+2026-09-29T21:07:50.431194+00:00     "disabled_max_error": 0.0,
+2026-09-29T21:07:50.431225+00:00     "active_allclose": false
+2026-09-29T21:07:50.431255+00:00   },
+2026-09-29T21:07:50.432894+00:00   "comparison_mode": "explicit CUDA FP16 autocast; unchanged atol/rtol",
+2026-09-29T21:07:50.432979+00:00   "adapter_parameter_dtypes": [
+2026-09-29T21:07:50.433018+00:00     "torch.float32"
+2026-09-29T21:07:50.433049+00:00   ],
+2026-09-29T21:07:50.433078+00:00   "repeat_noise_max": 0.0,
+2026-09-29T21:07:50.433119+00:00   "reloaded_adapter_effect_max": 0.1255950927734375,
+2026-09-29T21:07:50.433148+00:00   "stream_vs_resident_active_max_error": 0.0,
+2026-09-29T21:07:50.433176+00:00   "stream_vs_resident_disabled_max_error": 0.0,
+2026-09-29T21:07:50.433206+00:00   "parity_tolerance": {
+2026-09-29T21:07:50.433235+00:00     "atol": 0.001,
+2026-09-29T21:07:50.433269+00:00     "rtol": 0.001
+2026-09-29T21:07:50.433298+00:00   },
+2026-09-29T21:07:50.433325+00:00   "active_allclose": true,
+2026-09-29T21:07:50.433353+00:00   "disabled_allclose": true,
+2026-09-29T21:07:50.433379+00:00   "peak_allocated": 3116004864,
+2026-09-29T21:07:50.433405+00:00   "peak_reserved": 3154116608,
+2026-09-29T21:07:50.433431+00:00   "effect_threshold": 0.0001,
+2026-09-29T21:07:50.433458+00:00   "negative_control_detected": true,
+2026-09-29T21:07:50.433485+00:00   "limitations": "Three training prompts, last-token logits only; no held-out quality, gradient parity or deployment validation. Allclose is tolerance-based, not bitwise equality.",
+2026-09-29T21:07:50.433515+00:00   "finished_utc": "2026-09-29T21:07:50.429734+00:00"
+2026-09-29T21:07:50.433543+00:00 }
+2026-09-29T21:07:59.596470+00:00 
+2026-09-29T21:08:00.443004+00:00 Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]
+2026-09-29T21:08:00.552608+00:00 Loading weights:   0%|          | 1/338 [00:00<04:44,  1.18it/s]
+2026-09-29T21:08:00.775915+00:00 Loading weights:  26%|██▌       | 87/338 [00:00<00:02, 123.47it/s]
+2026-09-29T21:08:00.970623+00:00 Loading weights:  39%|███▉      | 133/338 [00:01<00:01, 149.26it/s]
+2026-09-29T21:08:01.143747+00:00 Loading weights:  50%|████▉     | 168/338 [00:01<00:01, 157.78it/s]
+2026-09-29T21:08:01.285758+00:00 Loading weights:  58%|█████▊    | 196/338 [00:01<00:00, 158.83it/s]
+2026-09-29T21:08:01.404714+00:00 Loading weights:  65%|██████▌   | 220/338 [00:01<00:00, 161.21it/s]
+2026-09-29T21:08:01.509388+00:00 Loading weights:  72%|███████▏  | 243/338 [00:01<00:00, 168.35it/s]
+2026-09-29T21:08:01.709977+00:00 Loading weights:  78%|███████▊  | 264/338 [00:01<00:00, 175.25it/s]
+2026-09-29T21:08:01.809285+00:00 Loading weights:  84%|████████▍ | 285/338 [00:02<00:00, 149.70it/s]
+2026-09-29T21:08:01.991082+00:00 Loading weights:  90%|████████▉ | 303/338 [00:02<00:00, 155.47it/s]
+2026-09-29T21:08:02.071937+00:00 Loading weights:  95%|█████████▍| 321/338 [00:02<00:00, 135.70it/s]
+2026-09-29T21:08:02.071977+00:00 Loading weights: 100%|██████████| 338/338 [00:02<00:00, 136.59it/s]
+2026-09-29T21:08:07.392411+00:00 HELDOUT: 10/100 pairs evaluated
+2026-09-29T21:08:10.166774+00:00 HELDOUT: 20/100 pairs evaluated
+2026-09-29T21:08:12.784741+00:00 HELDOUT: 30/100 pairs evaluated
+2026-09-29T21:08:15.387981+00:00 HELDOUT: 40/100 pairs evaluated
+2026-09-29T21:08:17.682271+00:00 HELDOUT: 50/100 pairs evaluated
+2026-09-29T21:08:19.891099+00:00 HELDOUT: 60/100 pairs evaluated
+2026-09-29T21:08:22.147987+00:00 HELDOUT: 70/100 pairs evaluated
+2026-09-29T21:08:24.063303+00:00 HELDOUT: 80/100 pairs evaluated
+2026-09-29T21:08:26.515233+00:00 HELDOUT: 90/100 pairs evaluated
+2026-09-29T21:08:29.445619+00:00 HELDOUT: 100/100 pairs evaluated
+2026-09-29T21:08:30.316093+00:00 ╭───────────────────────────────── soup ship ──────────────────────────────────╮
+2026-09-29T21:08:30.316169+00:00 │ DON'T SHIP                                                                   │
+2026-09-29T21:08:30.316184+00:00 │ Leg 1 task win (metric): 0.5600 -> 0.5600  [no win]                          │
+2026-09-29T21:08:30.316196+00:00 │                                                                              │
+2026-09-29T21:08:30.316206+00:00 │ Leg 2 general suite (threshold 5.00%)                                        │
+2026-09-29T21:08:30.316218+00:00 │ ┏━━━━━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━┳━━━┳━━━━━━━━━┓                             │
+2026-09-29T21:08:30.316228+00:00 │ ┃ Benchmark       ┃ Base ┃ Tuned ┃ Δ ┃ Verdict ┃                             │
+2026-09-29T21:08:30.316241+00:00 │ ┡━━━━━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━╇━━━╇━━━━━━━━━┩                             │
+2026-09-29T21:08:30.316262+00:00 │ │ (none measured) │    - │     - │ - │ missing │                             │
+2026-09-29T21:08:30.316272+00:00 │ └─────────────────┴──────┴───────┴───┴─────────┘                             │
+2026-09-29T21:08:30.316282+00:00 │                                                                              │
+2026-09-29T21:08:30.316292+00:00 │ No general-suite benchmarks were measured — cannot verify the model didn't   │
+2026-09-29T21:08:30.316301+00:00 │ regress. Supply a general suite or --baseline.                               │
+2026-09-29T21:08:30.316312+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-09-29T21:08:30.318552+00:00 Wrote 
+2026-09-29T21:08:30.318625+00:00 /content/soup_takehome/20260929T210735564189Z-heldout-eval/ship-verdict.json
+2026-09-29T21:08:30.561099+00:00 {
+2026-09-29T21:08:30.561130+00:00   "status": "EVALUATION_COMPLETE",
+2026-09-29T21:08:30.561141+00:00   "output": "/content/soup_takehome/20260929T210735564189Z-heldout-eval",
+2026-09-29T21:08:30.561151+00:00   "source": "/content/soup_takehome/20260929T202553230689Z-full-dpo",
+2026-09-29T21:08:30.561161+00:00   "test_sha256": "3eed9c45e23455d71dac705d7cac6078df203d1118420a7bbab7c4f3637e0397",
+2026-09-29T21:08:30.561170+00:00   "metric": "Preference ranking accuracy: chosen completion sum log-probability > rejected; ties count as 0. Not human-judged generation quality.",
+2026-09-29T21:08:30.561180+00:00   "precision": "FP16 base and CUDA FP16 autocast for BOTH baseline and tuned; log_softmax in FP32; no truncation",
+2026-09-29T21:08:30.561187+00:00   "base_accuracy": 0.56,
+2026-09-29T21:08:30.561195+00:00   "tuned_accuracy": 0.56,
+2026-09-29T21:08:30.561202+00:00   "accuracy_delta": 0.0,
+2026-09-29T21:08:30.561210+00:00   "paired_bootstrap_95ci": [
+2026-09-29T21:08:30.561218+00:00     0.0,
+2026-09-29T21:08:30.561225+00:00     0.0
+2026-09-29T21:08:30.561233+00:00   ],
+2026-09-29T21:08:30.561251+00:00   "wrong_to_right": 0,
+2026-09-29T21:08:30.561259+00:00   "right_to_wrong": 0,
+2026-09-29T21:08:30.561267+00:00   "base_length_normalized_accuracy": 0.71,
+2026-09-29T21:08:30.561276+00:00   "tuned_length_normalized_accuracy": 0.71,
+2026-09-29T21:08:30.561284+00:00   "mean_preference_margin_change": 0.037703236527740956,
+2026-09-29T21:08:30.561293+00:00   "fraction_positive_margin_change": 0.58,
+2026-09-29T21:08:30.561300+00:00   "length_strata": {
+2026-09-29T21:08:30.561308+00:00     "chosen_longer": {
+2026-09-29T21:08:30.561315+00:00       "n": 51,
+2026-09-29T21:08:30.561323+00:00       "base_accuracy": 0.27450980392156865,
+2026-09-29T21:08:30.561331+00:00       "tuned_accuracy": 0.27450980392156865
+2026-09-29T21:08:30.561339+00:00     },
+2026-09-29T21:08:30.561346+00:00     "chosen_not_longer": {
+2026-09-29T21:08:30.561355+00:00       "n": 49,
+2026-09-29T21:08:30.561365+00:00       "base_accuracy": 0.8571428571428571,
+2026-09-29T21:08:30.561373+00:00       "tuned_accuracy": 0.8571428571428571
+2026-09-29T21:08:30.561380+00:00     }
+2026-09-29T21:08:30.561388+00:00   },
+2026-09-29T21:08:30.561396+00:00   "ship_evidence_limitations": "No independent general-capability/forgetting benchmark measured; empty benchmarks is intentional missing evidence, not zero regression.",
+2026-09-29T21:08:30.561403+00:00   "ship_exit_code": 2,
+2026-09-29T21:08:30.561414+00:00   "limitations": "100 length-filtered general preference pairs; one seed; no Russian-support evaluation, no broad forgetting evaluation, no gradient parity. Bootstrap covers pair sampling only, not training randomness.",
+2026-09-29T21:08:30.561422+00:00   "finished_utc": "2026-09-29T21:08:30.560375+00:00"
+2026-09-29T21:08:30.561431+00:00 }
+
+END exit_code=0

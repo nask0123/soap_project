@@ -1,0 +1,30 @@
+START 2026-09-29T19:06:55.834675+00:00
+COMMAND ['/content/soup-py312/bin/soup', 'data', 'lint', '/content/soup_takehome/20260929T190646706574Z-config/train_dpo.jsonl', '--model', 'Qwen/Qwen2.5-1.5B-Instruct', '--output', '/content/soup_takehome/20260929T190646706574Z-config/data-lint.json']
+2026-09-29T19:07:01.355117+00:00 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-29T19:07:03.093810+00:00                               soup data lint (dpo)                              
+2026-09-29T19:07:03.093871+00:00 ┏━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┓
+2026-09-29T19:07:03.093890+00:00 ┃ Check           ┃ Verdict ┃ Message                ┃ Evidence                ┃
+2026-09-29T19:07:03.093905+00:00 ┡━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━┩
+2026-09-29T19:07:03.093916+00:00 │ length_bias     │ OK      │ effect size (Cohen's   │ mean chosen=161.0, mean │
+2026-09-29T19:07:03.093930+00:00 │                 │         │ d) = 0.221 (chosen     │ rejected=134.1          │
+2026-09-29T19:07:03.093941+00:00 │                 │         │ longer than rejected); │                         │
+2026-09-29T19:07:03.093953+00:00 │                 │         │ chosen is longer in    │                         │
+2026-09-29T19:07:03.093964+00:00 │                 │         │ 56.0% of rows          │                         │
+2026-09-29T19:07:03.093976+00:00 │ identical_pairs │ OK      │ 0/500 rows (0.0%) have │                         │
+2026-09-29T19:07:03.093988+00:00 │                 │         │ chosen == rejected     │                         │
+2026-09-29T19:07:03.094000+00:00 │                 │         │ (zero preference       │                         │
+2026-09-29T19:07:03.094011+00:00 │                 │         │ signal)                │                         │
+2026-09-29T19:07:03.094023+00:00 │ near_duplicates │ OK      │ near-dup check skipped │ pip install             │
+2026-09-29T19:07:03.094033+00:00 │                 │         │ (datasketch not        │ "soup-cli[data]" to     │
+2026-09-29T19:07:03.094043+00:00 │                 │         │ installed)             │ enable                  │
+2026-09-29T19:07:03.094054+00:00 │ prompt_leak     │ MINOR   │ 2/500 rows (0.4%) have │ min_prompt_len=40       │
+2026-09-29T19:07:03.094067+00:00 │                 │         │ the prompt echoed      │                         │
+2026-09-29T19:07:03.094077+00:00 │                 │         │ verbatim inside the    │                         │
+2026-09-29T19:07:03.094088+00:00 │                 │         │ completion             │                         │
+2026-09-29T19:07:03.094099+00:00 └─────────────────┴─────────┴────────────────────────┴─────────────────────────┘
+2026-09-29T19:07:03.095186+00:00 ╭────────── overall ───────────╮
+2026-09-29T19:07:03.095224+00:00 │ MINOR — 500/500 rows scanned │
+2026-09-29T19:07:03.095236+00:00 ╰──────────────────────────────╯
+2026-09-29T19:07:03.098578+00:00 Wrote /content/soup_takehome/20260929T190646706574Z-config/data-lint.json
+
+END exit_code=0

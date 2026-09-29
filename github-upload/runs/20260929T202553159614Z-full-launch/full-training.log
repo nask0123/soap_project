@@ -1,0 +1,1877 @@
+START 2026-09-29T20:25:53.160454+00:00
+COMMAND ['/content/soup-py312/bin/python', '-u', '/content/soup_takehome/20260929T202553159614Z-full-launch/smoke_dpo.py', '--full']
+2026-09-29T20:26:00.624471+00:00 Downloading pinned model snapshot (approximately 3 GB)...
+2026-09-29T20:26:00.626602+00:00 
+2026-09-29T20:26:00.638605+00:00 Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]
+2026-09-29T20:26:00.638632+00:00 Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 593.97it/s]
+2026-09-29T20:26:34.423198+00:00 Verified regular-file snapshot: /content/soup_models/qwen-1.5b-989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+2026-09-29T20:26:36.760026+00:00 Loading tokenizer: 
+2026-09-29T20:26:36.760060+00:00 /content/soup_models/qwen-1.5b-989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+2026-09-29T20:26:37.132521+00:00 ╭────────────────────── Layer streaming disk pre-flight ───────────────────────╮
+2026-09-29T20:26:37.132573+00:00 │ HF/local source: 3.09 GB                                                     │
+2026-09-29T20:26:37.132587+00:00 │ Soup materialized copy: 0.00 GB (no write required)                          │
+2026-09-29T20:26:37.132601+00:00 │ Layer-shard cache: 3.09 GB (reusable)                                        │
+2026-09-29T20:26:37.132612+00:00 │ Projected total on disk: 6.17 GB                                             │
+2026-09-29T20:26:37.132623+00:00 │ Additional writes before training: 0.00 GB                                   │
+2026-09-29T20:26:37.132633+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-09-29T20:26:37.133382+00:00 Preparing layer shards -> 
+2026-09-29T20:26:37.133411+00:00 /root/.soup/layer-stream/content__soup_models__qwen-1.5b-989aa7980e4cf806f80c7fe
+2026-09-29T20:26:37.133423+00:00 f2b1adb7bc71aa306
+2026-09-29T20:26:37.694086+00:00 ╭─────────────────────────── training.stream_layers ───────────────────────────╮
+2026-09-29T20:26:37.694124+00:00 │ Layer streaming BETA — arch qwen2, tier ram                                  │
+2026-09-29T20:26:37.694137+00:00 │   base store   2.62 GB across 28 layers (pageable)                           │
+2026-09-29T20:26:37.694149+00:00 │   VRAM buffers 2 x 94 MB + 1 x 0 MB large-layer slot = 187 MB                │
+2026-09-29T20:26:37.694158+00:00 │   resident     467 MB extras + adapters                                      │
+2026-09-29T20:26:37.694169+00:00 │   peak VRAM    ~3.00 GB at batch 1 x seq 512 (2 rows — chosen+rejected are   │
+2026-09-29T20:26:37.694179+00:00 │ one concatenated tensor) (logits 2.18 GB)                                    │
+2026-09-29T20:26:37.694191+00:00 │   free VRAM    15.51 GB                                                      │
+2026-09-29T20:26:37.694202+00:00 │   forecast     1985-2920 tok/s — a compute-bound bound, not a promise        │
+2026-09-29T20:26:37.694213+00:00 │                (from 27.04 TFLOPS measured on this card now using float16 @  │
+2026-09-29T20:26:37.694223+00:00 │ 885 MHz)                                                                     │
+2026-09-29T20:26:37.694232+00:00 │   ! accumulating 8x at batch 1: the base is re-read once per micro-batch.    │
+2026-09-29T20:26:37.694242+00:00 │ Per token that is free, but reaching effective batch 8 by raising            │
+2026-09-29T20:26:37.694253+00:00 │ training.batch_size instead measured ~2.5x faster. Accumulation holds peak   │
+2026-09-29T20:26:37.694262+00:00 │ VRAM flat, so raise batch_size while the budget above allows, then           │
+2026-09-29T20:26:37.694271+00:00 │ accumulate for the rest.                                                     │
+2026-09-29T20:26:37.694281+00:00 │   ! training.stream_pin=false forces a pageable RAM store. Host-to-device    │
+2026-09-29T20:26:37.694292+00:00 │ copies become synchronous, which costs overlap: measured GPU utilisation     │
+2026-09-29T20:26:37.694301+00:00 │ drops from ~97% to ~79%, and page-locking is worth up to 6.56x measured      │
+2026-09-29T20:26:37.694310+00:00 │ throughput (Qwen2.5-32B NF4), 7.41x on a synthetic. Unset stream_pin to let  │
+2026-09-29T20:26:37.694318+00:00 │ the box page-lock when it can.                                               │
+2026-09-29T20:26:37.694327+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-09-29T20:26:37.694916+00:00 Layer streaming is BETA: slower than resident training, but this model may not 
+2026-09-29T20:26:37.694939+00:00 run resident on this card at all.
+2026-09-29T20:26:37.695411+00:00 expandable_segments allocator hint not enabled: CUDA was already initialised 
+2026-09-29T20:26:37.695434+00:00 before Soup could set it — the allocator reads PYTORCH_CUDA_ALLOC_CONF once, at 
+2026-09-29T20:26:37.695447+00:00 context creation
+2026-09-29T20:26:37.706882+00:00 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+2026-09-29T20:26:45.633168+00:00 Layer streaming ready: 28 layers, 2.62 GB pageable RAM store, 2 x 94 MB decoder 
+2026-09-29T20:26:45.633207+00:00 buffers + 1 x 0 MB large-layer slot
+2026-09-29T20:26:45.636193+00:00 LoRA applied: 1,089,536 trainable / 1,543,714,304 total (0.07%)
+2026-09-29T20:26:48.065228+00:00 
+2026-09-29T20:26:48.168251+00:00 Tokenizing train dataset:   0%|          | 0/500 [00:00<?, ? examples/s]
+2026-09-29T20:26:48.271754+00:00 Tokenizing train dataset:   7%|▋         | 35/500 [00:00<00:01, 340.04 examples/s]
+2026-09-29T20:26:48.373579+00:00 Tokenizing train dataset:  17%|█▋        | 85/500 [00:00<00:00, 424.42 examples/s]
+2026-09-29T20:26:48.477414+00:00 Tokenizing train dataset:  26%|██▋       | 132/500 [00:00<00:00, 441.13 examples/s]
+2026-09-29T20:26:48.577943+00:00 Tokenizing train dataset:  36%|███▌      | 180/500 [00:00<00:00, 451.22 examples/s]
+2026-09-29T20:26:48.681778+00:00 Tokenizing train dataset:  45%|████▌     | 227/500 [00:00<00:00, 455.47 examples/s]
+2026-09-29T20:26:48.783764+00:00 Tokenizing train dataset:  55%|█████▍    | 274/500 [00:00<00:00, 454.69 examples/s]
+2026-09-29T20:26:48.936221+00:00 Tokenizing train dataset:  64%|██████▍   | 321/500 [00:00<00:00, 456.54 examples/s]
+2026-09-29T20:26:49.039005+00:00 Tokenizing train dataset:  78%|███████▊  | 390/500 [00:00<00:00, 454.97 examples/s]
+2026-09-29T20:26:49.140992+00:00 Tokenizing train dataset:  88%|████████▊ | 441/500 [00:00<00:00, 466.56 examples/s]
+2026-09-29T20:26:49.247189+00:00 Tokenizing train dataset:  98%|█████████▊| 491/500 [00:01<00:00, 473.38 examples/s]
+2026-09-29T20:26:49.247223+00:00 Tokenizing train dataset: 100%|██████████| 500/500 [00:01<00:00, 423.06 examples/s]
+2026-09-29T20:26:49.257950+00:00 [transformers] The model is already on multiple devices. Skipping the move to device specified in `args`.
+2026-09-29T20:26:49.267268+00:00 
+2026-09-29T20:26:49.389949+00:00 Map:   0%|          | 0/500 [00:00<?, ? examples/s]
+2026-09-29T20:26:49.393250+00:00 Map: 100%|██████████| 500/500 [00:00<00:00, 4082.79 examples/s]
+2026-09-29T20:26:49.393276+00:00 Map: 100%|██████████| 500/500 [00:00<00:00, 3972.06 examples/s]
+2026-09-29T20:26:58.455230+00:00 FULL_DPO_V1: ONE FULL EPOCH, fresh adapter, 500 pairs, accumulation=8.
+2026-09-29T20:26:58.455668+00:00 [transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'bos_token_id': None, 'pad_token_id': 151643}.
+2026-09-29T20:26:58.739640+00:00 
+2026-09-29T20:27:17.450915+00:00   0%|          | 0/63 [00:00<?, ?it/s]
+2026-09-29T20:27:17.467305+00:00   2%|▏         | 1/63 [00:18<19:20, 18.71s/it]AMP_STEP_AUDIT: {"step": 0, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 65536.0, "learning_rates": [0.0, 0.0], "skipped": false, "scale_after": 65536.0, "parameters_finite": true, "max_update": 0.0, "actual_update": false}
+2026-09-29T20:27:17.467878+00:00 
+2026-09-29T20:27:17.467916+00:00                                               
+2026-09-29T20:27:17.467931+00:00 {'loss': '0.6931', 'grad_norm': '2.779', 'learning_rate': '0', 'entropy': '1.236', 'num_tokens': '4179', 'logits/chosen': '-1.233', 'logits/rejected': '-0.843', 'mean_token_accuracy': '0.7169', 'rewards/chosen': '0', 'rewards/rejected': '0', 'rewards/accuracies': '0', 'rewards/margins': '0', 'logps/chosen': '-252.6', 'logps/rejected': '-190.5', 'epoch': '0.016'}
+2026-09-29T20:27:17.468021+00:00 
+2026-09-29T20:27:35.004017+00:00   2%|▏         | 1/63 [00:18<19:20, 18.71s/it]
+2026-09-29T20:27:35.024127+00:00   3%|▎         | 2/63 [00:36<18:19, 18.03s/it]AMP_STEP_AUDIT: {"step": 1, "finite": false, "nonzero": false, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": ["base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.0.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.1.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.1.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.1.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.1.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.2.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.2.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.2.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.3.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.3.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.3.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.3.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.4.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.4.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.4.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.4.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.5.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.5.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.5.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.5.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.6.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.6.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.6.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.6.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.7.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.7.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.7.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.8.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.8.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.8.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.8.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.9.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.9.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.9.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.9.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.10.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.10.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.10.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.10.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.11.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.11.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.11.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.11.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.12.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.12.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.12.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.12.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.13.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.13.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.13.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.13.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.14.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.14.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.14.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.14.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.15.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.15.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.15.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.15.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.16.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.16.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.16.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.16.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.17.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.17.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.17.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.17.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.18.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.18.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.18.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.18.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.19.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.19.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.19.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.19.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.20.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.20.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.20.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.20.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.21.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.21.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.21.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.21.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.22.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.22.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.22.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.22.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.23.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.23.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.23.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.23.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.24.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.24.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.24.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.24.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.25.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.25.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.25.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.25.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.26.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.26.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.26.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.26.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.27.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.27.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.27.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.27.self_attn.v_proj.lora_B.default.weight"], "scale_before": 65536.0, "learning_rates": [1e-05, 1e-05], "skipped": true, "scale_after": 32768.0, "parameters_finite": true, "max_update": 0.0, "actual_update": false}
+2026-09-29T20:27:35.024813+00:00 
+2026-09-29T20:27:35.025517+00:00                                               
+2026-09-29T20:27:35.025548+00:00 {'loss': '0.6931', 'grad_norm': 'nan', 'learning_rate': '1e-05', 'entropy': '0.9694', 'num_tokens': '6923', 'logits/chosen': '-1.674', 'logits/rejected': '-1.414', 'mean_token_accuracy': '0.6118', 'rewards/chosen': '0', 'rewards/rejected': '0', 'rewards/accuracies': '0', 'rewards/margins': '0', 'logps/chosen': '-142.4', 'logps/rejected': '-93.78', 'epoch': '0.032'}
+2026-09-29T20:27:35.025723+00:00 
+2026-09-29T20:27:53.479509+00:00   3%|▎         | 2/63 [00:36<18:19, 18.03s/it]
+2026-09-29T20:27:53.493147+00:00   5%|▍         | 3/63 [00:54<18:14, 18.23s/it]AMP_STEP_AUDIT: {"step": 2, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [1e-05, 1e-05], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 1.0013566679845098e-05, "actual_update": true}
+2026-09-29T20:27:53.493613+00:00 
+2026-09-29T20:27:53.493648+00:00                                               
+2026-09-29T20:27:53.493662+00:00 {'loss': '0.6931', 'grad_norm': '2.592', 'learning_rate': '1e-05', 'entropy': '0.8064', 'num_tokens': '1.175e+04', 'logits/chosen': '-1.164', 'logits/rejected': '-1.209', 'mean_token_accuracy': '0.6579', 'rewards/chosen': '0', 'rewards/rejected': '0', 'rewards/accuracies': '0', 'rewards/margins': '0', 'logps/chosen': '-255.5', 'logps/rejected': '-170.8', 'epoch': '0.048'}
+2026-09-29T20:27:53.493752+00:00 
+2026-09-29T20:28:11.426007+00:00   5%|▍         | 3/63 [00:54<18:14, 18.23s/it]
+2026-09-29T20:28:11.445396+00:00   6%|▋         | 4/63 [01:12<17:49, 18.12s/it]AMP_STEP_AUDIT: {"step": 3, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [9.993582535855265e-06, 9.993582535855265e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 1.0029581972048618e-05, "actual_update": true}
+2026-09-29T20:28:11.446025+00:00 
+2026-09-29T20:28:11.446092+00:00                                               
+2026-09-29T20:28:11.446117+00:00 {'loss': '0.6903', 'grad_norm': '2.047', 'learning_rate': '9.994e-06', 'entropy': '0.8476', 'num_tokens': '1.592e+04', 'logits/chosen': '-1.425', 'logits/rejected': '-0.8239', 'mean_token_accuracy': '0.7205', 'rewards/chosen': '0.004154', 'rewards/rejected': '-0.001538', 'rewards/accuracies': '0.875', 'rewards/margins': '0.005691', 'logps/chosen': '-197.3', 'logps/rejected': '-142.6', 'epoch': '0.064'}
+2026-09-29T20:28:11.446281+00:00 
+2026-09-29T20:28:29.540158+00:00   6%|▋         | 4/63 [01:12<17:49, 18.12s/it]
+2026-09-29T20:28:29.554035+00:00   8%|▊         | 5/63 [01:30<17:30, 18.12s/it]AMP_STEP_AUDIT: {"step": 4, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [9.974346616959476e-06, 9.974346616959476e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 1.0040708730230108e-05, "actual_update": true}
+2026-09-29T20:28:29.554543+00:00 
+2026-09-29T20:28:29.554593+00:00                                               
+2026-09-29T20:28:29.554609+00:00 {'loss': '0.6916', 'grad_norm': '2.346', 'learning_rate': '9.974e-06', 'entropy': '0.9543', 'num_tokens': '2.022e+04', 'logits/chosen': '-1.223', 'logits/rejected': '-1.097', 'mean_token_accuracy': '0.7306', 'rewards/chosen': '0.001321', 'rewards/rejected': '-0.001824', 'rewards/accuracies': '0.625', 'rewards/margins': '0.003144', 'logps/chosen': '-192.3', 'logps/rejected': '-149.4', 'epoch': '0.08'}
+2026-09-29T20:28:29.554731+00:00 
+2026-09-29T20:28:47.098502+00:00   8%|▊         | 5/63 [01:30<17:30, 18.12s/it]
+2026-09-29T20:28:47.111578+00:00  10%|▉         | 6/63 [01:48<17:01, 17.93s/it]AMP_STEP_AUDIT: {"step": 5, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [9.942341621640558e-06, 9.942341621640558e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 1.0043611837318167e-05, "actual_update": true}
+2026-09-29T20:28:47.112073+00:00 
+2026-09-29T20:28:47.112109+00:00                                               
+2026-09-29T20:28:47.112122+00:00 {'loss': '0.6924', 'grad_norm': '2.558', 'learning_rate': '9.942e-06', 'entropy': '1.044', 'num_tokens': '2.374e+04', 'logits/chosen': '-1.304', 'logits/rejected': '-1.151', 'mean_token_accuracy': '0.661', 'rewards/chosen': '-0.001533', 'rewards/rejected': '-0.003105', 'rewards/accuracies': '0.625', 'rewards/margins': '0.001572', 'logps/chosen': '-180.7', 'logps/rejected': '-145', 'epoch': '0.096'}
+2026-09-29T20:28:47.112222+00:00 
+2026-09-29T20:29:05.352001+00:00  10%|▉         | 6/63 [01:48<17:01, 17.93s/it]
+2026-09-29T20:29:05.365324+00:00  11%|█         | 7/63 [02:06<16:49, 18.03s/it]AMP_STEP_AUDIT: {"step": 6, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [9.897649706262474e-06, 9.897649706262474e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 1.0013325663749129e-05, "actual_update": true}
+2026-09-29T20:29:05.365789+00:00 
+2026-09-29T20:29:05.365823+00:00                                               
+2026-09-29T20:29:05.365851+00:00 {'loss': '0.6935', 'grad_norm': '2.508', 'learning_rate': '9.898e-06', 'entropy': '0.7329', 'num_tokens': '2.734e+04', 'logits/chosen': '-1.253', 'logits/rejected': '-1.144', 'mean_token_accuracy': '0.7074', 'rewards/chosen': '-0.00187', 'rewards/rejected': '-0.001113', 'rewards/accuracies': '0.25', 'rewards/margins': '-0.0007573', 'logps/chosen': '-126.2', 'logps/rejected': '-155.9', 'epoch': '0.112'}
+2026-09-29T20:29:05.365996+00:00 
+2026-09-29T20:29:23.353303+00:00  11%|█         | 7/63 [02:06<16:49, 18.03s/it]
+2026-09-29T20:29:23.366959+00:00  13%|█▎        | 8/63 [02:24<16:31, 18.02s/it]AMP_STEP_AUDIT: {"step": 7, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [9.840385594331022e-06, 9.840385594331022e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 9.973580745281652e-06, "actual_update": true}
+2026-09-29T20:29:23.366990+00:00 
+2026-09-29T20:29:23.367003+00:00                                               
+2026-09-29T20:29:23.367015+00:00 {'loss': '0.6932', 'grad_norm': '2.357', 'learning_rate': '9.84e-06', 'entropy': '0.9273', 'num_tokens': '3.202e+04', 'logits/chosen': '-0.8924', 'logits/rejected': '-1.243', 'mean_token_accuracy': '0.7076', 'rewards/chosen': '-0.001099', 'rewards/rejected': '-0.001038', 'rewards/accuracies': '0.5', 'rewards/margins': '-6.124e-05', 'logps/chosen': '-293.6', 'logps/rejected': '-177.8', 'epoch': '0.128'}
+2026-09-29T20:29:23.367025+00:00 
+2026-09-29T20:29:41.275989+00:00  13%|█▎        | 8/63 [02:24<16:31, 18.02s/it]
+2026-09-29T20:29:41.295579+00:00  14%|█▍        | 9/63 [02:42<16:11, 17.99s/it]AMP_STEP_AUDIT: {"step": 8, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [9.770696282000245e-06, 9.770696282000245e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 9.893334208754823e-06, "actual_update": true}
+2026-09-29T20:29:41.296191+00:00 
+2026-09-29T20:29:41.296258+00:00                                               
+2026-09-29T20:29:41.296284+00:00 {'loss': '0.6929', 'grad_norm': '2.279', 'learning_rate': '9.771e-06', 'entropy': '1.178', 'num_tokens': '3.565e+04', 'logits/chosen': '-1.633', 'logits/rejected': '-1.256', 'mean_token_accuracy': '0.6463', 'rewards/chosen': '-0.004194', 'rewards/rejected': '-0.004619', 'rewards/accuracies': '0.5', 'rewards/margins': '0.0004251', 'logps/chosen': '-139', 'logps/rejected': '-195.4', 'epoch': '0.144'}
+2026-09-29T20:29:41.296491+00:00 
+2026-09-29T20:29:59.007104+00:00  14%|█▍        | 9/63 [02:42<16:11, 17.99s/it]
+2026-09-29T20:29:59.021979+00:00  16%|█▌        | 10/63 [03:00<15:49, 17.91s/it]AMP_STEP_AUDIT: {"step": 9, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [9.688760660735403e-06, 9.688760660735403e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 9.763592970557511e-06, "actual_update": true}
+2026-09-29T20:29:59.022490+00:00 
+2026-09-29T20:29:59.022529+00:00                                                
+2026-09-29T20:29:59.022544+00:00 {'loss': '0.692', 'grad_norm': '1.916', 'learning_rate': '9.689e-06', 'entropy': '0.8182', 'num_tokens': '3.931e+04', 'logits/chosen': '-1.453', 'logits/rejected': '-0.9156', 'mean_token_accuracy': '0.7637', 'rewards/chosen': '-0.000633', 'rewards/rejected': '-0.002982', 'rewards/accuracies': '0.5', 'rewards/margins': '0.002349', 'logps/chosen': '-77.18', 'logps/rejected': '-99.82', 'epoch': '0.16'}
+2026-09-29T20:29:59.022658+00:00 
+2026-09-29T20:30:17.212389+00:00  16%|█▌        | 10/63 [03:00<15:49, 17.91s/it]
+2026-09-29T20:30:17.225682+00:00  17%|█▋        | 11/63 [03:18<15:36, 18.00s/it]AMP_STEP_AUDIT: {"step": 10, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [9.594789058101154e-06, 9.594789058101154e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 9.526193025521934e-06, "actual_update": true}
+2026-09-29T20:30:17.226212+00:00 
+2026-09-29T20:30:17.226248+00:00                                                
+2026-09-29T20:30:17.226262+00:00 {'loss': '0.6907', 'grad_norm': '2.476', 'learning_rate': '9.595e-06', 'entropy': '0.9814', 'num_tokens': '4.384e+04', 'logits/chosen': '-1.209', 'logits/rejected': '-1.24', 'mean_token_accuracy': '0.6965', 'rewards/chosen': '0.002529', 'rewards/rejected': '-0.002354', 'rewards/accuracies': '0.625', 'rewards/margins': '0.004883', 'logps/chosen': '-318.3', 'logps/rejected': '-206.3', 'epoch': '0.176'}
+2026-09-29T20:30:17.226373+00:00 
+2026-09-29T20:30:35.299928+00:00  17%|█▋        | 11/63 [03:18<15:36, 18.00s/it]
+2026-09-29T20:30:35.313546+00:00  19%|█▉        | 12/63 [03:36<15:19, 18.03s/it]AMP_STEP_AUDIT: {"step": 11, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [9.48902269785371e-06, 9.48902269785371e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 9.325551218353212e-06, "actual_update": true}
+2026-09-29T20:30:35.314101+00:00 
+2026-09-29T20:30:35.314136+00:00                                                
+2026-09-29T20:30:35.314151+00:00 {'loss': '0.695', 'grad_norm': '2.53', 'learning_rate': '9.489e-06', 'entropy': '1.132', 'num_tokens': '4.711e+04', 'logits/chosen': '-0.8669', 'logits/rejected': '-0.6914', 'mean_token_accuracy': '0.6485', 'rewards/chosen': '-0.007277', 'rewards/rejected': '-0.003633', 'rewards/accuracies': '0.5', 'rewards/margins': '-0.003645', 'logps/chosen': '-288.3', 'logps/rejected': '-138.1', 'epoch': '0.192'}
+2026-09-29T20:30:35.314269+00:00 
+2026-09-29T20:30:53.143073+00:00  19%|█▉        | 12/63 [03:36<15:19, 18.03s/it]
+2026-09-29T20:30:53.156884+00:00  21%|██        | 13/63 [03:54<14:58, 17.97s/it]AMP_STEP_AUDIT: {"step": 12, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [9.371733080722911e-06, 9.371733080722911e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 9.352341294288635e-06, "actual_update": true}
+2026-09-29T20:30:53.157396+00:00 
+2026-09-29T20:30:53.157432+00:00                                                
+2026-09-29T20:30:53.157445+00:00 {'loss': '0.6907', 'grad_norm': '2.196', 'learning_rate': '9.372e-06', 'entropy': '0.9869', 'num_tokens': '5.12e+04', 'logits/chosen': '-1.695', 'logits/rejected': '-0.9995', 'mean_token_accuracy': '0.7484', 'rewards/chosen': '-0.00277', 'rewards/rejected': '-0.007726', 'rewards/accuracies': '0.625', 'rewards/margins': '0.004956', 'logps/chosen': '-169.1', 'logps/rejected': '-217.3', 'epoch': '0.208'}
+2026-09-29T20:30:53.157546+00:00 
+2026-09-29T20:31:11.224995+00:00  21%|██        | 13/63 [03:54<14:58, 17.97s/it]
+2026-09-29T20:31:11.245165+00:00  22%|██▏       | 14/63 [04:12<14:42, 18.00s/it]AMP_STEP_AUDIT: {"step": 13, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [9.243221287473755e-06, 9.243221287473755e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 9.1882175183855e-06, "actual_update": true}
+2026-09-29T20:31:11.245787+00:00 
+2026-09-29T20:31:11.245886+00:00                                                
+2026-09-29T20:31:11.245917+00:00 {'loss': '0.6939', 'grad_norm': '1.96', 'learning_rate': '9.243e-06', 'entropy': '0.7763', 'num_tokens': '5.512e+04', 'logits/chosen': '-0.8223', 'logits/rejected': '-0.8631', 'mean_token_accuracy': '0.7542', 'rewards/chosen': '-0.003945', 'rewards/rejected': '-0.002507', 'rewards/accuracies': '0.375', 'rewards/margins': '-0.001438', 'logps/chosen': '-163', 'logps/rejected': '-144.6', 'epoch': '0.224'}
+2026-09-29T20:31:11.246099+00:00 
+2026-09-29T20:31:29.212929+00:00  22%|██▏       | 14/63 [04:12<14:42, 18.00s/it]
+2026-09-29T20:31:29.226520+00:00  24%|██▍       | 15/63 [04:30<14:23, 18.00s/it]AMP_STEP_AUDIT: {"step": 14, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [9.103817206036383e-06, 9.103817206036383e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 9.179115295410156e-06, "actual_update": true}
+2026-09-29T20:31:29.228920+00:00 
+2026-09-29T20:31:29.228943+00:00                                                
+2026-09-29T20:31:29.228957+00:00 {'loss': '0.6933', 'grad_norm': '2.156', 'learning_rate': '9.104e-06', 'entropy': '0.7674', 'num_tokens': '5.862e+04', 'logits/chosen': '-1.921', 'logits/rejected': '-1.314', 'mean_token_accuracy': '0.6616', 'rewards/chosen': '-0.0007007', 'rewards/rejected': '-0.0004248', 'rewards/accuracies': '0.625', 'rewards/margins': '-0.0002759', 'logps/chosen': '-126.9', 'logps/rejected': '-80.82', 'epoch': '0.24'}
+2026-09-29T20:31:29.228966+00:00 
+2026-09-29T20:31:46.962691+00:00  24%|██▍       | 15/63 [04:30<14:23, 18.00s/it]
+2026-09-29T20:31:46.984012+00:00  25%|██▌       | 16/63 [04:48<14:02, 17.92s/it]AMP_STEP_AUDIT: {"step": 15, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [8.953878684688492e-06, 8.953878684688492e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 9.132549166679382e-06, "actual_update": true}
+2026-09-29T20:31:46.984683+00:00 
+2026-09-29T20:31:46.984785+00:00                                                
+2026-09-29T20:31:46.984824+00:00 {'loss': '0.6917', 'grad_norm': '2.327', 'learning_rate': '8.954e-06', 'entropy': '0.9434', 'num_tokens': '6.225e+04', 'logits/chosen': '-1.116', 'logits/rejected': '-0.7534', 'mean_token_accuracy': '0.7087', 'rewards/chosen': '0.0008282', 'rewards/rejected': '-0.002166', 'rewards/accuracies': '0.75', 'rewards/margins': '0.002994', 'logps/chosen': '-146.2', 'logps/rejected': '-208.4', 'epoch': '0.256'}
+2026-09-29T20:31:46.985048+00:00 
+2026-09-29T20:32:04.921152+00:00  25%|██▌       | 16/63 [04:48<14:02, 17.92s/it]
+2026-09-29T20:32:04.934769+00:00  27%|██▋       | 17/63 [05:06<13:45, 17.93s/it]AMP_STEP_AUDIT: {"step": 16, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [8.793790613463956e-06, 8.793790613463956e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 9.160488843917847e-06, "actual_update": true}
+2026-09-29T20:32:04.935280+00:00 
+2026-09-29T20:32:04.935316+00:00                                                
+2026-09-29T20:32:04.935332+00:00 {'loss': '0.6909', 'grad_norm': '1.948', 'learning_rate': '8.794e-06', 'entropy': '0.9119', 'num_tokens': '6.597e+04', 'logits/chosen': '-1.236', 'logits/rejected': '-1.282', 'mean_token_accuracy': '0.7364', 'rewards/chosen': '-0.001313', 'rewards/rejected': '-0.005763', 'rewards/accuracies': '0.875', 'rewards/margins': '0.004451', 'logps/chosen': '-104.8', 'logps/rejected': '-126.5', 'epoch': '0.272'}
+2026-09-29T20:32:04.935423+00:00 
+2026-09-29T20:32:22.498879+00:00  27%|██▋       | 17/63 [05:06<13:45, 17.93s/it]
+2026-09-29T20:32:22.513421+00:00  29%|██▊       | 18/63 [05:23<13:22, 17.83s/it]AMP_STEP_AUDIT: {"step": 17, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [8.6239639361456e-06, 8.6239639361456e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 9.099021553993225e-06, "actual_update": true}
+2026-09-29T20:32:22.513978+00:00 
+2026-09-29T20:32:22.514017+00:00                                                
+2026-09-29T20:32:22.514034+00:00 {'loss': '0.6939', 'grad_norm': '1.949', 'learning_rate': '8.624e-06', 'entropy': '1.126', 'num_tokens': '6.918e+04', 'logits/chosen': '-1.312', 'logits/rejected': '-1.199', 'mean_token_accuracy': '0.6334', 'rewards/chosen': '-0.001523', 'rewards/rejected': '-2.797e-05', 'rewards/accuracies': '0.5', 'rewards/margins': '-0.001495', 'logps/chosen': '-133.3', 'logps/rejected': '-109.4', 'epoch': '0.288'}
+2026-09-29T20:32:22.514159+00:00 
+2026-09-29T20:32:40.352366+00:00  29%|██▊       | 18/63 [05:23<13:22, 17.83s/it]
+2026-09-29T20:32:40.375913+00:00  30%|███       | 19/63 [05:41<13:04, 17.84s/it]AMP_STEP_AUDIT: {"step": 18, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [8.444834595378434e-06, 8.444834595378434e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 8.868053555488586e-06, "actual_update": true}
+2026-09-29T20:32:40.376317+00:00 
+2026-09-29T20:32:40.376410+00:00                                                
+2026-09-29T20:32:40.376441+00:00 {'loss': '0.6909', 'grad_norm': '2.861', 'learning_rate': '8.445e-06', 'entropy': '1.109', 'num_tokens': '7.309e+04', 'logits/chosen': '-0.9784', 'logits/rejected': '-0.3749', 'mean_token_accuracy': '0.6394', 'rewards/chosen': '-0.002376', 'rewards/rejected': '-0.006933', 'rewards/accuracies': '0.625', 'rewards/margins': '0.004557', 'logps/chosen': '-101', 'logps/rejected': '-177.8', 'epoch': '0.304'}
+2026-09-29T20:32:40.376651+00:00 
+2026-09-29T20:32:57.715115+00:00  30%|███       | 19/63 [05:41<13:04, 17.84s/it]
+2026-09-29T20:32:57.728820+00:00  32%|███▏      | 20/63 [05:58<12:40, 17.69s/it]AMP_STEP_AUDIT: {"step": 19, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [8.256862413611113e-06, 8.256862413611113e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 8.735805749893188e-06, "actual_update": true}
+2026-09-29T20:32:57.729311+00:00 
+2026-09-29T20:32:57.729347+00:00                                                
+2026-09-29T20:32:57.729368+00:00 {'loss': '0.6892', 'grad_norm': '2.383', 'learning_rate': '8.257e-06', 'entropy': '0.9472', 'num_tokens': '7.593e+04', 'logits/chosen': '-1.513', 'logits/rejected': '-1.121', 'mean_token_accuracy': '0.7182', 'rewards/chosen': '-0.0005337', 'rewards/rejected': '-0.00854', 'rewards/accuracies': '0.875', 'rewards/margins': '0.008007', 'logps/chosen': '-116.1', 'logps/rejected': '-146.4', 'epoch': '0.32'}
+2026-09-29T20:32:57.729459+00:00 
+2026-09-29T20:33:15.605553+00:00  32%|███▏      | 20/63 [05:58<12:40, 17.69s/it]
+2026-09-29T20:33:15.620897+00:00  33%|███▎      | 21/63 [06:16<12:25, 17.75s/it]AMP_STEP_AUDIT: {"step": 20, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [8.060529912738316e-06, 8.060529912738316e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 8.645467460155487e-06, "actual_update": true}
+2026-09-29T20:33:15.621386+00:00 
+2026-09-29T20:33:15.621419+00:00                                                
+2026-09-29T20:33:15.621450+00:00 {'loss': '0.6918', 'grad_norm': '2.307', 'learning_rate': '8.061e-06', 'entropy': '0.9786', 'num_tokens': '8.01e+04', 'logits/chosen': '-1.236', 'logits/rejected': '-0.9451', 'mean_token_accuracy': '0.6477', 'rewards/chosen': '-0.001138', 'rewards/rejected': '-0.003937', 'rewards/accuracies': '0.625', 'rewards/margins': '0.0028', 'logps/chosen': '-220.6', 'logps/rejected': '-154.4', 'epoch': '0.336'}
+2026-09-29T20:33:15.621558+00:00 
+2026-09-29T20:33:33.608778+00:00  33%|███▎      | 21/63 [06:16<12:25, 17.75s/it]
+2026-09-29T20:33:33.622903+00:00  35%|███▍      | 22/63 [06:34<12:10, 17.83s/it]AMP_STEP_AUDIT: {"step": 21, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [7.856341075473963e-06, 7.856341075473963e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 8.307397365570068e-06, "actual_update": true}
+2026-09-29T20:33:33.623386+00:00 
+2026-09-29T20:33:33.623419+00:00                                                
+2026-09-29T20:33:33.623433+00:00 {'loss': '0.6954', 'grad_norm': '2.545', 'learning_rate': '7.856e-06', 'entropy': '1.094', 'num_tokens': '8.325e+04', 'logits/chosen': '-1.051', 'logits/rejected': '-0.3253', 'mean_token_accuracy': '0.6257', 'rewards/chosen': '-0.00897', 'rewards/rejected': '-0.00451', 'rewards/accuracies': '0.375', 'rewards/margins': '-0.00446', 'logps/chosen': '-155.4', 'logps/rejected': '-211.9', 'epoch': '0.352'}
+2026-09-29T20:33:33.623550+00:00 
+2026-09-29T20:33:51.869968+00:00  35%|███▍      | 22/63 [06:34<12:10, 17.83s/it]
+2026-09-29T20:33:51.884227+00:00  37%|███▋      | 23/63 [06:53<11:58, 17.96s/it]AMP_STEP_AUDIT: {"step": 22, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [7.644820051634813e-06, 7.644820051634813e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 8.162111043930054e-06, "actual_update": true}
+2026-09-29T20:33:51.884706+00:00 
+2026-09-29T20:33:51.884740+00:00                                                
+2026-09-29T20:33:51.884755+00:00 {'loss': '0.6897', 'grad_norm': '2.402', 'learning_rate': '7.645e-06', 'entropy': '0.9985', 'num_tokens': '8.787e+04', 'logits/chosen': '-0.5955', 'logits/rejected': '-1.289', 'mean_token_accuracy': '0.662', 'rewards/chosen': '-0.004084', 'rewards/rejected': '-0.01102', 'rewards/accuracies': '0.75', 'rewards/margins': '0.006935', 'logps/chosen': '-288', 'logps/rejected': '-210', 'epoch': '0.368'}
+2026-09-29T20:33:51.884880+00:00 
+2026-09-29T20:34:09.814794+00:00  37%|███▋      | 23/63 [06:53<11:58, 17.96s/it]
+2026-09-29T20:34:09.831953+00:00  38%|███▊      | 24/63 [07:11<11:40, 17.95s/it]AMP_STEP_AUDIT: {"step": 23, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [7.4265098126554065e-06, 7.4265098126554065e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 8.177012205123901e-06, "actual_update": true}
+2026-09-29T20:34:09.831986+00:00 
+2026-09-29T20:34:09.831998+00:00                                                
+2026-09-29T20:34:09.832010+00:00 {'loss': '0.6936', 'grad_norm': '1.745', 'learning_rate': '7.427e-06', 'entropy': '0.9444', 'num_tokens': '9.101e+04', 'logits/chosen': '-0.9508', 'logits/rejected': '-0.5043', 'mean_token_accuracy': '0.7171', 'rewards/chosen': '-0.006986', 'rewards/rejected': '-0.006219', 'rewards/accuracies': '0.5', 'rewards/margins': '-0.0007674', 'logps/chosen': '-172.9', 'logps/rejected': '-92.8', 'epoch': '0.384'}
+2026-09-29T20:34:09.832076+00:00 
+2026-09-29T20:34:27.754453+00:00  38%|███▊      | 24/63 [07:11<11:40, 17.95s/it]
+2026-09-29T20:34:27.768384+00:00  40%|███▉      | 25/63 [07:29<11:22, 17.95s/it]AMP_STEP_AUDIT: {"step": 24, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [7.201970757788172e-06, 7.201970757788172e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 8.022412657737732e-06, "actual_update": true}
+2026-09-29T20:34:27.768877+00:00 
+2026-09-29T20:34:27.768913+00:00                                                
+2026-09-29T20:34:27.768926+00:00 {'loss': '0.6863', 'grad_norm': '3.174', 'learning_rate': '7.202e-06', 'entropy': '1.046', 'num_tokens': '9.549e+04', 'logits/chosen': '-0.547', 'logits/rejected': '-1.095', 'mean_token_accuracy': '0.6345', 'rewards/chosen': '0.005327', 'rewards/rejected': '-0.008572', 'rewards/accuracies': '0.875', 'rewards/margins': '0.0139', 'logps/chosen': '-266.6', 'logps/rejected': '-200', 'epoch': '0.4'}
+2026-09-29T20:34:27.769031+00:00 
+2026-09-29T20:34:45.840977+00:00  40%|███▉      | 25/63 [07:29<11:22, 17.95s/it]
+2026-09-29T20:34:45.860240+00:00  41%|████▏     | 26/63 [07:47<11:05, 17.99s/it]AMP_STEP_AUDIT: {"step": 25, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [6.971779275566593e-06, 6.971779275566593e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 7.905066013336182e-06, "actual_update": true}
+2026-09-29T20:34:45.860818+00:00 
+2026-09-29T20:34:45.860913+00:00                                                
+2026-09-29T20:34:45.860937+00:00 {'loss': '0.6892', 'grad_norm': '2.317', 'learning_rate': '6.972e-06', 'entropy': '0.868', 'num_tokens': '9.999e+04', 'logits/chosen': '-1.17', 'logits/rejected': '-0.9993', 'mean_token_accuracy': '0.7259', 'rewards/chosen': '-0.008164', 'rewards/rejected': '-0.01607', 'rewards/accuracies': '0.625', 'rewards/margins': '0.007902', 'logps/chosen': '-189.8', 'logps/rejected': '-193', 'epoch': '0.416'}
+2026-09-29T20:34:45.861095+00:00 
+2026-09-29T20:35:03.697989+00:00  41%|████▏     | 26/63 [07:47<11:05, 17.99s/it]
+2026-09-29T20:35:03.712949+00:00  43%|████▎     | 27/63 [08:04<10:46, 17.95s/it]AMP_STEP_AUDIT: {"step": 26, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [6.736526264224101e-06, 6.736526264224101e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 7.754191756248474e-06, "actual_update": true}
+2026-09-29T20:35:03.712977+00:00 
+2026-09-29T20:35:03.712987+00:00                                                
+2026-09-29T20:35:03.712998+00:00 {'loss': '0.6911', 'grad_norm': '2.369', 'learning_rate': '6.737e-06', 'entropy': '1.093', 'num_tokens': '1.038e+05', 'logits/chosen': '-1.18', 'logits/rejected': '-0.9856', 'mean_token_accuracy': '0.6662', 'rewards/chosen': '-0.004969', 'rewards/rejected': '-0.009071', 'rewards/accuracies': '0.5', 'rewards/margins': '0.004102', 'logps/chosen': '-204.5', 'logps/rejected': '-212.3', 'epoch': '0.432'}
+2026-09-29T20:35:03.713005+00:00 
+2026-09-29T20:35:21.468000+00:00  43%|████▎     | 27/63 [08:04<10:46, 17.95s/it]
+2026-09-29T20:35:21.481742+00:00  44%|████▍     | 28/63 [08:22<10:26, 17.90s/it]AMP_STEP_AUDIT: {"step": 27, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [6.496815614866792e-06, 6.496815614866792e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 7.545575499534607e-06, "actual_update": true}
+2026-09-29T20:35:21.482273+00:00 
+2026-09-29T20:35:21.482313+00:00                                                
+2026-09-29T20:35:21.482327+00:00 {'loss': '0.6912', 'grad_norm': '2.435', 'learning_rate': '6.497e-06', 'entropy': '1.16', 'num_tokens': '1.074e+05', 'logits/chosen': '-1.395', 'logits/rejected': '-0.7789', 'mean_token_accuracy': '0.6548', 'rewards/chosen': '-0.007528', 'rewards/rejected': '-0.01148', 'rewards/accuracies': '0.625', 'rewards/margins': '0.003951', 'logps/chosen': '-172.3', 'logps/rejected': '-180.7', 'epoch': '0.448'}
+2026-09-29T20:35:21.482423+00:00 
+2026-09-29T20:35:39.094614+00:00  44%|████▍     | 28/63 [08:22<10:26, 17.90s/it]
+2026-09-29T20:35:39.109222+00:00  46%|████▌     | 29/63 [08:40<10:05, 17.82s/it]AMP_STEP_AUDIT: {"step": 28, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [6.2532626612936035e-06, 6.2532626612936035e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 6.6854991018772125e-06, "actual_update": true}
+2026-09-29T20:35:39.109710+00:00 
+2026-09-29T20:35:39.109745+00:00                                                
+2026-09-29T20:35:39.109758+00:00 {'loss': '0.6941', 'grad_norm': '2.784', 'learning_rate': '6.253e-06', 'entropy': '0.997', 'num_tokens': '1.109e+05', 'logits/chosen': '-1.561', 'logits/rejected': '-1.597', 'mean_token_accuracy': '0.6344', 'rewards/chosen': '-0.003995', 'rewards/rejected': '-0.002156', 'rewards/accuracies': '0.375', 'rewards/margins': '-0.001839', 'logps/chosen': '-133.9', 'logps/rejected': '-109.3', 'epoch': '0.464'}
+2026-09-29T20:35:39.109845+00:00 
+2026-09-29T20:35:56.913982+00:00  46%|████▌     | 29/63 [08:40<10:05, 17.82s/it]
+2026-09-29T20:35:56.928701+00:00  48%|████▊     | 30/63 [08:58<09:47, 17.82s/it]AMP_STEP_AUDIT: {"step": 29, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [6.006492600443301e-06, 6.006492600443301e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 6.5856147557497025e-06, "actual_update": true}
+2026-09-29T20:35:56.929191+00:00 
+2026-09-29T20:35:56.929226+00:00                                                
+2026-09-29T20:35:56.929239+00:00 {'loss': '0.6931', 'grad_norm': '2.03', 'learning_rate': '6.006e-06', 'entropy': '0.9723', 'num_tokens': '1.143e+05', 'logits/chosen': '-1.299', 'logits/rejected': '-1.131', 'mean_token_accuracy': '0.7121', 'rewards/chosen': '-0.01139', 'rewards/rejected': '-0.01147', 'rewards/accuracies': '0.75', 'rewards/margins': '7.958e-05', 'logps/chosen': '-85.37', 'logps/rejected': '-159.6', 'epoch': '0.48'}
+2026-09-29T20:35:56.929348+00:00 
+2026-09-29T20:36:14.714034+00:00  48%|████▊     | 30/63 [08:58<09:47, 17.82s/it]
+2026-09-29T20:36:14.736431+00:00  49%|████▉     | 31/63 [09:15<09:29, 17.81s/it]AMP_STEP_AUDIT: {"step": 30, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [5.757138887522884e-06, 5.757138887522884e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 6.468966603279114e-06, "actual_update": true}
+2026-09-29T20:36:14.737124+00:00 
+2026-09-29T20:36:14.737208+00:00                                                
+2026-09-29T20:36:14.737236+00:00 {'loss': '0.6916', 'grad_norm': '1.87', 'learning_rate': '5.757e-06', 'entropy': '0.6353', 'num_tokens': '1.178e+05', 'logits/chosen': '-0.9887', 'logits/rejected': '-0.7283', 'mean_token_accuracy': '0.8171', 'rewards/chosen': '-0.003454', 'rewards/rejected': '-0.006534', 'rewards/accuracies': '0.625', 'rewards/margins': '0.00308', 'logps/chosen': '-65.38', 'logps/rejected': '-87.78', 'epoch': '0.496'}
+2026-09-29T20:36:14.737443+00:00 
+2026-09-29T20:36:32.704492+00:00  49%|████▉     | 31/63 [09:15<09:29, 17.81s/it]
+2026-09-29T20:36:32.718598+00:00  51%|█████     | 32/63 [09:33<09:13, 17.87s/it]AMP_STEP_AUDIT: {"step": 31, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [5.505841609937162e-06, 5.505841609937162e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 6.2911713030189276e-06, "actual_update": true}
+2026-09-29T20:36:32.719099+00:00 
+2026-09-29T20:36:32.719135+00:00                                                
+2026-09-29T20:36:32.719150+00:00 {'loss': '0.6875', 'grad_norm': '2.396', 'learning_rate': '5.506e-06', 'entropy': '0.9406', 'num_tokens': '1.216e+05', 'logits/chosen': '-1.387', 'logits/rejected': '-0.01221', 'mean_token_accuracy': '0.7979', 'rewards/chosen': '-0.003575', 'rewards/rejected': '-0.01495', 'rewards/accuracies': '0.875', 'rewards/margins': '0.01137', 'logps/chosen': '-99.61', 'logps/rejected': '-148.8', 'epoch': '0.512'}
+2026-09-29T20:36:32.719238+00:00 
+2026-09-29T20:36:50.936011+00:00  51%|█████     | 32/63 [09:33<09:13, 17.87s/it]
+2026-09-29T20:36:50.959117+00:00  52%|█████▏    | 33/63 [09:52<08:59, 17.97s/it]AMP_STEP_AUDIT: {"step": 32, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [5.253245844193564e-06, 5.253245844193564e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 6.167218089103699e-06, "actual_update": true}
+2026-09-29T20:36:50.960130+00:00 
+2026-09-29T20:36:50.960224+00:00                                                
+2026-09-29T20:36:50.960260+00:00 {'loss': '0.6893', 'grad_norm': '2.362', 'learning_rate': '5.253e-06', 'entropy': '0.9345', 'num_tokens': '1.266e+05', 'logits/chosen': '-1.265', 'logits/rejected': '-1.218', 'mean_token_accuracy': '0.69', 'rewards/chosen': '-0.001066', 'rewards/rejected': '-0.008913', 'rewards/accuracies': '0.625', 'rewards/margins': '0.007847', 'logps/chosen': '-233.8', 'logps/rejected': '-244.9', 'epoch': '0.528'}
+2026-09-29T20:36:50.960471+00:00 
+2026-09-29T20:37:09.125016+00:00  52%|█████▏    | 33/63 [09:52<08:59, 17.97s/it]
+2026-09-29T20:37:09.139640+00:00  54%|█████▍    | 34/63 [10:10<08:43, 18.04s/it]AMP_STEP_AUDIT: {"step": 33, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [5e-06, 5e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 6.01448118686676e-06, "actual_update": true}
+2026-09-29T20:37:09.140131+00:00 
+2026-09-29T20:37:09.140168+00:00                                                
+2026-09-29T20:37:09.140182+00:00 {'loss': '0.6905', 'grad_norm': '2.713', 'learning_rate': '5e-06', 'entropy': '0.7764', 'num_tokens': '1.306e+05', 'logits/chosen': '-1.426', 'logits/rejected': '-1.171', 'mean_token_accuracy': '0.7378', 'rewards/chosen': '-0.01081', 'rewards/rejected': '-0.01616', 'rewards/accuracies': '0.625', 'rewards/margins': '0.005351', 'logps/chosen': '-134.6', 'logps/rejected': '-202', 'epoch': '0.544'}
+2026-09-29T20:37:09.140253+00:00 
+2026-09-29T20:37:26.960398+00:00  54%|█████▍    | 34/63 [10:10<08:43, 18.04s/it]
+2026-09-29T20:37:26.975088+00:00  56%|█████▌    | 35/63 [10:28<08:23, 17.98s/it]AMP_STEP_AUDIT: {"step": 34, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [4.746754155806437e-06, 4.746754155806437e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 5.649402737617493e-06, "actual_update": true}
+2026-09-29T20:37:26.975569+00:00 
+2026-09-29T20:37:26.975604+00:00                                                
+2026-09-29T20:37:26.975617+00:00 {'loss': '0.6905', 'grad_norm': '2.766', 'learning_rate': '4.747e-06', 'entropy': '1.142', 'num_tokens': '1.346e+05', 'logits/chosen': '-0.9403', 'logits/rejected': '-0.8964', 'mean_token_accuracy': '0.648', 'rewards/chosen': '-0.009426', 'rewards/rejected': '-0.01493', 'rewards/accuracies': '0.75', 'rewards/margins': '0.005508', 'logps/chosen': '-305.4', 'logps/rejected': '-180.1', 'epoch': '0.56'}
+2026-09-29T20:37:26.975706+00:00 
+2026-09-29T20:37:45.881354+00:00  56%|█████▌    | 35/63 [10:28<08:23, 17.98s/it]
+2026-09-29T20:37:45.896006+00:00  57%|█████▋    | 36/63 [10:47<08:13, 18.26s/it]AMP_STEP_AUDIT: {"step": 35, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [4.49415839006284e-06, 4.49415839006284e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 5.327165126800537e-06, "actual_update": true}
+2026-09-29T20:37:45.896478+00:00 
+2026-09-29T20:37:45.896522+00:00                                                
+2026-09-29T20:37:45.896535+00:00 {'loss': '0.6945', 'grad_norm': '2.437', 'learning_rate': '4.494e-06', 'entropy': '0.9788', 'num_tokens': '1.395e+05', 'logits/chosen': '-1.368', 'logits/rejected': '-0.3752', 'mean_token_accuracy': '0.7559', 'rewards/chosen': '-0.01234', 'rewards/rejected': '-0.009734', 'rewards/accuracies': '0.625', 'rewards/margins': '-0.002602', 'logps/chosen': '-238.8', 'logps/rejected': '-128.1', 'epoch': '0.576'}
+2026-09-29T20:37:45.896635+00:00 
+2026-09-29T20:38:03.905710+00:00  57%|█████▋    | 36/63 [10:47<08:13, 18.26s/it]
+2026-09-29T20:38:03.920953+00:00  59%|█████▊    | 37/63 [11:05<07:52, 18.19s/it]AMP_STEP_AUDIT: {"step": 36, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [4.2428611124771184e-06, 4.2428611124771184e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 5.0049275159835815e-06, "actual_update": true}
+2026-09-29T20:38:03.920980+00:00 
+2026-09-29T20:38:03.920991+00:00                                                
+2026-09-29T20:38:03.921002+00:00 {'loss': '0.6886', 'grad_norm': '3.023', 'learning_rate': '4.243e-06', 'entropy': '0.8594', 'num_tokens': '1.44e+05', 'logits/chosen': '-0.7947', 'logits/rejected': '-0.4895', 'mean_token_accuracy': '0.7139', 'rewards/chosen': '-0.007861', 'rewards/rejected': '-0.01701', 'rewards/accuracies': '0.75', 'rewards/margins': '0.009153', 'logps/chosen': '-257.5', 'logps/rejected': '-172.3', 'epoch': '0.592'}
+2026-09-29T20:38:03.921011+00:00 
+2026-09-29T20:38:22.461563+00:00  59%|█████▊    | 37/63 [11:05<07:52, 18.19s/it]
+2026-09-29T20:38:22.476697+00:00  60%|██████    | 38/63 [11:23<07:37, 18.30s/it]AMP_STEP_AUDIT: {"step": 37, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [3.993507399556699e-06, 3.993507399556699e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 4.8074871301651e-06, "actual_update": true}
+2026-09-29T20:38:22.477241+00:00 
+2026-09-29T20:38:22.477277+00:00                                                
+2026-09-29T20:38:22.477290+00:00 {'loss': '0.696', 'grad_norm': '2.503', 'learning_rate': '3.994e-06', 'entropy': '0.9376', 'num_tokens': '1.482e+05', 'logits/chosen': '-0.9965', 'logits/rejected': '-0.8244', 'mean_token_accuracy': '0.6846', 'rewards/chosen': '-0.01391', 'rewards/rejected': '-0.008356', 'rewards/accuracies': '0.375', 'rewards/margins': '-0.00555', 'logps/chosen': '-285.8', 'logps/rejected': '-112.9', 'epoch': '0.608'}
+2026-09-29T20:38:22.477386+00:00 
+2026-09-29T20:38:40.041251+00:00  60%|██████    | 38/63 [11:23<07:37, 18.30s/it]
+2026-09-29T20:38:40.055590+00:00  62%|██████▏   | 39/63 [11:41<07:14, 18.08s/it]AMP_STEP_AUDIT: {"step": 38, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [3.7467373387063973e-06, 3.7467373387063973e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 4.7031790018081665e-06, "actual_update": true}
+2026-09-29T20:38:40.056088+00:00 
+2026-09-29T20:38:40.056123+00:00                                                
+2026-09-29T20:38:40.056136+00:00 {'loss': '0.6877', 'grad_norm': '2.978', 'learning_rate': '3.747e-06', 'entropy': '1.068', 'num_tokens': '1.521e+05', 'logits/chosen': '-1.266', 'logits/rejected': '-0.9112', 'mean_token_accuracy': '0.682', 'rewards/chosen': '-0.005498', 'rewards/rejected': '-0.01642', 'rewards/accuracies': '0.75', 'rewards/margins': '0.01092', 'logps/chosen': '-123', 'logps/rejected': '-221', 'epoch': '0.624'}
+2026-09-29T20:38:40.056202+00:00 
+2026-09-29T20:38:58.058982+00:00  62%|██████▏   | 39/63 [11:41<07:14, 18.08s/it]
+2026-09-29T20:38:58.079415+00:00  63%|██████▎   | 40/63 [11:59<06:55, 18.06s/it]AMP_STEP_AUDIT: {"step": 39, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [3.5031843851332105e-06, 3.5031843851332105e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 4.393979907035828e-06, "actual_update": true}
+2026-09-29T20:38:58.080011+00:00 
+2026-09-29T20:38:58.080079+00:00                                                
+2026-09-29T20:38:58.080104+00:00 {'loss': '0.6926', 'grad_norm': '2.613', 'learning_rate': '3.503e-06', 'entropy': '1.105', 'num_tokens': '1.562e+05', 'logits/chosen': '-0.9552', 'logits/rejected': '-0.9191', 'mean_token_accuracy': '0.6765', 'rewards/chosen': '-0.009198', 'rewards/rejected': '-0.01038', 'rewards/accuracies': '0.5', 'rewards/margins': '0.001185', 'logps/chosen': '-208.7', 'logps/rejected': '-252', 'epoch': '0.64'}
+2026-09-29T20:38:58.080254+00:00 
+2026-09-29T20:39:15.901189+00:00  63%|██████▎   | 40/63 [11:59<06:55, 18.06s/it]
+2026-09-29T20:39:15.918972+00:00  65%|██████▌   | 41/63 [12:17<06:35, 18.00s/it]AMP_STEP_AUDIT: {"step": 40, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [3.2634737357758994e-06, 3.2634737357758994e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 4.03914600610733e-06, "actual_update": true}
+2026-09-29T20:39:15.919008+00:00 
+2026-09-29T20:39:15.919023+00:00                                                
+2026-09-29T20:39:15.919040+00:00 {'loss': '0.6937', 'grad_norm': '1.941', 'learning_rate': '3.263e-06', 'entropy': '1.08', 'num_tokens': '1.598e+05', 'logits/chosen': '-1.313', 'logits/rejected': '-0.4576', 'mean_token_accuracy': '0.6634', 'rewards/chosen': '-0.01002', 'rewards/rejected': '-0.008955', 'rewards/accuracies': '0.5', 'rewards/margins': '-0.001064', 'logps/chosen': '-167.5', 'logps/rejected': '-152.9', 'epoch': '0.656'}
+2026-09-29T20:39:15.919050+00:00 
+2026-09-29T20:39:33.351725+00:00  65%|██████▌   | 41/63 [12:17<06:35, 18.00s/it]
+2026-09-29T20:39:33.366232+00:00  67%|██████▋   | 42/63 [12:34<06:14, 17.83s/it]AMP_STEP_AUDIT: {"step": 41, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [3.0282207244334084e-06, 3.0282207244334084e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 3.877095878124237e-06, "actual_update": true}
+2026-09-29T20:39:33.366704+00:00 
+2026-09-29T20:39:33.366740+00:00                                                
+2026-09-29T20:39:33.366754+00:00 {'loss': '0.6906', 'grad_norm': '2.258', 'learning_rate': '3.028e-06', 'entropy': '1.158', 'num_tokens': '1.63e+05', 'logits/chosen': '-1.261', 'logits/rejected': '-0.7223', 'mean_token_accuracy': '0.6697', 'rewards/chosen': '-0.01009', 'rewards/rejected': '-0.01525', 'rewards/accuracies': '0.75', 'rewards/margins': '0.005163', 'logps/chosen': '-205.7', 'logps/rejected': '-200.4', 'epoch': '0.672'}
+2026-09-29T20:39:33.366855+00:00 
+2026-09-29T20:39:52.171008+00:00  67%|██████▋   | 42/63 [12:34<06:14, 17.83s/it]
+2026-09-29T20:39:52.186220+00:00  68%|██████▊   | 43/63 [12:53<06:02, 18.13s/it]AMP_STEP_AUDIT: {"step": 42, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [2.7980292422118282e-06, 2.7980292422118282e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 3.4477561712265015e-06, "actual_update": true}
+2026-09-29T20:39:52.186706+00:00 
+2026-09-29T20:39:52.186740+00:00                                                
+2026-09-29T20:39:52.186761+00:00 {'loss': '0.6899', 'grad_norm': '2.243', 'learning_rate': '2.798e-06', 'entropy': '0.9513', 'num_tokens': '1.677e+05', 'logits/chosen': '-1.091', 'logits/rejected': '-0.6229', 'mean_token_accuracy': '0.7149', 'rewards/chosen': '-0.006596', 'rewards/rejected': '-0.01324', 'rewards/accuracies': '0.625', 'rewards/margins': '0.006649', 'logps/chosen': '-180.5', 'logps/rejected': '-188.6', 'epoch': '0.688'}
+2026-09-29T20:39:52.186847+00:00 
+2026-09-29T20:40:10.398642+00:00  68%|██████▊   | 43/63 [12:53<06:02, 18.13s/it]
+2026-09-29T20:40:10.413562+00:00  70%|██████▉   | 44/63 [13:11<05:45, 18.16s/it]AMP_STEP_AUDIT: {"step": 43, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [2.573490187344596e-06, 2.573490187344596e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 3.259163349866867e-06, "actual_update": true}
+2026-09-29T20:40:10.414061+00:00 
+2026-09-29T20:40:10.414097+00:00                                                
+2026-09-29T20:40:10.414111+00:00 {'loss': '0.6897', 'grad_norm': '2.63', 'learning_rate': '2.573e-06', 'entropy': '1.118', 'num_tokens': '1.717e+05', 'logits/chosen': '-1.056', 'logits/rejected': '-0.8032', 'mean_token_accuracy': '0.7122', 'rewards/chosen': '-0.008261', 'rewards/rejected': '-0.01528', 'rewards/accuracies': '0.5', 'rewards/margins': '0.007017', 'logps/chosen': '-196.5', 'logps/rejected': '-182.9', 'epoch': '0.704'}
+2026-09-29T20:40:10.414182+00:00 
+2026-09-29T20:40:27.880045+00:00  70%|██████▉   | 44/63 [13:11<05:45, 18.16s/it]
+2026-09-29T20:40:27.903897+00:00  71%|███████▏  | 45/63 [13:29<05:23, 17.96s/it]AMP_STEP_AUDIT: {"step": 44, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [2.3551799483651894e-06, 2.3551799483651894e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 3.0212104320526123e-06, "actual_update": true}
+2026-09-29T20:40:27.904608+00:00 
+2026-09-29T20:40:27.904695+00:00                                                
+2026-09-29T20:40:27.904726+00:00 {'loss': '0.6889', 'grad_norm': '2.091', 'learning_rate': '2.355e-06', 'entropy': '1.017', 'num_tokens': '1.744e+05', 'logits/chosen': '-1.433', 'logits/rejected': '-1.194', 'mean_token_accuracy': '0.6747', 'rewards/chosen': '-0.004263', 'rewards/rejected': '-0.0129', 'rewards/accuracies': '0.5', 'rewards/margins': '0.008633', 'logps/chosen': '-106.4', 'logps/rejected': '-103.9', 'epoch': '0.72'}
+2026-09-29T20:40:27.904948+00:00 
+2026-09-29T20:40:46.484482+00:00  71%|███████▏  | 45/63 [13:29<05:23, 17.96s/it]
+2026-09-29T20:40:46.499925+00:00  73%|███████▎  | 46/63 [13:47<05:08, 18.15s/it]AMP_STEP_AUDIT: {"step": 45, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [2.1436589245260375e-06, 2.1436589245260375e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 2.812594175338745e-06, "actual_update": true}
+2026-09-29T20:40:46.500457+00:00 
+2026-09-29T20:40:46.500495+00:00                                                
+2026-09-29T20:40:46.500509+00:00 {'loss': '0.6887', 'grad_norm': '2.49', 'learning_rate': '2.144e-06', 'entropy': '0.7939', 'num_tokens': '1.797e+05', 'logits/chosen': '-0.9183', 'logits/rejected': '-0.5872', 'mean_token_accuracy': '0.7782', 'rewards/chosen': '-0.01106', 'rewards/rejected': '-0.02017', 'rewards/accuracies': '0.625', 'rewards/margins': '0.009111', 'logps/chosen': '-206.2', 'logps/rejected': '-186', 'epoch': '0.736'}
+2026-09-29T20:40:46.500600+00:00 
+2026-09-29T20:41:04.461000+00:00  73%|███████▎  | 46/63 [13:47<05:08, 18.15s/it]
+2026-09-29T20:41:04.483682+00:00  75%|███████▍  | 47/63 [14:05<04:49, 18.10s/it]AMP_STEP_AUDIT: {"step": 46, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [1.9394700872616856e-06, 1.9394700872616856e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 2.6337802410125732e-06, "actual_update": true}
+2026-09-29T20:41:04.484968+00:00 
+2026-09-29T20:41:04.485069+00:00                                                
+2026-09-29T20:41:04.485098+00:00 {'loss': '0.6874', 'grad_norm': '2.325', 'learning_rate': '1.939e-06', 'entropy': '0.9185', 'num_tokens': '1.833e+05', 'logits/chosen': '-1.219', 'logits/rejected': '-0.6699', 'mean_token_accuracy': '0.7057', 'rewards/chosen': '-0.003742', 'rewards/rejected': '-0.01528', 'rewards/accuracies': '0.875', 'rewards/margins': '0.01153', 'logps/chosen': '-222.3', 'logps/rejected': '-170.8', 'epoch': '0.752'}
+2026-09-29T20:41:04.485293+00:00 
+2026-09-29T20:41:23.301753+00:00  75%|███████▍  | 47/63 [14:05<04:49, 18.10s/it]
+2026-09-29T20:41:23.316966+00:00  76%|███████▌  | 48/63 [14:24<04:34, 18.32s/it]AMP_STEP_AUDIT: {"step": 47, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [1.74313758638889e-06, 1.74313758638889e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 2.3562461137771606e-06, "actual_update": true}
+2026-09-29T20:41:23.316997+00:00 
+2026-09-29T20:41:23.317010+00:00                                                
+2026-09-29T20:41:23.317024+00:00 {'loss': '0.6974', 'grad_norm': '2.911', 'learning_rate': '1.743e-06', 'entropy': '0.6819', 'num_tokens': '1.885e+05', 'logits/chosen': '-1.376', 'logits/rejected': '-1.111', 'mean_token_accuracy': '0.7945', 'rewards/chosen': '-0.02025', 'rewards/rejected': '-0.01192', 'rewards/accuracies': '0.375', 'rewards/margins': '-0.008328', 'logps/chosen': '-224', 'logps/rejected': '-182.4', 'epoch': '0.768'}
+2026-09-29T20:41:23.317035+00:00 
+2026-09-29T20:41:40.927971+00:00  76%|███████▌  | 48/63 [14:24<04:34, 18.32s/it]
+2026-09-29T20:41:40.942873+00:00  78%|███████▊  | 49/63 [14:42<04:13, 18.11s/it]AMP_STEP_AUDIT: {"step": 48, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [1.555165404621567e-06, 1.555165404621567e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 2.074986696243286e-06, "actual_update": true}
+2026-09-29T20:41:40.943396+00:00 
+2026-09-29T20:41:40.943434+00:00                                                
+2026-09-29T20:41:40.943450+00:00 {'loss': '0.688', 'grad_norm': '2.475', 'learning_rate': '1.555e-06', 'entropy': '1.297', 'num_tokens': '1.926e+05', 'logits/chosen': '-0.7315', 'logits/rejected': '-1.067', 'mean_token_accuracy': '0.6071', 'rewards/chosen': '-0.006551', 'rewards/rejected': '-0.01695', 'rewards/accuracies': '0.625', 'rewards/margins': '0.0104', 'logps/chosen': '-306.5', 'logps/rejected': '-224.8', 'epoch': '0.784'}
+2026-09-29T20:41:40.943571+00:00 
+2026-09-29T20:41:59.496772+00:00  78%|███████▊  | 49/63 [14:42<04:13, 18.11s/it]
+2026-09-29T20:41:59.512944+00:00  79%|███████▉  | 50/63 [15:00<03:57, 18.25s/it]AMP_STEP_AUDIT: {"step": 49, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [1.3760360638544012e-06, 1.3760360638544012e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 1.7154961824417114e-06, "actual_update": true}
+2026-09-29T20:41:59.512966+00:00 
+2026-09-29T20:41:59.512974+00:00                                                
+2026-09-29T20:41:59.512983+00:00 {'loss': '0.7001', 'grad_norm': '3.006', 'learning_rate': '1.376e-06', 'entropy': '1.11', 'num_tokens': '1.977e+05', 'logits/chosen': '-0.7384', 'logits/rejected': '-0.5048', 'mean_token_accuracy': '0.6646', 'rewards/chosen': '-0.01848', 'rewards/rejected': '-0.004847', 'rewards/accuracies': '0.25', 'rewards/margins': '-0.01363', 'logps/chosen': '-323.9', 'logps/rejected': '-256.2', 'epoch': '0.8'}
+2026-09-29T20:41:59.512989+00:00 
+2026-09-29T20:42:17.515881+00:00  79%|███████▉  | 50/63 [15:00<03:57, 18.25s/it]
+2026-09-29T20:42:17.531948+00:00  81%|████████  | 51/63 [15:18<03:38, 18.18s/it]AMP_STEP_AUDIT: {"step": 50, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [1.2062093865360458e-06, 1.2062093865360458e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 1.4994293451309204e-06, "actual_update": true}
+2026-09-29T20:42:17.531979+00:00 
+2026-09-29T20:42:17.531991+00:00                                                
+2026-09-29T20:42:17.532003+00:00 {'loss': '0.69', 'grad_norm': '1.893', 'learning_rate': '1.206e-06', 'entropy': '0.6669', 'num_tokens': '2.011e+05', 'logits/chosen': '-1.542', 'logits/rejected': '-1.225', 'mean_token_accuracy': '0.7592', 'rewards/chosen': '-0.006252', 'rewards/rejected': '-0.01274', 'rewards/accuracies': '0.625', 'rewards/margins': '0.006487', 'logps/chosen': '-109.6', 'logps/rejected': '-91.15', 'epoch': '0.816'}
+2026-09-29T20:42:17.532012+00:00 
+2026-09-29T20:42:35.461712+00:00  81%|████████  | 51/63 [15:18<03:38, 18.18s/it]
+2026-09-29T20:42:35.476529+00:00  83%|████████▎ | 52/63 [15:36<03:19, 18.11s/it]AMP_STEP_AUDIT: {"step": 51, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [1.046121315311508e-06, 1.046121315311508e-06], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 1.3262033462524414e-06, "actual_update": true}
+2026-09-29T20:42:35.477036+00:00 
+2026-09-29T20:42:35.477073+00:00                                                
+2026-09-29T20:42:35.477088+00:00 {'loss': '0.687', 'grad_norm': '2.408', 'learning_rate': '1.046e-06', 'entropy': '0.8506', 'num_tokens': '2.055e+05', 'logits/chosen': '-0.8906', 'logits/rejected': '-1.076', 'mean_token_accuracy': '0.717', 'rewards/chosen': '-0.001114', 'rewards/rejected': '-0.01348', 'rewards/accuracies': '0.75', 'rewards/margins': '0.01237', 'logps/chosen': '-211.9', 'logps/rejected': '-166.7', 'epoch': '0.832'}
+2026-09-29T20:42:35.477198+00:00 
+2026-09-29T20:42:53.236738+00:00  83%|████████▎ | 52/63 [15:36<03:19, 18.11s/it]
+2026-09-29T20:42:53.252957+00:00  84%|████████▍ | 53/63 [15:54<03:00, 18.01s/it]AMP_STEP_AUDIT: {"step": 52, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [8.961827939636198e-07, 8.961827939636198e-07], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 1.1730007827281952e-06, "actual_update": true}
+2026-09-29T20:42:53.252989+00:00 
+2026-09-29T20:42:53.253000+00:00                                                
+2026-09-29T20:42:53.253012+00:00 {'loss': '0.6943', 'grad_norm': '2.602', 'learning_rate': '8.962e-07', 'entropy': '1.202', 'num_tokens': '2.094e+05', 'logits/chosen': '-1.143', 'logits/rejected': '0.04232', 'mean_token_accuracy': '0.6925', 'rewards/chosen': '-0.02134', 'rewards/rejected': '-0.01911', 'rewards/accuracies': '0.5', 'rewards/margins': '-0.00223', 'logps/chosen': '-161.1', 'logps/rejected': '-275.4', 'epoch': '0.848'}
+2026-09-29T20:42:53.253020+00:00 
+2026-09-29T20:43:11.016649+00:00  84%|████████▍ | 53/63 [15:54<03:00, 18.01s/it]
+2026-09-29T20:43:11.041921+00:00  86%|████████▌ | 54/63 [16:12<02:41, 17.94s/it]AMP_STEP_AUDIT: {"step": 53, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [7.567787125262449e-07, 7.567787125262449e-07], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 9.746290743350983e-07, "actual_update": true}
+2026-09-29T20:43:11.041953+00:00 
+2026-09-29T20:43:11.041964+00:00                                                
+2026-09-29T20:43:11.041978+00:00 {'loss': '0.6959', 'grad_norm': '2.292', 'learning_rate': '7.568e-07', 'entropy': '0.9383', 'num_tokens': '2.131e+05', 'logits/chosen': '-1.142', 'logits/rejected': '-0.9996', 'mean_token_accuracy': '0.6738', 'rewards/chosen': '-0.01481', 'rewards/rejected': '-0.009495', 'rewards/accuracies': '0.375', 'rewards/margins': '-0.00532', 'logps/chosen': '-174.1', 'logps/rejected': '-225.1', 'epoch': '0.864'}
+2026-09-29T20:43:11.042028+00:00 
+2026-09-29T20:43:28.808524+00:00  86%|████████▌ | 54/63 [16:12<02:41, 17.94s/it]
+2026-09-29T20:43:28.824956+00:00  87%|████████▋ | 55/63 [16:30<02:23, 17.90s/it]AMP_STEP_AUDIT: {"step": 54, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [6.282669192770896e-07, 6.282669192770896e-07], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 8.121132850646973e-07, "actual_update": true}
+2026-09-29T20:43:28.824988+00:00 
+2026-09-29T20:43:28.824999+00:00                                                
+2026-09-29T20:43:28.825011+00:00 {'loss': '0.6914', 'grad_norm': '2.094', 'learning_rate': '6.283e-07', 'entropy': '1.306', 'num_tokens': '2.165e+05', 'logits/chosen': '-1.293', 'logits/rejected': '-1.008', 'mean_token_accuracy': '0.6611', 'rewards/chosen': '-0.009689', 'rewards/rejected': '-0.01331', 'rewards/accuracies': '0.625', 'rewards/margins': '0.003619', 'logps/chosen': '-144.5', 'logps/rejected': '-201.5', 'epoch': '0.88'}
+2026-09-29T20:43:28.825038+00:00 
+2026-09-29T20:43:46.807756+00:00  87%|████████▋ | 55/63 [16:30<02:23, 17.90s/it]
+2026-09-29T20:43:46.829195+00:00  89%|████████▉ | 56/63 [16:48<02:05, 17.93s/it]AMP_STEP_AUDIT: {"step": 55, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [5.109773021462921e-07, 5.109773021462921e-07], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 6.48200511932373e-07, "actual_update": true}
+2026-09-29T20:43:46.829684+00:00 
+2026-09-29T20:43:46.829718+00:00                                                
+2026-09-29T20:43:46.829732+00:00 {'loss': '0.6893', 'grad_norm': '2.454', 'learning_rate': '5.11e-07', 'entropy': '1.074', 'num_tokens': '2.205e+05', 'logits/chosen': '-1.138', 'logits/rejected': '-1.178', 'mean_token_accuracy': '0.7102', 'rewards/chosen': '-0.009127', 'rewards/rejected': '-0.01703', 'rewards/accuracies': '0.5', 'rewards/margins': '0.007898', 'logps/chosen': '-231.7', 'logps/rejected': '-197', 'epoch': '0.896'}
+2026-09-29T20:43:46.829846+00:00 
+2026-09-29T20:44:05.160206+00:00  89%|████████▉ | 56/63 [16:48<02:05, 17.93s/it]
+2026-09-29T20:44:05.175414+00:00  90%|█████████ | 57/63 [17:06<01:48, 18.05s/it]AMP_STEP_AUDIT: {"step": 56, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [4.05210941898847e-07, 4.05210941898847e-07], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 5.387119017541409e-07, "actual_update": true}
+2026-09-29T20:44:05.175902+00:00 
+2026-09-29T20:44:05.175938+00:00                                                
+2026-09-29T20:44:05.175952+00:00 {'loss': '0.6838', 'grad_norm': '2.69', 'learning_rate': '4.052e-07', 'entropy': '0.9986', 'num_tokens': '2.254e+05', 'logits/chosen': '-1.303', 'logits/rejected': '-0.7766', 'mean_token_accuracy': '0.7087', 'rewards/chosen': '-0.004286', 'rewards/rejected': '-0.02328', 'rewards/accuracies': '0.875', 'rewards/margins': '0.01899', 'logps/chosen': '-183.6', 'logps/rejected': '-239.3', 'epoch': '0.912'}
+2026-09-29T20:44:05.176059+00:00 
+2026-09-29T20:44:22.647026+00:00  90%|█████████ | 57/63 [17:06<01:48, 18.05s/it]
+2026-09-29T20:44:22.664409+00:00  92%|█████████▏| 58/63 [17:23<01:29, 17.88s/it]AMP_STEP_AUDIT: {"step": 57, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [3.112393392645985e-07, 3.112393392645985e-07], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 4.01865690946579e-07, "actual_update": true}
+2026-09-29T20:44:22.665175+00:00 
+2026-09-29T20:44:22.665215+00:00                                                
+2026-09-29T20:44:22.665231+00:00 {'loss': '0.6935', 'grad_norm': '1.576', 'learning_rate': '3.112e-07', 'entropy': '0.8517', 'num_tokens': '2.277e+05', 'logits/chosen': '-1.697', 'logits/rejected': '-1.607', 'mean_token_accuracy': '0.6886', 'rewards/chosen': '-0.006274', 'rewards/rejected': '-0.005497', 'rewards/accuracies': '0.5', 'rewards/margins': '-0.0007766', 'logps/chosen': '-124.1', 'logps/rejected': '-94.04', 'epoch': '0.928'}
+2026-09-29T20:44:22.665925+00:00 
+2026-09-29T20:44:40.854416+00:00  92%|█████████▏| 58/63 [17:23<01:29, 17.88s/it]
+2026-09-29T20:44:40.879948+00:00  94%|█████████▎| 59/63 [17:42<01:11, 17.98s/it]AMP_STEP_AUDIT: {"step": 58, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [2.2930371799975593e-07, 2.2930371799975593e-07], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 2.9616057872772217e-07, "actual_update": true}
+2026-09-29T20:44:40.879980+00:00 
+2026-09-29T20:44:40.879990+00:00                                                
+2026-09-29T20:44:40.880002+00:00 {'loss': '0.7014', 'grad_norm': '2.283', 'learning_rate': '2.293e-07', 'entropy': '0.7024', 'num_tokens': '2.316e+05', 'logits/chosen': '-1.339', 'logits/rejected': '-0.9358', 'mean_token_accuracy': '0.7623', 'rewards/chosen': '-0.02535', 'rewards/rejected': '-0.009122', 'rewards/accuracies': '0.25', 'rewards/margins': '-0.01623', 'logps/chosen': '-123.2', 'logps/rejected': '-165.3', 'epoch': '0.944'}
+2026-09-29T20:44:40.880011+00:00 
+2026-09-29T20:44:59.059096+00:00  94%|█████████▎| 59/63 [17:42<01:11, 17.98s/it]
+2026-09-29T20:44:59.075270+00:00  95%|█████████▌| 60/63 [18:00<00:54, 18.05s/it]AMP_STEP_AUDIT: {"step": 59, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [1.5961440566897913e-07, 1.5961440566897913e-07], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 1.8812716007232666e-07, "actual_update": true}
+2026-09-29T20:44:59.075820+00:00 
+2026-09-29T20:44:59.075888+00:00                                                
+2026-09-29T20:44:59.075905+00:00 {'loss': '0.6933', 'grad_norm': '2.569', 'learning_rate': '1.596e-07', 'entropy': '1.157', 'num_tokens': '2.365e+05', 'logits/chosen': '-1.243', 'logits/rejected': '-0.8034', 'mean_token_accuracy': '0.6451', 'rewards/chosen': '-0.01441', 'rewards/rejected': '-0.01413', 'rewards/accuracies': '0.375', 'rewards/margins': '-0.0002728', 'logps/chosen': '-286', 'logps/rejected': '-269.7', 'epoch': '0.96'}
+2026-09-29T20:44:59.076011+00:00 
+2026-09-29T20:45:16.894585+00:00  95%|█████████▌| 60/63 [18:00<00:54, 18.05s/it]
+2026-09-29T20:45:16.910411+00:00  97%|█████████▋| 61/63 [18:18<00:35, 17.98s/it]AMP_STEP_AUDIT: {"step": 60, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [1.0235029373752758e-07, 1.0235029373752758e-07], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 1.2665987014770508e-07, "actual_update": true}
+2026-09-29T20:45:16.910902+00:00 
+2026-09-29T20:45:16.910937+00:00                                                
+2026-09-29T20:45:16.910951+00:00 {'loss': '0.6888', 'grad_norm': '3.166', 'learning_rate': '1.024e-07', 'entropy': '1.07', 'num_tokens': '2.406e+05', 'logits/chosen': '-1.428', 'logits/rejected': '-1.117', 'mean_token_accuracy': '0.6688', 'rewards/chosen': '-0.01041', 'rewards/rejected': '-0.01928', 'rewards/accuracies': '0.625', 'rewards/margins': '0.008873', 'logps/chosen': '-224.6', 'logps/rejected': '-205.1', 'epoch': '0.976'}
+2026-09-29T20:45:16.911054+00:00 
+2026-09-29T20:45:35.031473+00:00  97%|█████████▋| 61/63 [18:18<00:35, 17.98s/it]
+2026-09-29T20:45:35.046984+00:00  98%|█████████▊| 62/63 [18:36<00:18, 18.03s/it]AMP_STEP_AUDIT: {"step": 61, "finite": true, "nonzero": true, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": [], "scale_before": 32768.0, "learning_rates": [5.7658378359443104e-08, 5.7658378359443104e-08], "skipped": false, "scale_after": 32768.0, "parameters_finite": true, "max_update": 7.078051567077637e-08, "actual_update": true}
+2026-09-29T20:45:35.047477+00:00 
+2026-09-29T20:45:35.047513+00:00                                                
+2026-09-29T20:45:35.047529+00:00 {'loss': '0.6883', 'grad_norm': '2.251', 'learning_rate': '5.766e-08', 'entropy': '0.8474', 'num_tokens': '2.445e+05', 'logits/chosen': '-1.223', 'logits/rejected': '-0.9556', 'mean_token_accuracy': '0.7512', 'rewards/chosen': '-0.007034', 'rewards/rejected': '-0.01686', 'rewards/accuracies': '0.75', 'rewards/margins': '0.009824', 'logps/chosen': '-154.9', 'logps/rejected': '-180.7', 'epoch': '0.992'}
+2026-09-29T20:45:35.047634+00:00 
+2026-09-29T20:45:44.005555+00:00  98%|█████████▊| 62/63 [18:36<00:18, 18.03s/it]
+2026-09-29T20:45:44.030969+00:00 100%|██████████| 63/63 [18:45<00:00, 15.31s/it]AMP_STEP_AUDIT: {"step": 62, "finite": false, "nonzero": false, "grad_tensor_count": 112, "missing_gradients": [], "nonfinite_gradients": ["base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.0.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.1.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.1.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.1.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.1.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.2.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.2.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.2.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.3.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.3.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.3.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.3.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.4.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.4.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.4.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.4.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.5.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.5.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.5.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.5.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.6.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.6.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.6.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.6.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.7.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.7.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.7.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.8.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.8.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.8.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.8.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.9.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.9.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.9.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.9.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.10.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.10.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.10.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.10.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.11.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.11.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.11.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.11.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.12.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.12.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.12.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.12.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.13.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.13.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.13.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.13.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.14.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.14.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.14.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.14.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.15.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.15.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.15.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.15.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.16.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.16.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.16.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.16.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.17.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.17.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.17.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.17.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.18.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.18.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.18.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.18.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.19.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.19.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.19.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.19.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.20.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.20.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.20.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.20.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.21.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.21.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.21.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.21.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.22.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.22.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.22.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.22.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.23.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.23.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.23.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.23.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.24.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.24.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.24.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.24.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.25.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.25.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.25.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.25.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.26.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.26.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.26.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.26.self_attn.v_proj.lora_B.default.weight", "base_model.model.model.layers.27.self_attn.q_proj.lora_A.default.weight", "base_model.model.model.layers.27.self_attn.q_proj.lora_B.default.weight", "base_model.model.model.layers.27.self_attn.v_proj.lora_A.default.weight", "base_model.model.model.layers.27.self_attn.v_proj.lora_B.default.weight"], "scale_before": 32768.0, "learning_rates": [2.5653383040524228e-08, 2.5653383040524228e-08], "skipped": true, "scale_after": 16384.0, "parameters_finite": true, "max_update": 0.0, "actual_update": false}
+2026-09-29T20:45:44.031062+00:00 
+2026-09-29T20:45:44.031075+00:00                                                
+2026-09-29T20:45:44.031087+00:00 {'loss': '0.6921', 'grad_norm': 'nan', 'learning_rate': '2.565e-08', 'entropy': '1.067', 'num_tokens': '2.468e+05', 'logits/chosen': '-0.782', 'logits/rejected': '-0.4784', 'mean_token_accuracy': '0.7307', 'rewards/chosen': '-0.006402', 'rewards/rejected': '-0.008537', 'rewards/accuracies': '0.75', 'rewards/margins': '0.002135', 'logps/chosen': '-168.9', 'logps/rejected': '-168.7', 'epoch': '1'}
+2026-09-29T20:45:44.031096+00:00 
+2026-09-29T20:45:44.031106+00:00 100%|██████████| 63/63 [18:45<00:00, 15.31s/it]
+2026-09-29T20:45:44.031117+00:00                                                
+2026-09-29T20:45:44.031127+00:00 {'train_runtime': '1125', 'train_samples_per_second': '0.444', 'train_steps_per_second': '0.056', 'train_loss': '0.6916', 'epoch': '1'}
+2026-09-29T20:45:44.031136+00:00 
+2026-09-29T20:45:44.031145+00:00 100%|██████████| 63/63 [18:45<00:00, 15.31s/it]
+2026-09-29T20:45:44.031172+00:00 100%|██████████| 63/63 [18:45<00:00, 17.86s/it]
+2026-09-29T20:45:48.842223+00:00 {
+2026-09-29T20:45:48.842274+00:00   "status": "FULL_RUN_PASS_WITH_SKIPPED_STEPS",
+2026-09-29T20:45:48.842288+00:00   "output": "/content/soup_takehome/20260929T202553230689Z-full-dpo",
+2026-09-29T20:45:48.842298+00:00   "scope": "Fresh adapter; one epoch over 500 pairs; no held-out quality claim yet",
+2026-09-29T20:45:48.842308+00:00   "gpu": "Tesla T4",
+2026-09-29T20:45:48.842317+00:00   "started_utc": "2026-09-29T20:26:00.415212+00:00",
+2026-09-29T20:45:48.842327+00:00   "budget": "Existing memory-budget-before.txt: estimated 3-7 GiB, not a bound. Add frozen ref LoRA (~4.16 MiB FP32).",
+2026-09-29T20:45:48.842338+00:00   "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+2026-09-29T20:45:48.842349+00:00   "train_sha256": "d43f24aebcdfed198dbfe5b7c2264aab13cca5c3e804105abb91a772058bf917",
+2026-09-29T20:45:48.842359+00:00   "test_sha256": "3eed9c45e23455d71dac705d7cac6078df203d1118420a7bbab7c4f3637e0397",
+2026-09-29T20:45:48.842368+00:00   "stream_runtime": {
+2026-09-29T20:45:48.842377+00:00     "n_layers": 28,
+2026-09-29T20:45:48.842387+00:00     "buffers": 2,
+2026-09-29T20:45:48.842397+00:00     "buffer_bytes": 187191296,
+2026-09-29T20:45:48.842406+00:00     "large_buffer_bytes": 0,
+2026-09-29T20:45:48.842416+00:00     "store_bytes": 2620678144,
+2026-09-29T20:45:48.842425+00:00     "pinned": false,
+2026-09-29T20:45:48.842434+00:00     "tier": "ram",
+2026-09-29T20:45:48.842442+00:00     "disk_bytes": 0,
+2026-09-29T20:45:48.842453+00:00     "layer_loads": 0,
+2026-09-29T20:45:48.842461+00:00     "large_loads": 0,
+2026-09-29T20:45:48.842470+00:00     "device": "cuda",
+2026-09-29T20:45:48.842479+00:00     "total_params": 1543714304
+2026-09-29T20:45:48.842489+00:00   },
+2026-09-29T20:45:48.842498+00:00   "trainer_token_audit": "PASS: 500 pairs, exact template IDs, EOS and no truncation",
+2026-09-29T20:45:48.842507+00:00   "trainable_params": 1089536,
+2026-09-29T20:45:48.842518+00:00   "repeat_logit_noise": 0.0,
+2026-09-29T20:45:48.842527+00:00   "initial_adapter_effect": 0.0,
+2026-09-29T20:45:48.842536+00:00   "setup_and_probe_peak_allocated": 686235648,
+2026-09-29T20:45:48.842545+00:00   "gradient_events": [
+2026-09-29T20:45:48.842555+00:00     {
+2026-09-29T20:45:48.842564+00:00       "step": 0,
+2026-09-29T20:45:48.842573+00:00       "finite": true,
+2026-09-29T20:45:48.842581+00:00       "nonzero": true,
+2026-09-29T20:45:48.842590+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.842599+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.842608+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.842617+00:00       "scale_before": 65536.0,
+2026-09-29T20:45:48.842626+00:00       "learning_rates": [
+2026-09-29T20:45:48.842635+00:00         0.0,
+2026-09-29T20:45:48.842644+00:00         0.0
+2026-09-29T20:45:48.842653+00:00       ],
+2026-09-29T20:45:48.842662+00:00       "skipped": false,
+2026-09-29T20:45:48.842672+00:00       "scale_after": 65536.0,
+2026-09-29T20:45:48.842681+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.842691+00:00       "max_update": 0.0,
+2026-09-29T20:45:48.842711+00:00       "actual_update": false
+2026-09-29T20:45:48.842720+00:00     },
+2026-09-29T20:45:48.842729+00:00     {
+2026-09-29T20:45:48.842738+00:00       "step": 1,
+2026-09-29T20:45:48.842758+00:00       "finite": false,
+2026-09-29T20:45:48.842766+00:00       "nonzero": false,
+2026-09-29T20:45:48.842774+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.842782+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.842791+00:00       "nonfinite_gradients": [
+2026-09-29T20:45:48.842801+00:00         "base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.842810+00:00         "base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.842819+00:00         "base_model.model.model.layers.0.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.842862+00:00         "base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.842872+00:00         "base_model.model.model.layers.1.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.842882+00:00         "base_model.model.model.layers.1.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.842891+00:00         "base_model.model.model.layers.1.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.842900+00:00         "base_model.model.model.layers.1.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.842908+00:00         "base_model.model.model.layers.2.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.842917+00:00         "base_model.model.model.layers.2.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.842925+00:00         "base_model.model.model.layers.2.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.842933+00:00         "base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.842944+00:00         "base_model.model.model.layers.3.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.842953+00:00         "base_model.model.model.layers.3.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.842961+00:00         "base_model.model.model.layers.3.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.842969+00:00         "base_model.model.model.layers.3.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.842977+00:00         "base_model.model.model.layers.4.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.842985+00:00         "base_model.model.model.layers.4.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.842993+00:00         "base_model.model.model.layers.4.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843001+00:00         "base_model.model.model.layers.4.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843009+00:00         "base_model.model.model.layers.5.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843017+00:00         "base_model.model.model.layers.5.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843025+00:00         "base_model.model.model.layers.5.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843033+00:00         "base_model.model.model.layers.5.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843040+00:00         "base_model.model.model.layers.6.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843049+00:00         "base_model.model.model.layers.6.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843056+00:00         "base_model.model.model.layers.6.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843064+00:00         "base_model.model.model.layers.6.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843075+00:00         "base_model.model.model.layers.7.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843083+00:00         "base_model.model.model.layers.7.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843141+00:00         "base_model.model.model.layers.7.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843151+00:00         "base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843160+00:00         "base_model.model.model.layers.8.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843170+00:00         "base_model.model.model.layers.8.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843178+00:00         "base_model.model.model.layers.8.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843186+00:00         "base_model.model.model.layers.8.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843195+00:00         "base_model.model.model.layers.9.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843204+00:00         "base_model.model.model.layers.9.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843213+00:00         "base_model.model.model.layers.9.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843221+00:00         "base_model.model.model.layers.9.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843229+00:00         "base_model.model.model.layers.10.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843236+00:00         "base_model.model.model.layers.10.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843244+00:00         "base_model.model.model.layers.10.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843252+00:00         "base_model.model.model.layers.10.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843259+00:00         "base_model.model.model.layers.11.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843267+00:00         "base_model.model.model.layers.11.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843275+00:00         "base_model.model.model.layers.11.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843282+00:00         "base_model.model.model.layers.11.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843290+00:00         "base_model.model.model.layers.12.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843298+00:00         "base_model.model.model.layers.12.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843306+00:00         "base_model.model.model.layers.12.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843314+00:00         "base_model.model.model.layers.12.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843323+00:00         "base_model.model.model.layers.13.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843332+00:00         "base_model.model.model.layers.13.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843341+00:00         "base_model.model.model.layers.13.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843349+00:00         "base_model.model.model.layers.13.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843358+00:00         "base_model.model.model.layers.14.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843366+00:00         "base_model.model.model.layers.14.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843375+00:00         "base_model.model.model.layers.14.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843383+00:00         "base_model.model.model.layers.14.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843392+00:00         "base_model.model.model.layers.15.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843400+00:00         "base_model.model.model.layers.15.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843409+00:00         "base_model.model.model.layers.15.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843431+00:00         "base_model.model.model.layers.15.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843440+00:00         "base_model.model.model.layers.16.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843447+00:00         "base_model.model.model.layers.16.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843455+00:00         "base_model.model.model.layers.16.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843463+00:00         "base_model.model.model.layers.16.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843471+00:00         "base_model.model.model.layers.17.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843479+00:00         "base_model.model.model.layers.17.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843488+00:00         "base_model.model.model.layers.17.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843496+00:00         "base_model.model.model.layers.17.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843504+00:00         "base_model.model.model.layers.18.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843513+00:00         "base_model.model.model.layers.18.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843521+00:00         "base_model.model.model.layers.18.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843529+00:00         "base_model.model.model.layers.18.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843538+00:00         "base_model.model.model.layers.19.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843584+00:00         "base_model.model.model.layers.19.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843593+00:00         "base_model.model.model.layers.19.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843600+00:00         "base_model.model.model.layers.19.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843609+00:00         "base_model.model.model.layers.20.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843618+00:00         "base_model.model.model.layers.20.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843626+00:00         "base_model.model.model.layers.20.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843635+00:00         "base_model.model.model.layers.20.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843644+00:00         "base_model.model.model.layers.21.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843657+00:00         "base_model.model.model.layers.21.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843665+00:00         "base_model.model.model.layers.21.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843673+00:00         "base_model.model.model.layers.21.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843681+00:00         "base_model.model.model.layers.22.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843688+00:00         "base_model.model.model.layers.22.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843695+00:00         "base_model.model.model.layers.22.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843703+00:00         "base_model.model.model.layers.22.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843712+00:00         "base_model.model.model.layers.23.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843720+00:00         "base_model.model.model.layers.23.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843728+00:00         "base_model.model.model.layers.23.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843736+00:00         "base_model.model.model.layers.23.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843744+00:00         "base_model.model.model.layers.24.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843752+00:00         "base_model.model.model.layers.24.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843761+00:00         "base_model.model.model.layers.24.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843768+00:00         "base_model.model.model.layers.24.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843776+00:00         "base_model.model.model.layers.25.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843804+00:00         "base_model.model.model.layers.25.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843811+00:00         "base_model.model.model.layers.25.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843818+00:00         "base_model.model.model.layers.25.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843877+00:00         "base_model.model.model.layers.26.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843888+00:00         "base_model.model.model.layers.26.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843895+00:00         "base_model.model.model.layers.26.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843904+00:00         "base_model.model.model.layers.26.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843912+00:00         "base_model.model.model.layers.27.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843920+00:00         "base_model.model.model.layers.27.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.843928+00:00         "base_model.model.model.layers.27.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.843936+00:00         "base_model.model.model.layers.27.self_attn.v_proj.lora_B.default.weight"
+2026-09-29T20:45:48.843945+00:00       ],
+2026-09-29T20:45:48.843953+00:00       "scale_before": 65536.0,
+2026-09-29T20:45:48.843970+00:00       "learning_rates": [
+2026-09-29T20:45:48.843979+00:00         1e-05,
+2026-09-29T20:45:48.843987+00:00         1e-05
+2026-09-29T20:45:48.843994+00:00       ],
+2026-09-29T20:45:48.844003+00:00       "skipped": true,
+2026-09-29T20:45:48.844012+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.844020+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.844027+00:00       "max_update": 0.0,
+2026-09-29T20:45:48.844035+00:00       "actual_update": false
+2026-09-29T20:45:48.844043+00:00     },
+2026-09-29T20:45:48.844053+00:00     {
+2026-09-29T20:45:48.844060+00:00       "step": 2,
+2026-09-29T20:45:48.844068+00:00       "finite": true,
+2026-09-29T20:45:48.844076+00:00       "nonzero": true,
+2026-09-29T20:45:48.844085+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.844093+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.844101+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.844108+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.844116+00:00       "learning_rates": [
+2026-09-29T20:45:48.844125+00:00         1e-05,
+2026-09-29T20:45:48.844133+00:00         1e-05
+2026-09-29T20:45:48.844141+00:00       ],
+2026-09-29T20:45:48.844148+00:00       "skipped": false,
+2026-09-29T20:45:48.844157+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.844166+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.844174+00:00       "max_update": 1.0013566679845098e-05,
+2026-09-29T20:45:48.844181+00:00       "actual_update": true
+2026-09-29T20:45:48.844189+00:00     },
+2026-09-29T20:45:48.844198+00:00     {
+2026-09-29T20:45:48.844206+00:00       "step": 3,
+2026-09-29T20:45:48.844213+00:00       "finite": true,
+2026-09-29T20:45:48.844221+00:00       "nonzero": true,
+2026-09-29T20:45:48.844230+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.844238+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.844245+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.844253+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.844261+00:00       "learning_rates": [
+2026-09-29T20:45:48.844270+00:00         9.993582535855265e-06,
+2026-09-29T20:45:48.844277+00:00         9.993582535855265e-06
+2026-09-29T20:45:48.844285+00:00       ],
+2026-09-29T20:45:48.844294+00:00       "skipped": false,
+2026-09-29T20:45:48.844303+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.844310+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.844319+00:00       "max_update": 1.0029581972048618e-05,
+2026-09-29T20:45:48.844336+00:00       "actual_update": true
+2026-09-29T20:45:48.844344+00:00     },
+2026-09-29T20:45:48.844352+00:00     {
+2026-09-29T20:45:48.844360+00:00       "step": 4,
+2026-09-29T20:45:48.844369+00:00       "finite": true,
+2026-09-29T20:45:48.844376+00:00       "nonzero": true,
+2026-09-29T20:45:48.844384+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.844393+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.844402+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.844409+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.844416+00:00       "learning_rates": [
+2026-09-29T20:45:48.844423+00:00         9.974346616959476e-06,
+2026-09-29T20:45:48.844430+00:00         9.974346616959476e-06
+2026-09-29T20:45:48.844437+00:00       ],
+2026-09-29T20:45:48.844444+00:00       "skipped": false,
+2026-09-29T20:45:48.844452+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.844460+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.844469+00:00       "max_update": 1.0040708730230108e-05,
+2026-09-29T20:45:48.844477+00:00       "actual_update": true
+2026-09-29T20:45:48.844485+00:00     },
+2026-09-29T20:45:48.844494+00:00     {
+2026-09-29T20:45:48.844503+00:00       "step": 5,
+2026-09-29T20:45:48.844511+00:00       "finite": true,
+2026-09-29T20:45:48.844519+00:00       "nonzero": true,
+2026-09-29T20:45:48.844526+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.844534+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.844542+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.844549+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.844557+00:00       "learning_rates": [
+2026-09-29T20:45:48.844565+00:00         9.942341621640558e-06,
+2026-09-29T20:45:48.844573+00:00         9.942341621640558e-06
+2026-09-29T20:45:48.844582+00:00       ],
+2026-09-29T20:45:48.844590+00:00       "skipped": false,
+2026-09-29T20:45:48.844598+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.844606+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.844613+00:00       "max_update": 1.0043611837318167e-05,
+2026-09-29T20:45:48.844622+00:00       "actual_update": true
+2026-09-29T20:45:48.844629+00:00     },
+2026-09-29T20:45:48.844637+00:00     {
+2026-09-29T20:45:48.844645+00:00       "step": 6,
+2026-09-29T20:45:48.844652+00:00       "finite": true,
+2026-09-29T20:45:48.844660+00:00       "nonzero": true,
+2026-09-29T20:45:48.844667+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.844675+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.844683+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.844691+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.844700+00:00       "learning_rates": [
+2026-09-29T20:45:48.844708+00:00         9.897649706262474e-06,
+2026-09-29T20:45:48.844716+00:00         9.897649706262474e-06
+2026-09-29T20:45:48.844724+00:00       ],
+2026-09-29T20:45:48.844733+00:00       "skipped": false,
+2026-09-29T20:45:48.844740+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.844749+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.844758+00:00       "max_update": 1.0013325663749129e-05,
+2026-09-29T20:45:48.844766+00:00       "actual_update": true
+2026-09-29T20:45:48.844775+00:00     },
+2026-09-29T20:45:48.844783+00:00     {
+2026-09-29T20:45:48.844792+00:00       "step": 7,
+2026-09-29T20:45:48.844800+00:00       "finite": true,
+2026-09-29T20:45:48.844808+00:00       "nonzero": true,
+2026-09-29T20:45:48.844816+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.844844+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.844853+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.844860+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.844868+00:00       "learning_rates": [
+2026-09-29T20:45:48.844875+00:00         9.840385594331022e-06,
+2026-09-29T20:45:48.844883+00:00         9.840385594331022e-06
+2026-09-29T20:45:48.844891+00:00       ],
+2026-09-29T20:45:48.844899+00:00       "skipped": false,
+2026-09-29T20:45:48.844911+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.844920+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.844928+00:00       "max_update": 9.973580745281652e-06,
+2026-09-29T20:45:48.844937+00:00       "actual_update": true
+2026-09-29T20:45:48.844945+00:00     },
+2026-09-29T20:45:48.845241+00:00     {
+2026-09-29T20:45:48.845259+00:00       "step": 8,
+2026-09-29T20:45:48.845269+00:00       "finite": true,
+2026-09-29T20:45:48.845277+00:00       "nonzero": true,
+2026-09-29T20:45:48.845286+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.845295+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.845304+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.845311+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.845319+00:00       "learning_rates": [
+2026-09-29T20:45:48.845327+00:00         9.770696282000245e-06,
+2026-09-29T20:45:48.845335+00:00         9.770696282000245e-06
+2026-09-29T20:45:48.845344+00:00       ],
+2026-09-29T20:45:48.845352+00:00       "skipped": false,
+2026-09-29T20:45:48.845360+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.845368+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.845376+00:00       "max_update": 9.893334208754823e-06,
+2026-09-29T20:45:48.845383+00:00       "actual_update": true
+2026-09-29T20:45:48.845391+00:00     },
+2026-09-29T20:45:48.845400+00:00     {
+2026-09-29T20:45:48.845409+00:00       "step": 9,
+2026-09-29T20:45:48.845417+00:00       "finite": true,
+2026-09-29T20:45:48.845426+00:00       "nonzero": true,
+2026-09-29T20:45:48.845434+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.845442+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.845466+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.845475+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.845485+00:00       "learning_rates": [
+2026-09-29T20:45:48.845494+00:00         9.688760660735403e-06,
+2026-09-29T20:45:48.845503+00:00         9.688760660735403e-06
+2026-09-29T20:45:48.845511+00:00       ],
+2026-09-29T20:45:48.845520+00:00       "skipped": false,
+2026-09-29T20:45:48.845530+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.845538+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.845547+00:00       "max_update": 9.763592970557511e-06,
+2026-09-29T20:45:48.845556+00:00       "actual_update": true
+2026-09-29T20:45:48.845565+00:00     },
+2026-09-29T20:45:48.845574+00:00     {
+2026-09-29T20:45:48.845584+00:00       "step": 10,
+2026-09-29T20:45:48.845592+00:00       "finite": true,
+2026-09-29T20:45:48.845602+00:00       "nonzero": true,
+2026-09-29T20:45:48.845611+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.845620+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.845629+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.845639+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.845647+00:00       "learning_rates": [
+2026-09-29T20:45:48.845656+00:00         9.594789058101154e-06,
+2026-09-29T20:45:48.845665+00:00         9.594789058101154e-06
+2026-09-29T20:45:48.845674+00:00       ],
+2026-09-29T20:45:48.845683+00:00       "skipped": false,
+2026-09-29T20:45:48.845692+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.845701+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.845709+00:00       "max_update": 9.526193025521934e-06,
+2026-09-29T20:45:48.845717+00:00       "actual_update": true
+2026-09-29T20:45:48.845726+00:00     },
+2026-09-29T20:45:48.845735+00:00     {
+2026-09-29T20:45:48.845743+00:00       "step": 11,
+2026-09-29T20:45:48.845750+00:00       "finite": true,
+2026-09-29T20:45:48.845758+00:00       "nonzero": true,
+2026-09-29T20:45:48.845783+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.845792+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.845800+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.845809+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.845817+00:00       "learning_rates": [
+2026-09-29T20:45:48.845857+00:00         9.48902269785371e-06,
+2026-09-29T20:45:48.845869+00:00         9.48902269785371e-06
+2026-09-29T20:45:48.845878+00:00       ],
+2026-09-29T20:45:48.845887+00:00       "skipped": false,
+2026-09-29T20:45:48.845896+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.845905+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.845914+00:00       "max_update": 9.325551218353212e-06,
+2026-09-29T20:45:48.845923+00:00       "actual_update": true
+2026-09-29T20:45:48.845932+00:00     },
+2026-09-29T20:45:48.845941+00:00     {
+2026-09-29T20:45:48.845950+00:00       "step": 12,
+2026-09-29T20:45:48.845959+00:00       "finite": true,
+2026-09-29T20:45:48.845967+00:00       "nonzero": true,
+2026-09-29T20:45:48.845976+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.845986+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.845995+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.846004+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.846013+00:00       "learning_rates": [
+2026-09-29T20:45:48.846032+00:00         9.371733080722911e-06,
+2026-09-29T20:45:48.846040+00:00         9.371733080722911e-06
+2026-09-29T20:45:48.846049+00:00       ],
+2026-09-29T20:45:48.846057+00:00       "skipped": false,
+2026-09-29T20:45:48.846065+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.846074+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.846082+00:00       "max_update": 9.352341294288635e-06,
+2026-09-29T20:45:48.846091+00:00       "actual_update": true
+2026-09-29T20:45:48.846099+00:00     },
+2026-09-29T20:45:48.846107+00:00     {
+2026-09-29T20:45:48.846115+00:00       "step": 13,
+2026-09-29T20:45:48.846124+00:00       "finite": true,
+2026-09-29T20:45:48.846134+00:00       "nonzero": true,
+2026-09-29T20:45:48.846143+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.846186+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.846196+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.846205+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.846213+00:00       "learning_rates": [
+2026-09-29T20:45:48.846222+00:00         9.243221287473755e-06,
+2026-09-29T20:45:48.846230+00:00         9.243221287473755e-06
+2026-09-29T20:45:48.846238+00:00       ],
+2026-09-29T20:45:48.846247+00:00       "skipped": false,
+2026-09-29T20:45:48.846255+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.846263+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.846271+00:00       "max_update": 9.1882175183855e-06,
+2026-09-29T20:45:48.846280+00:00       "actual_update": true
+2026-09-29T20:45:48.846289+00:00     },
+2026-09-29T20:45:48.846298+00:00     {
+2026-09-29T20:45:48.846308+00:00       "step": 14,
+2026-09-29T20:45:48.846316+00:00       "finite": true,
+2026-09-29T20:45:48.846324+00:00       "nonzero": true,
+2026-09-29T20:45:48.846333+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.846343+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.846352+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.846361+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.846370+00:00       "learning_rates": [
+2026-09-29T20:45:48.846379+00:00         9.103817206036383e-06,
+2026-09-29T20:45:48.846387+00:00         9.103817206036383e-06
+2026-09-29T20:45:48.846396+00:00       ],
+2026-09-29T20:45:48.846405+00:00       "skipped": false,
+2026-09-29T20:45:48.846414+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.846422+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.846431+00:00       "max_update": 9.179115295410156e-06,
+2026-09-29T20:45:48.846439+00:00       "actual_update": true
+2026-09-29T20:45:48.846448+00:00     },
+2026-09-29T20:45:48.846457+00:00     {
+2026-09-29T20:45:48.846465+00:00       "step": 15,
+2026-09-29T20:45:48.846473+00:00       "finite": true,
+2026-09-29T20:45:48.846483+00:00       "nonzero": true,
+2026-09-29T20:45:48.846491+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.846499+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.846513+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.846522+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.846531+00:00       "learning_rates": [
+2026-09-29T20:45:48.846539+00:00         8.953878684688492e-06,
+2026-09-29T20:45:48.846548+00:00         8.953878684688492e-06
+2026-09-29T20:45:48.846557+00:00       ],
+2026-09-29T20:45:48.846565+00:00       "skipped": false,
+2026-09-29T20:45:48.846574+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.846582+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.846626+00:00       "max_update": 9.132549166679382e-06,
+2026-09-29T20:45:48.846637+00:00       "actual_update": true
+2026-09-29T20:45:48.846646+00:00     },
+2026-09-29T20:45:48.846654+00:00     {
+2026-09-29T20:45:48.846663+00:00       "step": 16,
+2026-09-29T20:45:48.846671+00:00       "finite": true,
+2026-09-29T20:45:48.846679+00:00       "nonzero": true,
+2026-09-29T20:45:48.846688+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.846696+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.846715+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.846723+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.846731+00:00       "learning_rates": [
+2026-09-29T20:45:48.846740+00:00         8.793790613463956e-06,
+2026-09-29T20:45:48.846748+00:00         8.793790613463956e-06
+2026-09-29T20:45:48.846756+00:00       ],
+2026-09-29T20:45:48.846763+00:00       "skipped": false,
+2026-09-29T20:45:48.846771+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.846779+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.846786+00:00       "max_update": 9.160488843917847e-06,
+2026-09-29T20:45:48.846794+00:00       "actual_update": true
+2026-09-29T20:45:48.846801+00:00     },
+2026-09-29T20:45:48.846808+00:00     {
+2026-09-29T20:45:48.846817+00:00       "step": 17,
+2026-09-29T20:45:48.846847+00:00       "finite": true,
+2026-09-29T20:45:48.846857+00:00       "nonzero": true,
+2026-09-29T20:45:48.846864+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.846872+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.846880+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.846888+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.846896+00:00       "learning_rates": [
+2026-09-29T20:45:48.846904+00:00         8.6239639361456e-06,
+2026-09-29T20:45:48.846913+00:00         8.6239639361456e-06
+2026-09-29T20:45:48.846920+00:00       ],
+2026-09-29T20:45:48.846930+00:00       "skipped": false,
+2026-09-29T20:45:48.846937+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.846945+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.846952+00:00       "max_update": 9.099021553993225e-06,
+2026-09-29T20:45:48.846961+00:00       "actual_update": true
+2026-09-29T20:45:48.846970+00:00     },
+2026-09-29T20:45:48.846978+00:00     {
+2026-09-29T20:45:48.846986+00:00       "step": 18,
+2026-09-29T20:45:48.846993+00:00       "finite": true,
+2026-09-29T20:45:48.847001+00:00       "nonzero": true,
+2026-09-29T20:45:48.847009+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.847017+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.847025+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.847034+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.847042+00:00       "learning_rates": [
+2026-09-29T20:45:48.847050+00:00         8.444834595378434e-06,
+2026-09-29T20:45:48.847057+00:00         8.444834595378434e-06
+2026-09-29T20:45:48.847065+00:00       ],
+2026-09-29T20:45:48.847073+00:00       "skipped": false,
+2026-09-29T20:45:48.847082+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.847091+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.847099+00:00       "max_update": 8.868053555488586e-06,
+2026-09-29T20:45:48.847106+00:00       "actual_update": true
+2026-09-29T20:45:48.847115+00:00     },
+2026-09-29T20:45:48.847123+00:00     {
+2026-09-29T20:45:48.847131+00:00       "step": 19,
+2026-09-29T20:45:48.847140+00:00       "finite": true,
+2026-09-29T20:45:48.847148+00:00       "nonzero": true,
+2026-09-29T20:45:48.847156+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.847164+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.847171+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.847179+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.847188+00:00       "learning_rates": [
+2026-09-29T20:45:48.847197+00:00         8.256862413611113e-06,
+2026-09-29T20:45:48.847204+00:00         8.256862413611113e-06
+2026-09-29T20:45:48.847212+00:00       ],
+2026-09-29T20:45:48.847219+00:00       "skipped": false,
+2026-09-29T20:45:48.847227+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.847236+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.847245+00:00       "max_update": 8.735805749893188e-06,
+2026-09-29T20:45:48.847252+00:00       "actual_update": true
+2026-09-29T20:45:48.847261+00:00     },
+2026-09-29T20:45:48.847268+00:00     {
+2026-09-29T20:45:48.847276+00:00       "step": 20,
+2026-09-29T20:45:48.847285+00:00       "finite": true,
+2026-09-29T20:45:48.847294+00:00       "nonzero": true,
+2026-09-29T20:45:48.847302+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.847310+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.847317+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.847325+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.847334+00:00       "learning_rates": [
+2026-09-29T20:45:48.847342+00:00         8.060529912738316e-06,
+2026-09-29T20:45:48.847351+00:00         8.060529912738316e-06
+2026-09-29T20:45:48.847359+00:00       ],
+2026-09-29T20:45:48.847367+00:00       "skipped": false,
+2026-09-29T20:45:48.847375+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.847383+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.847391+00:00       "max_update": 8.645467460155487e-06,
+2026-09-29T20:45:48.847400+00:00       "actual_update": true
+2026-09-29T20:45:48.847408+00:00     },
+2026-09-29T20:45:48.847417+00:00     {
+2026-09-29T20:45:48.847424+00:00       "step": 21,
+2026-09-29T20:45:48.847432+00:00       "finite": true,
+2026-09-29T20:45:48.847440+00:00       "nonzero": true,
+2026-09-29T20:45:48.847449+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.847457+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.847465+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.847472+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.847480+00:00       "learning_rates": [
+2026-09-29T20:45:48.847489+00:00         7.856341075473963e-06,
+2026-09-29T20:45:48.847497+00:00         7.856341075473963e-06
+2026-09-29T20:45:48.847505+00:00       ],
+2026-09-29T20:45:48.847513+00:00       "skipped": false,
+2026-09-29T20:45:48.847520+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.847528+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.847536+00:00       "max_update": 8.307397365570068e-06,
+2026-09-29T20:45:48.847546+00:00       "actual_update": true
+2026-09-29T20:45:48.847554+00:00     },
+2026-09-29T20:45:48.847562+00:00     {
+2026-09-29T20:45:48.847569+00:00       "step": 22,
+2026-09-29T20:45:48.847576+00:00       "finite": true,
+2026-09-29T20:45:48.847584+00:00       "nonzero": true,
+2026-09-29T20:45:48.847593+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.847601+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.847609+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.847617+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.847624+00:00       "learning_rates": [
+2026-09-29T20:45:48.847632+00:00         7.644820051634813e-06,
+2026-09-29T20:45:48.847640+00:00         7.644820051634813e-06
+2026-09-29T20:45:48.847649+00:00       ],
+2026-09-29T20:45:48.847656+00:00       "skipped": false,
+2026-09-29T20:45:48.847664+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.847672+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.847679+00:00       "max_update": 8.162111043930054e-06,
+2026-09-29T20:45:48.847687+00:00       "actual_update": true
+2026-09-29T20:45:48.847695+00:00     },
+2026-09-29T20:45:48.847705+00:00     {
+2026-09-29T20:45:48.847713+00:00       "step": 23,
+2026-09-29T20:45:48.847721+00:00       "finite": true,
+2026-09-29T20:45:48.847728+00:00       "nonzero": true,
+2026-09-29T20:45:48.847736+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.847743+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.847751+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.847759+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.847766+00:00       "learning_rates": [
+2026-09-29T20:45:48.847774+00:00         7.4265098126554065e-06,
+2026-09-29T20:45:48.847782+00:00         7.4265098126554065e-06
+2026-09-29T20:45:48.847790+00:00       ],
+2026-09-29T20:45:48.847856+00:00       "skipped": false,
+2026-09-29T20:45:48.847866+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.847875+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.847883+00:00       "max_update": 8.177012205123901e-06,
+2026-09-29T20:45:48.847891+00:00       "actual_update": true
+2026-09-29T20:45:48.847899+00:00     },
+2026-09-29T20:45:48.847906+00:00     {
+2026-09-29T20:45:48.847914+00:00       "step": 24,
+2026-09-29T20:45:48.847922+00:00       "finite": true,
+2026-09-29T20:45:48.847930+00:00       "nonzero": true,
+2026-09-29T20:45:48.847938+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.847945+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.847953+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.847960+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.847967+00:00       "learning_rates": [
+2026-09-29T20:45:48.847975+00:00         7.201970757788172e-06,
+2026-09-29T20:45:48.847983+00:00         7.201970757788172e-06
+2026-09-29T20:45:48.847990+00:00       ],
+2026-09-29T20:45:48.847997+00:00       "skipped": false,
+2026-09-29T20:45:48.848005+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.848012+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.848026+00:00       "max_update": 8.022412657737732e-06,
+2026-09-29T20:45:48.848033+00:00       "actual_update": true
+2026-09-29T20:45:48.848040+00:00     },
+2026-09-29T20:45:48.848048+00:00     {
+2026-09-29T20:45:48.848056+00:00       "step": 25,
+2026-09-29T20:45:48.848063+00:00       "finite": true,
+2026-09-29T20:45:48.848070+00:00       "nonzero": true,
+2026-09-29T20:45:48.848078+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.848086+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.848093+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.848101+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.848108+00:00       "learning_rates": [
+2026-09-29T20:45:48.848116+00:00         6.971779275566593e-06,
+2026-09-29T20:45:48.848123+00:00         6.971779275566593e-06
+2026-09-29T20:45:48.848131+00:00       ],
+2026-09-29T20:45:48.848139+00:00       "skipped": false,
+2026-09-29T20:45:48.848147+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.848155+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.848163+00:00       "max_update": 7.905066013336182e-06,
+2026-09-29T20:45:48.848171+00:00       "actual_update": true
+2026-09-29T20:45:48.848180+00:00     },
+2026-09-29T20:45:48.848188+00:00     {
+2026-09-29T20:45:48.848195+00:00       "step": 26,
+2026-09-29T20:45:48.848203+00:00       "finite": true,
+2026-09-29T20:45:48.848210+00:00       "nonzero": true,
+2026-09-29T20:45:48.848218+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.848226+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.848234+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.848242+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.848251+00:00       "learning_rates": [
+2026-09-29T20:45:48.848259+00:00         6.736526264224101e-06,
+2026-09-29T20:45:48.848266+00:00         6.736526264224101e-06
+2026-09-29T20:45:48.848273+00:00       ],
+2026-09-29T20:45:48.848281+00:00       "skipped": false,
+2026-09-29T20:45:48.848289+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.848297+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.848306+00:00       "max_update": 7.754191756248474e-06,
+2026-09-29T20:45:48.848315+00:00       "actual_update": true
+2026-09-29T20:45:48.848323+00:00     },
+2026-09-29T20:45:48.848337+00:00     {
+2026-09-29T20:45:48.848345+00:00       "step": 27,
+2026-09-29T20:45:48.848354+00:00       "finite": true,
+2026-09-29T20:45:48.848363+00:00       "nonzero": true,
+2026-09-29T20:45:48.848371+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.848380+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.848388+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.848396+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.848405+00:00       "learning_rates": [
+2026-09-29T20:45:48.848413+00:00         6.496815614866792e-06,
+2026-09-29T20:45:48.848421+00:00         6.496815614866792e-06
+2026-09-29T20:45:48.848430+00:00       ],
+2026-09-29T20:45:48.848439+00:00       "skipped": false,
+2026-09-29T20:45:48.848447+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.848456+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.848465+00:00       "max_update": 7.545575499534607e-06,
+2026-09-29T20:45:48.848473+00:00       "actual_update": true
+2026-09-29T20:45:48.848482+00:00     },
+2026-09-29T20:45:48.848491+00:00     {
+2026-09-29T20:45:48.848499+00:00       "step": 28,
+2026-09-29T20:45:48.848508+00:00       "finite": true,
+2026-09-29T20:45:48.848516+00:00       "nonzero": true,
+2026-09-29T20:45:48.848525+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.848532+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.848541+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.848550+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.848558+00:00       "learning_rates": [
+2026-09-29T20:45:48.848567+00:00         6.2532626612936035e-06,
+2026-09-29T20:45:48.848576+00:00         6.2532626612936035e-06
+2026-09-29T20:45:48.848584+00:00       ],
+2026-09-29T20:45:48.848592+00:00       "skipped": false,
+2026-09-29T20:45:48.848601+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.848610+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.848620+00:00       "max_update": 6.6854991018772125e-06,
+2026-09-29T20:45:48.848629+00:00       "actual_update": true
+2026-09-29T20:45:48.848637+00:00     },
+2026-09-29T20:45:48.848645+00:00     {
+2026-09-29T20:45:48.848652+00:00       "step": 29,
+2026-09-29T20:45:48.848659+00:00       "finite": true,
+2026-09-29T20:45:48.848667+00:00       "nonzero": true,
+2026-09-29T20:45:48.848674+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.848681+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.848689+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.848697+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.848705+00:00       "learning_rates": [
+2026-09-29T20:45:48.848712+00:00         6.006492600443301e-06,
+2026-09-29T20:45:48.848720+00:00         6.006492600443301e-06
+2026-09-29T20:45:48.848728+00:00       ],
+2026-09-29T20:45:48.848735+00:00       "skipped": false,
+2026-09-29T20:45:48.848744+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.848751+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.848759+00:00       "max_update": 6.5856147557497025e-06,
+2026-09-29T20:45:48.848767+00:00       "actual_update": true
+2026-09-29T20:45:48.848774+00:00     },
+2026-09-29T20:45:48.848782+00:00     {
+2026-09-29T20:45:48.848790+00:00       "step": 30,
+2026-09-29T20:45:48.848798+00:00       "finite": true,
+2026-09-29T20:45:48.848806+00:00       "nonzero": true,
+2026-09-29T20:45:48.848814+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.848839+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.848848+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.848856+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.848864+00:00       "learning_rates": [
+2026-09-29T20:45:48.848872+00:00         5.757138887522884e-06,
+2026-09-29T20:45:48.848879+00:00         5.757138887522884e-06
+2026-09-29T20:45:48.848886+00:00       ],
+2026-09-29T20:45:48.848894+00:00       "skipped": false,
+2026-09-29T20:45:48.848901+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.848909+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.848941+00:00       "max_update": 6.468966603279114e-06,
+2026-09-29T20:45:48.848950+00:00       "actual_update": true
+2026-09-29T20:45:48.848958+00:00     },
+2026-09-29T20:45:48.848966+00:00     {
+2026-09-29T20:45:48.848973+00:00       "step": 31,
+2026-09-29T20:45:48.848980+00:00       "finite": true,
+2026-09-29T20:45:48.848987+00:00       "nonzero": true,
+2026-09-29T20:45:48.849027+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.849035+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.849043+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.849051+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.849058+00:00       "learning_rates": [
+2026-09-29T20:45:48.849172+00:00         5.505841609937162e-06,
+2026-09-29T20:45:48.849183+00:00         5.505841609937162e-06
+2026-09-29T20:45:48.849190+00:00       ],
+2026-09-29T20:45:48.849198+00:00       "skipped": false,
+2026-09-29T20:45:48.849206+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.849214+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.849222+00:00       "max_update": 6.2911713030189276e-06,
+2026-09-29T20:45:48.849231+00:00       "actual_update": true
+2026-09-29T20:45:48.849238+00:00     },
+2026-09-29T20:45:48.849246+00:00     {
+2026-09-29T20:45:48.849253+00:00       "step": 32,
+2026-09-29T20:45:48.849261+00:00       "finite": true,
+2026-09-29T20:45:48.849269+00:00       "nonzero": true,
+2026-09-29T20:45:48.849277+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.849286+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.849294+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.849301+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.849309+00:00       "learning_rates": [
+2026-09-29T20:45:48.849318+00:00         5.253245844193564e-06,
+2026-09-29T20:45:48.849325+00:00         5.253245844193564e-06
+2026-09-29T20:45:48.849333+00:00       ],
+2026-09-29T20:45:48.849341+00:00       "skipped": false,
+2026-09-29T20:45:48.849349+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.849357+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.849365+00:00       "max_update": 6.167218089103699e-06,
+2026-09-29T20:45:48.849373+00:00       "actual_update": true
+2026-09-29T20:45:48.849381+00:00     },
+2026-09-29T20:45:48.849390+00:00     {
+2026-09-29T20:45:48.849397+00:00       "step": 33,
+2026-09-29T20:45:48.849405+00:00       "finite": true,
+2026-09-29T20:45:48.849413+00:00       "nonzero": true,
+2026-09-29T20:45:48.849420+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.849428+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.849437+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.849445+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.849454+00:00       "learning_rates": [
+2026-09-29T20:45:48.849461+00:00         5e-06,
+2026-09-29T20:45:48.849469+00:00         5e-06
+2026-09-29T20:45:48.849477+00:00       ],
+2026-09-29T20:45:48.849484+00:00       "skipped": false,
+2026-09-29T20:45:48.849492+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.849500+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.849508+00:00       "max_update": 6.01448118686676e-06,
+2026-09-29T20:45:48.849516+00:00       "actual_update": true
+2026-09-29T20:45:48.849523+00:00     },
+2026-09-29T20:45:48.849531+00:00     {
+2026-09-29T20:45:48.849538+00:00       "step": 34,
+2026-09-29T20:45:48.849546+00:00       "finite": true,
+2026-09-29T20:45:48.849553+00:00       "nonzero": true,
+2026-09-29T20:45:48.849562+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.849569+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.849577+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.849585+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.849593+00:00       "learning_rates": [
+2026-09-29T20:45:48.849600+00:00         4.746754155806437e-06,
+2026-09-29T20:45:48.849608+00:00         4.746754155806437e-06
+2026-09-29T20:45:48.849616+00:00       ],
+2026-09-29T20:45:48.849623+00:00       "skipped": false,
+2026-09-29T20:45:48.849630+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.849638+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.849646+00:00       "max_update": 5.649402737617493e-06,
+2026-09-29T20:45:48.849655+00:00       "actual_update": true
+2026-09-29T20:45:48.849663+00:00     },
+2026-09-29T20:45:48.849670+00:00     {
+2026-09-29T20:45:48.849678+00:00       "step": 35,
+2026-09-29T20:45:48.849686+00:00       "finite": true,
+2026-09-29T20:45:48.849693+00:00       "nonzero": true,
+2026-09-29T20:45:48.849701+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.849708+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.849716+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.849725+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.849732+00:00       "learning_rates": [
+2026-09-29T20:45:48.849739+00:00         4.49415839006284e-06,
+2026-09-29T20:45:48.849746+00:00         4.49415839006284e-06
+2026-09-29T20:45:48.849753+00:00       ],
+2026-09-29T20:45:48.849761+00:00       "skipped": false,
+2026-09-29T20:45:48.849768+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.849776+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.849783+00:00       "max_update": 5.327165126800537e-06,
+2026-09-29T20:45:48.849790+00:00       "actual_update": true
+2026-09-29T20:45:48.849797+00:00     },
+2026-09-29T20:45:48.849804+00:00     {
+2026-09-29T20:45:48.849811+00:00       "step": 36,
+2026-09-29T20:45:48.849818+00:00       "finite": true,
+2026-09-29T20:45:48.849852+00:00       "nonzero": true,
+2026-09-29T20:45:48.849860+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.849868+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.849875+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.849882+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.849889+00:00       "learning_rates": [
+2026-09-29T20:45:48.849896+00:00         4.2428611124771184e-06,
+2026-09-29T20:45:48.849903+00:00         4.2428611124771184e-06
+2026-09-29T20:45:48.849911+00:00       ],
+2026-09-29T20:45:48.849919+00:00       "skipped": false,
+2026-09-29T20:45:48.849927+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.849934+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.849951+00:00       "max_update": 5.0049275159835815e-06,
+2026-09-29T20:45:48.849959+00:00       "actual_update": true
+2026-09-29T20:45:48.849966+00:00     },
+2026-09-29T20:45:48.849974+00:00     {
+2026-09-29T20:45:48.849982+00:00       "step": 37,
+2026-09-29T20:45:48.849990+00:00       "finite": true,
+2026-09-29T20:45:48.849997+00:00       "nonzero": true,
+2026-09-29T20:45:48.850005+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.850012+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.850021+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.850028+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.850036+00:00       "learning_rates": [
+2026-09-29T20:45:48.850044+00:00         3.993507399556699e-06,
+2026-09-29T20:45:48.850053+00:00         3.993507399556699e-06
+2026-09-29T20:45:48.850060+00:00       ],
+2026-09-29T20:45:48.850068+00:00       "skipped": false,
+2026-09-29T20:45:48.850076+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.850084+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.850092+00:00       "max_update": 4.8074871301651e-06,
+2026-09-29T20:45:48.850100+00:00       "actual_update": true
+2026-09-29T20:45:48.850107+00:00     },
+2026-09-29T20:45:48.850114+00:00     {
+2026-09-29T20:45:48.850122+00:00       "step": 38,
+2026-09-29T20:45:48.850131+00:00       "finite": true,
+2026-09-29T20:45:48.850138+00:00       "nonzero": true,
+2026-09-29T20:45:48.850146+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.850154+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.850161+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.850170+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.850177+00:00       "learning_rates": [
+2026-09-29T20:45:48.850185+00:00         3.7467373387063973e-06,
+2026-09-29T20:45:48.850198+00:00         3.7467373387063973e-06
+2026-09-29T20:45:48.850206+00:00       ],
+2026-09-29T20:45:48.850214+00:00       "skipped": false,
+2026-09-29T20:45:48.850221+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.850229+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.850253+00:00       "max_update": 4.7031790018081665e-06,
+2026-09-29T20:45:48.850262+00:00       "actual_update": true
+2026-09-29T20:45:48.850271+00:00     },
+2026-09-29T20:45:48.850280+00:00     {
+2026-09-29T20:45:48.850289+00:00       "step": 39,
+2026-09-29T20:45:48.850299+00:00       "finite": true,
+2026-09-29T20:45:48.850308+00:00       "nonzero": true,
+2026-09-29T20:45:48.850318+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.850328+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.850337+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.850380+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.850390+00:00       "learning_rates": [
+2026-09-29T20:45:48.850399+00:00         3.5031843851332105e-06,
+2026-09-29T20:45:48.850408+00:00         3.5031843851332105e-06
+2026-09-29T20:45:48.850417+00:00       ],
+2026-09-29T20:45:48.850426+00:00       "skipped": false,
+2026-09-29T20:45:48.850434+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.850444+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.850452+00:00       "max_update": 4.393979907035828e-06,
+2026-09-29T20:45:48.850461+00:00       "actual_update": true
+2026-09-29T20:45:48.850470+00:00     },
+2026-09-29T20:45:48.850479+00:00     {
+2026-09-29T20:45:48.850488+00:00       "step": 40,
+2026-09-29T20:45:48.850497+00:00       "finite": true,
+2026-09-29T20:45:48.850505+00:00       "nonzero": true,
+2026-09-29T20:45:48.850514+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.850523+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.850532+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.850540+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.850549+00:00       "learning_rates": [
+2026-09-29T20:45:48.850558+00:00         3.2634737357758994e-06,
+2026-09-29T20:45:48.850567+00:00         3.2634737357758994e-06
+2026-09-29T20:45:48.850576+00:00       ],
+2026-09-29T20:45:48.850585+00:00       "skipped": false,
+2026-09-29T20:45:48.850594+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.850603+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.850612+00:00       "max_update": 4.03914600610733e-06,
+2026-09-29T20:45:48.850622+00:00       "actual_update": true
+2026-09-29T20:45:48.850631+00:00     },
+2026-09-29T20:45:48.850640+00:00     {
+2026-09-29T20:45:48.850649+00:00       "step": 41,
+2026-09-29T20:45:48.850658+00:00       "finite": true,
+2026-09-29T20:45:48.850666+00:00       "nonzero": true,
+2026-09-29T20:45:48.850675+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.850684+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.850693+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.850702+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.850711+00:00       "learning_rates": [
+2026-09-29T20:45:48.850719+00:00         3.0282207244334084e-06,
+2026-09-29T20:45:48.850728+00:00         3.0282207244334084e-06
+2026-09-29T20:45:48.850737+00:00       ],
+2026-09-29T20:45:48.850746+00:00       "skipped": false,
+2026-09-29T20:45:48.850754+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.850763+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.850772+00:00       "max_update": 3.877095878124237e-06,
+2026-09-29T20:45:48.850780+00:00       "actual_update": true
+2026-09-29T20:45:48.850789+00:00     },
+2026-09-29T20:45:48.850798+00:00     {
+2026-09-29T20:45:48.850808+00:00       "step": 42,
+2026-09-29T20:45:48.850817+00:00       "finite": true,
+2026-09-29T20:45:48.850846+00:00       "nonzero": true,
+2026-09-29T20:45:48.850856+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.850866+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.850876+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.850884+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.850893+00:00       "learning_rates": [
+2026-09-29T20:45:48.850901+00:00         2.7980292422118282e-06,
+2026-09-29T20:45:48.850910+00:00         2.7980292422118282e-06
+2026-09-29T20:45:48.850920+00:00       ],
+2026-09-29T20:45:48.850929+00:00       "skipped": false,
+2026-09-29T20:45:48.850938+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.850947+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.850956+00:00       "max_update": 3.4477561712265015e-06,
+2026-09-29T20:45:48.850965+00:00       "actual_update": true
+2026-09-29T20:45:48.850975+00:00     },
+2026-09-29T20:45:48.850985+00:00     {
+2026-09-29T20:45:48.850994+00:00       "step": 43,
+2026-09-29T20:45:48.851003+00:00       "finite": true,
+2026-09-29T20:45:48.851011+00:00       "nonzero": true,
+2026-09-29T20:45:48.851020+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.851029+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.851038+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.851048+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.851057+00:00       "learning_rates": [
+2026-09-29T20:45:48.851066+00:00         2.573490187344596e-06,
+2026-09-29T20:45:48.851075+00:00         2.573490187344596e-06
+2026-09-29T20:45:48.851084+00:00       ],
+2026-09-29T20:45:48.851094+00:00       "skipped": false,
+2026-09-29T20:45:48.851103+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.851113+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.851122+00:00       "max_update": 3.259163349866867e-06,
+2026-09-29T20:45:48.851131+00:00       "actual_update": true
+2026-09-29T20:45:48.851140+00:00     },
+2026-09-29T20:45:48.851149+00:00     {
+2026-09-29T20:45:48.851158+00:00       "step": 44,
+2026-09-29T20:45:48.851167+00:00       "finite": true,
+2026-09-29T20:45:48.851177+00:00       "nonzero": true,
+2026-09-29T20:45:48.851186+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.851195+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.851203+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.851212+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.851221+00:00       "learning_rates": [
+2026-09-29T20:45:48.851229+00:00         2.3551799483651894e-06,
+2026-09-29T20:45:48.851239+00:00         2.3551799483651894e-06
+2026-09-29T20:45:48.851248+00:00       ],
+2026-09-29T20:45:48.851256+00:00       "skipped": false,
+2026-09-29T20:45:48.851266+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.851275+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.851284+00:00       "max_update": 3.0212104320526123e-06,
+2026-09-29T20:45:48.851292+00:00       "actual_update": true
+2026-09-29T20:45:48.851301+00:00     },
+2026-09-29T20:45:48.851311+00:00     {
+2026-09-29T20:45:48.851319+00:00       "step": 45,
+2026-09-29T20:45:48.851329+00:00       "finite": true,
+2026-09-29T20:45:48.851338+00:00       "nonzero": true,
+2026-09-29T20:45:48.851347+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.851355+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.851364+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.851372+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.851382+00:00       "learning_rates": [
+2026-09-29T20:45:48.851391+00:00         2.1436589245260375e-06,
+2026-09-29T20:45:48.851400+00:00         2.1436589245260375e-06
+2026-09-29T20:45:48.851409+00:00       ],
+2026-09-29T20:45:48.851418+00:00       "skipped": false,
+2026-09-29T20:45:48.851426+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.851436+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.851445+00:00       "max_update": 2.812594175338745e-06,
+2026-09-29T20:45:48.851454+00:00       "actual_update": true
+2026-09-29T20:45:48.851463+00:00     },
+2026-09-29T20:45:48.851471+00:00     {
+2026-09-29T20:45:48.851481+00:00       "step": 46,
+2026-09-29T20:45:48.851489+00:00       "finite": true,
+2026-09-29T20:45:48.851498+00:00       "nonzero": true,
+2026-09-29T20:45:48.851507+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.851516+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.851525+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.851534+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.851544+00:00       "learning_rates": [
+2026-09-29T20:45:48.851553+00:00         1.9394700872616856e-06,
+2026-09-29T20:45:48.851562+00:00         1.9394700872616856e-06
+2026-09-29T20:45:48.851571+00:00       ],
+2026-09-29T20:45:48.851580+00:00       "skipped": false,
+2026-09-29T20:45:48.851589+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.851597+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.851606+00:00       "max_update": 2.6337802410125732e-06,
+2026-09-29T20:45:48.851615+00:00       "actual_update": true
+2026-09-29T20:45:48.851623+00:00     },
+2026-09-29T20:45:48.851632+00:00     {
+2026-09-29T20:45:48.851641+00:00       "step": 47,
+2026-09-29T20:45:48.851650+00:00       "finite": true,
+2026-09-29T20:45:48.851659+00:00       "nonzero": true,
+2026-09-29T20:45:48.851700+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.851710+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.851719+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.851728+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.851737+00:00       "learning_rates": [
+2026-09-29T20:45:48.851745+00:00         1.74313758638889e-06,
+2026-09-29T20:45:48.851754+00:00         1.74313758638889e-06
+2026-09-29T20:45:48.851763+00:00       ],
+2026-09-29T20:45:48.851773+00:00       "skipped": false,
+2026-09-29T20:45:48.851782+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.851791+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.851800+00:00       "max_update": 2.3562461137771606e-06,
+2026-09-29T20:45:48.851809+00:00       "actual_update": true
+2026-09-29T20:45:48.851818+00:00     },
+2026-09-29T20:45:48.851853+00:00     {
+2026-09-29T20:45:48.851864+00:00       "step": 48,
+2026-09-29T20:45:48.851873+00:00       "finite": true,
+2026-09-29T20:45:48.851882+00:00       "nonzero": true,
+2026-09-29T20:45:48.851891+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.851899+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.851908+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.851916+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.851925+00:00       "learning_rates": [
+2026-09-29T20:45:48.851934+00:00         1.555165404621567e-06,
+2026-09-29T20:45:48.851942+00:00         1.555165404621567e-06
+2026-09-29T20:45:48.851951+00:00       ],
+2026-09-29T20:45:48.851960+00:00       "skipped": false,
+2026-09-29T20:45:48.851970+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.851979+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.851988+00:00       "max_update": 2.074986696243286e-06,
+2026-09-29T20:45:48.851997+00:00       "actual_update": true
+2026-09-29T20:45:48.852006+00:00     },
+2026-09-29T20:45:48.852016+00:00     {
+2026-09-29T20:45:48.852025+00:00       "step": 49,
+2026-09-29T20:45:48.852034+00:00       "finite": true,
+2026-09-29T20:45:48.852042+00:00       "nonzero": true,
+2026-09-29T20:45:48.852083+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.852092+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.852102+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.852111+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.852120+00:00       "learning_rates": [
+2026-09-29T20:45:48.852129+00:00         1.3760360638544012e-06,
+2026-09-29T20:45:48.852137+00:00         1.3760360638544012e-06
+2026-09-29T20:45:48.852147+00:00       ],
+2026-09-29T20:45:48.852156+00:00       "skipped": false,
+2026-09-29T20:45:48.852166+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.852176+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.852185+00:00       "max_update": 1.7154961824417114e-06,
+2026-09-29T20:45:48.852194+00:00       "actual_update": true
+2026-09-29T20:45:48.852202+00:00     },
+2026-09-29T20:45:48.852211+00:00     {
+2026-09-29T20:45:48.852220+00:00       "step": 50,
+2026-09-29T20:45:48.852229+00:00       "finite": true,
+2026-09-29T20:45:48.852238+00:00       "nonzero": true,
+2026-09-29T20:45:48.852247+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.852256+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.852265+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.852273+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.852282+00:00       "learning_rates": [
+2026-09-29T20:45:48.852291+00:00         1.2062093865360458e-06,
+2026-09-29T20:45:48.852301+00:00         1.2062093865360458e-06
+2026-09-29T20:45:48.852309+00:00       ],
+2026-09-29T20:45:48.852318+00:00       "skipped": false,
+2026-09-29T20:45:48.852327+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.852337+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.852347+00:00       "max_update": 1.4994293451309204e-06,
+2026-09-29T20:45:48.852356+00:00       "actual_update": true
+2026-09-29T20:45:48.852364+00:00     },
+2026-09-29T20:45:48.852373+00:00     {
+2026-09-29T20:45:48.852382+00:00       "step": 51,
+2026-09-29T20:45:48.852390+00:00       "finite": true,
+2026-09-29T20:45:48.852399+00:00       "nonzero": true,
+2026-09-29T20:45:48.852408+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.852417+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.852426+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.852435+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.852443+00:00       "learning_rates": [
+2026-09-29T20:45:48.852453+00:00         1.046121315311508e-06,
+2026-09-29T20:45:48.852462+00:00         1.046121315311508e-06
+2026-09-29T20:45:48.852470+00:00       ],
+2026-09-29T20:45:48.852480+00:00       "skipped": false,
+2026-09-29T20:45:48.852499+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.852508+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.852517+00:00       "max_update": 1.3262033462524414e-06,
+2026-09-29T20:45:48.852526+00:00       "actual_update": true
+2026-09-29T20:45:48.852536+00:00     },
+2026-09-29T20:45:48.852545+00:00     {
+2026-09-29T20:45:48.852554+00:00       "step": 52,
+2026-09-29T20:45:48.852562+00:00       "finite": true,
+2026-09-29T20:45:48.852571+00:00       "nonzero": true,
+2026-09-29T20:45:48.852580+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.852588+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.852598+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.852607+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.852616+00:00       "learning_rates": [
+2026-09-29T20:45:48.852624+00:00         8.961827939636198e-07,
+2026-09-29T20:45:48.852634+00:00         8.961827939636198e-07
+2026-09-29T20:45:48.852642+00:00       ],
+2026-09-29T20:45:48.852662+00:00       "skipped": false,
+2026-09-29T20:45:48.852670+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.852678+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.852685+00:00       "max_update": 1.1730007827281952e-06,
+2026-09-29T20:45:48.852693+00:00       "actual_update": true
+2026-09-29T20:45:48.852701+00:00     },
+2026-09-29T20:45:48.852709+00:00     {
+2026-09-29T20:45:48.852716+00:00       "step": 53,
+2026-09-29T20:45:48.852723+00:00       "finite": true,
+2026-09-29T20:45:48.852730+00:00       "nonzero": true,
+2026-09-29T20:45:48.852738+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.852760+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.852768+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.852775+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.852783+00:00       "learning_rates": [
+2026-09-29T20:45:48.852790+00:00         7.567787125262449e-07,
+2026-09-29T20:45:48.852798+00:00         7.567787125262449e-07
+2026-09-29T20:45:48.852805+00:00       ],
+2026-09-29T20:45:48.852813+00:00       "skipped": false,
+2026-09-29T20:45:48.852820+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.852861+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.852869+00:00       "max_update": 9.746290743350983e-07,
+2026-09-29T20:45:48.852876+00:00       "actual_update": true
+2026-09-29T20:45:48.852884+00:00     },
+2026-09-29T20:45:48.852892+00:00     {
+2026-09-29T20:45:48.852899+00:00       "step": 54,
+2026-09-29T20:45:48.852906+00:00       "finite": true,
+2026-09-29T20:45:48.852914+00:00       "nonzero": true,
+2026-09-29T20:45:48.852922+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.852929+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.852937+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.852946+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.852954+00:00       "learning_rates": [
+2026-09-29T20:45:48.852961+00:00         6.282669192770896e-07,
+2026-09-29T20:45:48.852968+00:00         6.282669192770896e-07
+2026-09-29T20:45:48.852976+00:00       ],
+2026-09-29T20:45:48.852983+00:00       "skipped": false,
+2026-09-29T20:45:48.852990+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.852998+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.853005+00:00       "max_update": 8.121132850646973e-07,
+2026-09-29T20:45:48.853013+00:00       "actual_update": true
+2026-09-29T20:45:48.853020+00:00     },
+2026-09-29T20:45:48.853056+00:00     {
+2026-09-29T20:45:48.853065+00:00       "step": 55,
+2026-09-29T20:45:48.853073+00:00       "finite": true,
+2026-09-29T20:45:48.853080+00:00       "nonzero": true,
+2026-09-29T20:45:48.853088+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.853096+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.853103+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.853111+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.853119+00:00       "learning_rates": [
+2026-09-29T20:45:48.853126+00:00         5.109773021462921e-07,
+2026-09-29T20:45:48.853135+00:00         5.109773021462921e-07
+2026-09-29T20:45:48.853142+00:00       ],
+2026-09-29T20:45:48.853150+00:00       "skipped": false,
+2026-09-29T20:45:48.853158+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.853165+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.853173+00:00       "max_update": 6.48200511932373e-07,
+2026-09-29T20:45:48.853181+00:00       "actual_update": true
+2026-09-29T20:45:48.853188+00:00     },
+2026-09-29T20:45:48.853196+00:00     {
+2026-09-29T20:45:48.853204+00:00       "step": 56,
+2026-09-29T20:45:48.853211+00:00       "finite": true,
+2026-09-29T20:45:48.853218+00:00       "nonzero": true,
+2026-09-29T20:45:48.853226+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.853233+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.853241+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.853248+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.853256+00:00       "learning_rates": [
+2026-09-29T20:45:48.853264+00:00         4.05210941898847e-07,
+2026-09-29T20:45:48.853271+00:00         4.05210941898847e-07
+2026-09-29T20:45:48.853279+00:00       ],
+2026-09-29T20:45:48.853287+00:00       "skipped": false,
+2026-09-29T20:45:48.853294+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.853302+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.853309+00:00       "max_update": 5.387119017541409e-07,
+2026-09-29T20:45:48.853317+00:00       "actual_update": true
+2026-09-29T20:45:48.853325+00:00     },
+2026-09-29T20:45:48.853333+00:00     {
+2026-09-29T20:45:48.853341+00:00       "step": 57,
+2026-09-29T20:45:48.853349+00:00       "finite": true,
+2026-09-29T20:45:48.853356+00:00       "nonzero": true,
+2026-09-29T20:45:48.853363+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.853371+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.853378+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.853385+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.853393+00:00       "learning_rates": [
+2026-09-29T20:45:48.853401+00:00         3.112393392645985e-07,
+2026-09-29T20:45:48.853408+00:00         3.112393392645985e-07
+2026-09-29T20:45:48.853416+00:00       ],
+2026-09-29T20:45:48.853423+00:00       "skipped": false,
+2026-09-29T20:45:48.853431+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.853438+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.853445+00:00       "max_update": 4.01865690946579e-07,
+2026-09-29T20:45:48.853452+00:00       "actual_update": true
+2026-09-29T20:45:48.853461+00:00     },
+2026-09-29T20:45:48.853468+00:00     {
+2026-09-29T20:45:48.853475+00:00       "step": 58,
+2026-09-29T20:45:48.853483+00:00       "finite": true,
+2026-09-29T20:45:48.853490+00:00       "nonzero": true,
+2026-09-29T20:45:48.853498+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.853506+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.853513+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.853520+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.853527+00:00       "learning_rates": [
+2026-09-29T20:45:48.853535+00:00         2.2930371799975593e-07,
+2026-09-29T20:45:48.853542+00:00         2.2930371799975593e-07
+2026-09-29T20:45:48.853550+00:00       ],
+2026-09-29T20:45:48.853557+00:00       "skipped": false,
+2026-09-29T20:45:48.853565+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.853573+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.853580+00:00       "max_update": 2.9616057872772217e-07,
+2026-09-29T20:45:48.853588+00:00       "actual_update": true
+2026-09-29T20:45:48.853595+00:00     },
+2026-09-29T20:45:48.853603+00:00     {
+2026-09-29T20:45:48.853610+00:00       "step": 59,
+2026-09-29T20:45:48.853617+00:00       "finite": true,
+2026-09-29T20:45:48.853625+00:00       "nonzero": true,
+2026-09-29T20:45:48.853632+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.853640+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.853648+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.853655+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.853663+00:00       "learning_rates": [
+2026-09-29T20:45:48.853670+00:00         1.5961440566897913e-07,
+2026-09-29T20:45:48.853678+00:00         1.5961440566897913e-07
+2026-09-29T20:45:48.853685+00:00       ],
+2026-09-29T20:45:48.853693+00:00       "skipped": false,
+2026-09-29T20:45:48.853700+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.853708+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.853715+00:00       "max_update": 1.8812716007232666e-07,
+2026-09-29T20:45:48.853724+00:00       "actual_update": true
+2026-09-29T20:45:48.853732+00:00     },
+2026-09-29T20:45:48.853739+00:00     {
+2026-09-29T20:45:48.853746+00:00       "step": 60,
+2026-09-29T20:45:48.853754+00:00       "finite": true,
+2026-09-29T20:45:48.853763+00:00       "nonzero": true,
+2026-09-29T20:45:48.853770+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.853778+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.853786+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.853793+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.853801+00:00       "learning_rates": [
+2026-09-29T20:45:48.853808+00:00         1.0235029373752758e-07,
+2026-09-29T20:45:48.853816+00:00         1.0235029373752758e-07
+2026-09-29T20:45:48.853859+00:00       ],
+2026-09-29T20:45:48.853869+00:00       "skipped": false,
+2026-09-29T20:45:48.853876+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.853884+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.853891+00:00       "max_update": 1.2665987014770508e-07,
+2026-09-29T20:45:48.853899+00:00       "actual_update": true
+2026-09-29T20:45:48.853906+00:00     },
+2026-09-29T20:45:48.853913+00:00     {
+2026-09-29T20:45:48.853922+00:00       "step": 61,
+2026-09-29T20:45:48.853929+00:00       "finite": true,
+2026-09-29T20:45:48.853936+00:00       "nonzero": true,
+2026-09-29T20:45:48.853944+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.853952+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.853959+00:00       "nonfinite_gradients": [],
+2026-09-29T20:45:48.853967+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.853975+00:00       "learning_rates": [
+2026-09-29T20:45:48.853982+00:00         5.7658378359443104e-08,
+2026-09-29T20:45:48.853990+00:00         5.7658378359443104e-08
+2026-09-29T20:45:48.853997+00:00       ],
+2026-09-29T20:45:48.854004+00:00       "skipped": false,
+2026-09-29T20:45:48.854012+00:00       "scale_after": 32768.0,
+2026-09-29T20:45:48.854020+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.854027+00:00       "max_update": 7.078051567077637e-08,
+2026-09-29T20:45:48.854034+00:00       "actual_update": true
+2026-09-29T20:45:48.854042+00:00     },
+2026-09-29T20:45:48.854050+00:00     {
+2026-09-29T20:45:48.854057+00:00       "step": 62,
+2026-09-29T20:45:48.854065+00:00       "finite": false,
+2026-09-29T20:45:48.854073+00:00       "nonzero": false,
+2026-09-29T20:45:48.854081+00:00       "grad_tensor_count": 112,
+2026-09-29T20:45:48.854089+00:00       "missing_gradients": [],
+2026-09-29T20:45:48.854096+00:00       "nonfinite_gradients": [
+2026-09-29T20:45:48.854103+00:00         "base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854111+00:00         "base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854119+00:00         "base_model.model.model.layers.0.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854127+00:00         "base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854162+00:00         "base_model.model.model.layers.1.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854170+00:00         "base_model.model.model.layers.1.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854178+00:00         "base_model.model.model.layers.1.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854186+00:00         "base_model.model.model.layers.1.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854194+00:00         "base_model.model.model.layers.2.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854202+00:00         "base_model.model.model.layers.2.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854211+00:00         "base_model.model.model.layers.2.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854218+00:00         "base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854226+00:00         "base_model.model.model.layers.3.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854234+00:00         "base_model.model.model.layers.3.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854241+00:00         "base_model.model.model.layers.3.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854249+00:00         "base_model.model.model.layers.3.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854256+00:00         "base_model.model.model.layers.4.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854280+00:00         "base_model.model.model.layers.4.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854288+00:00         "base_model.model.model.layers.4.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854295+00:00         "base_model.model.model.layers.4.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854303+00:00         "base_model.model.model.layers.5.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854311+00:00         "base_model.model.model.layers.5.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854319+00:00         "base_model.model.model.layers.5.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854327+00:00         "base_model.model.model.layers.5.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854336+00:00         "base_model.model.model.layers.6.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854344+00:00         "base_model.model.model.layers.6.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854380+00:00         "base_model.model.model.layers.6.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854388+00:00         "base_model.model.model.layers.6.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854397+00:00         "base_model.model.model.layers.7.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854404+00:00         "base_model.model.model.layers.7.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854412+00:00         "base_model.model.model.layers.7.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854420+00:00         "base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854428+00:00         "base_model.model.model.layers.8.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854436+00:00         "base_model.model.model.layers.8.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854444+00:00         "base_model.model.model.layers.8.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854452+00:00         "base_model.model.model.layers.8.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854460+00:00         "base_model.model.model.layers.9.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854468+00:00         "base_model.model.model.layers.9.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854476+00:00         "base_model.model.model.layers.9.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854483+00:00         "base_model.model.model.layers.9.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854492+00:00         "base_model.model.model.layers.10.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854500+00:00         "base_model.model.model.layers.10.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854508+00:00         "base_model.model.model.layers.10.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854516+00:00         "base_model.model.model.layers.10.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854537+00:00         "base_model.model.model.layers.11.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854545+00:00         "base_model.model.model.layers.11.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854554+00:00         "base_model.model.model.layers.11.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854561+00:00         "base_model.model.model.layers.11.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854569+00:00         "base_model.model.model.layers.12.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854577+00:00         "base_model.model.model.layers.12.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854584+00:00         "base_model.model.model.layers.12.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854592+00:00         "base_model.model.model.layers.12.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854600+00:00         "base_model.model.model.layers.13.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854608+00:00         "base_model.model.model.layers.13.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854617+00:00         "base_model.model.model.layers.13.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854625+00:00         "base_model.model.model.layers.13.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854633+00:00         "base_model.model.model.layers.14.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854641+00:00         "base_model.model.model.layers.14.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854650+00:00         "base_model.model.model.layers.14.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854658+00:00         "base_model.model.model.layers.14.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854666+00:00         "base_model.model.model.layers.15.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854674+00:00         "base_model.model.model.layers.15.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854682+00:00         "base_model.model.model.layers.15.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854691+00:00         "base_model.model.model.layers.15.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854699+00:00         "base_model.model.model.layers.16.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854707+00:00         "base_model.model.model.layers.16.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854716+00:00         "base_model.model.model.layers.16.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854724+00:00         "base_model.model.model.layers.16.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854732+00:00         "base_model.model.model.layers.17.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854740+00:00         "base_model.model.model.layers.17.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854749+00:00         "base_model.model.model.layers.17.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854757+00:00         "base_model.model.model.layers.17.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854764+00:00         "base_model.model.model.layers.18.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854773+00:00         "base_model.model.model.layers.18.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854781+00:00         "base_model.model.model.layers.18.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854808+00:00         "base_model.model.model.layers.18.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854817+00:00         "base_model.model.model.layers.19.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854843+00:00         "base_model.model.model.layers.19.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854852+00:00         "base_model.model.model.layers.19.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854860+00:00         "base_model.model.model.layers.19.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854869+00:00         "base_model.model.model.layers.20.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854876+00:00         "base_model.model.model.layers.20.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854885+00:00         "base_model.model.model.layers.20.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854893+00:00         "base_model.model.model.layers.20.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854901+00:00         "base_model.model.model.layers.21.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854920+00:00         "base_model.model.model.layers.21.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854927+00:00         "base_model.model.model.layers.21.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854935+00:00         "base_model.model.model.layers.21.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854942+00:00         "base_model.model.model.layers.22.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854949+00:00         "base_model.model.model.layers.22.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854957+00:00         "base_model.model.model.layers.22.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854964+00:00         "base_model.model.model.layers.22.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.854988+00:00         "base_model.model.model.layers.23.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.854997+00:00         "base_model.model.model.layers.23.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.855004+00:00         "base_model.model.model.layers.23.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.855013+00:00         "base_model.model.model.layers.23.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.855021+00:00         "base_model.model.model.layers.24.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.855030+00:00         "base_model.model.model.layers.24.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.855037+00:00         "base_model.model.model.layers.24.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.855045+00:00         "base_model.model.model.layers.24.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.855054+00:00         "base_model.model.model.layers.25.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.855061+00:00         "base_model.model.model.layers.25.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.855070+00:00         "base_model.model.model.layers.25.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.855077+00:00         "base_model.model.model.layers.25.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.855085+00:00         "base_model.model.model.layers.26.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.855093+00:00         "base_model.model.model.layers.26.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.855101+00:00         "base_model.model.model.layers.26.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.855109+00:00         "base_model.model.model.layers.26.self_attn.v_proj.lora_B.default.weight",
+2026-09-29T20:45:48.855117+00:00         "base_model.model.model.layers.27.self_attn.q_proj.lora_A.default.weight",
+2026-09-29T20:45:48.855124+00:00         "base_model.model.model.layers.27.self_attn.q_proj.lora_B.default.weight",
+2026-09-29T20:45:48.855132+00:00         "base_model.model.model.layers.27.self_attn.v_proj.lora_A.default.weight",
+2026-09-29T20:45:48.855140+00:00         "base_model.model.model.layers.27.self_attn.v_proj.lora_B.default.weight"
+2026-09-29T20:45:48.855148+00:00       ],
+2026-09-29T20:45:48.855157+00:00       "scale_before": 32768.0,
+2026-09-29T20:45:48.855165+00:00       "learning_rates": [
+2026-09-29T20:45:48.855173+00:00         2.5653383040524228e-08,
+2026-09-29T20:45:48.855181+00:00         2.5653383040524228e-08
+2026-09-29T20:45:48.855189+00:00       ],
+2026-09-29T20:45:48.855198+00:00       "skipped": true,
+2026-09-29T20:45:48.855206+00:00       "scale_after": 16384.0,
+2026-09-29T20:45:48.855214+00:00       "parameters_finite": true,
+2026-09-29T20:45:48.855221+00:00       "max_update": 0.0,
+2026-09-29T20:45:48.855240+00:00       "actual_update": false
+2026-09-29T20:45:48.855247+00:00     }
+2026-09-29T20:45:48.855255+00:00   ],
+2026-09-29T20:45:48.855263+00:00   "actual_updates": 60,
+2026-09-29T20:45:48.855270+00:00   "independent_throughput": {
+2026-09-29T20:45:48.855277+00:00     "pairs_presented": 500,
+2026-09-29T20:45:48.855284+00:00     "nonpadding_tokens_presented": 246845,
+2026-09-29T20:45:48.855293+00:00     "completion_tokens_presented": 149515,
+2026-09-29T20:45:48.855300+00:00     "wall_seconds": 1125.5755679460017,
+2026-09-29T20:45:48.855308+00:00     "pairs_per_second": 0.44421717585112597,
+2026-09-29T20:45:48.855317+00:00     "nonpadding_tokens_per_second": 219.30557754594238,
+2026-09-29T20:45:48.855325+00:00     "definition": "Collated pair presentations, including AMP-skipped attempts; chosen/rejected prompts each counted; reference compute not counted as extra tokens"
+2026-09-29T20:45:48.855333+00:00   },
+2026-09-29T20:45:48.855340+00:00   "training_peak_allocated": 3578143232,
+2026-09-29T20:45:48.855348+00:00   "training_peak_reserved": 7365197824,
+2026-09-29T20:45:48.855355+00:00   "train_metrics": {
+2026-09-29T20:45:48.855363+00:00     "train_runtime": 1125.2933,
+2026-09-29T20:45:48.855370+00:00     "train_samples_per_second": 0.444,
+2026-09-29T20:45:48.855378+00:00     "train_steps_per_second": 0.056,
+2026-09-29T20:45:48.855386+00:00     "total_flos": 2326609135319040.0,
+2026-09-29T20:45:48.855393+00:00     "train_loss": 0.6916357543733385
+2026-09-29T20:45:48.855400+00:00   },
+2026-09-29T20:45:48.855408+00:00   "steps": 63,
+2026-09-29T20:45:48.855429+00:00   "max_parameter_delta": 0.0002647917717695236,
+2026-09-29T20:45:48.855437+00:00   "policy_logit_delta": 0.1255950927734375,
+2026-09-29T20:45:48.855444+00:00   "adapter_effect_after": 0.1255950927734375,
+2026-09-29T20:45:48.855451+00:00   "disabled_base_drift": 0.0,
+2026-09-29T20:45:48.855459+00:00   "limitations": "No held-out quality claim; no reload parity yet; no resident gradient parity; no ship verdict.",
+2026-09-29T20:45:48.855467+00:00   "final_peak_allocated": 3578143232,
+2026-09-29T20:45:48.855474+00:00   "final_peak_reserved": 7365197824,
+2026-09-29T20:45:48.855482+00:00   "finished_utc": "2026-09-29T20:45:48.838496+00:00"
+2026-09-29T20:45:48.855490+00:00 }
+
+END exit_code=0

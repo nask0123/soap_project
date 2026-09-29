@@ -1,0 +1,7 @@
+START 2026-09-29T17:49:40.591203+00:00
+COMMAND ['/usr/bin/python3', '-m', 'uv', 'pip', 'check', '--python', '/content/soup-py312/bin/python']
+2026-09-29T17:49:40.649173+00:00 Using Python 3.12.3 environment at: soup-py312
+2026-09-29T17:49:40.650196+00:00 Checked 82 packages in 1ms
+2026-09-29T17:49:40.658698+00:00 All installed packages are compatible
+
+END exit_code=0

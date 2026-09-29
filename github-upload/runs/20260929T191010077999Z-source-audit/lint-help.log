@@ -1,0 +1,32 @@
+START 2026-09-29T19:10:11.234227+00:00
+COMMAND ['/content/soup-py312/bin/soup', 'data', 'lint', '--help']
+2026-09-29T19:10:12.161968+00:00                                                                                 
+2026-09-29T19:10:12.162007+00:00  Usage: soup data lint [OPTIONS] PATH                                           
+2026-09-29T19:10:12.162020+00:00                                                                                 
+2026-09-29T19:10:12.167986+00:00  Preference-data linter (dpo/orpo/simpo/ipo/bco/kto).                           
+2026-09-29T19:10:12.168013+00:00                                                                                 
+2026-09-29T19:10:12.168024+00:00  Flags the top silent preference-data bugs: length bias (chosen                 
+2026-09-29T19:10:12.168036+00:00  systematically longer than rejected — reported as a Cohen's d effect           
+2026-09-29T19:10:12.168050+00:00  size), KTO label imbalance, near-duplicate pairs, chosen == rejected           
+2026-09-29T19:10:12.168060+00:00  rows, and the prompt echoed verbatim inside the completion.                    
+2026-09-29T19:10:12.168075+00:00                                                                                 
+2026-09-29T19:10:12.171827+00:00 ╭─ Arguments ──────────────────────────────────────────────────────────────────╮
+2026-09-29T19:10:12.171893+00:00 │ *    path      TEXT  [required]                                              │
+2026-09-29T19:10:12.171905+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-09-29T19:10:12.183906+00:00 ╭─ Options ────────────────────────────────────────────────────────────────────╮
+2026-09-29T19:10:12.183930+00:00 │ --format             -f      TEXT     Dataset format: auto, dpo, kto.        │
+2026-09-29T19:10:12.183942+00:00 │                                       [default: auto]                        │
+2026-09-29T19:10:12.183952+00:00 │ --model              -m      TEXT     Optional tokenizer for exact           │
+2026-09-29T19:10:12.183964+00:00 │                                       token-length bias (default: word       │
+2026-09-29T19:10:12.183974+00:00 │                                       count).                                │
+2026-09-29T19:10:12.183984+00:00 │ --sample                     INTEGER  Number of rows to sample for the       │
+2026-09-29T19:10:12.183993+00:00 │                                       checks.                                │
+2026-09-29T19:10:12.184002+00:00 │                                       [default: 2000]                        │
+2026-09-29T19:10:12.184013+00:00 │ --trust-remote-code                   Allow loading a tokenizer that ships   │
+2026-09-29T19:10:12.184022+00:00 │                                       custom code.                           │
+2026-09-29T19:10:12.184030+00:00 │ --output             -o      TEXT     Write the report JSON to this path.    │
+2026-09-29T19:10:12.184039+00:00 │ --help                                Show this message and exit.            │
+2026-09-29T19:10:12.184048+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-09-29T19:10:12.184057+00:00 
+
+END exit_code=0

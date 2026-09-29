@@ -1,0 +1,11 @@
+START 2026-09-29T19:10:10.078741+00:00
+COMMAND ['/content/soup-py312/bin/python', '/content/soup_takehome/20260929T191010077999Z-source-audit/collect_source.py', '/content/soup_takehome/20260929T191010077999Z-source-audit']
+2026-09-29T19:10:10.366313+00:00 soup-cli 0.75.1
+2026-09-29T19:10:10.366350+00:00 transformers 5.17.0
+2026-09-29T19:10:10.366363+00:00 trl 0.29.1
+2026-09-29T19:10:10.366374+00:00 peft 0.21.1
+2026-09-29T19:10:10.366385+00:00 torch 2.14.0
+2026-09-29T19:10:10.366394+00:00 soup_cli: saved 433 Python source files
+2026-09-29T19:10:10.366402+00:00 trl: saved 18 Python source files
+
+END exit_code=0

@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/content/soup_takehome/20260929T191833221370Z-smoke-launch/smoke_dpo.py", line 180, in <module>
+    main()
+  File "/content/soup_takehome/20260929T191833221370Z-smoke-launch/smoke_dpo.py", line 81, in main
+    wrapper.setup(dataset)
+  File "/content/soup-py312/lib/python3.12/site-packages/soup_cli/trainer/dpo.py", line 102, in setup
+    self._setup_streaming_transformers(cfg, tcfg)
+  File "/content/soup-py312/lib/python3.12/site-packages/soup_cli/trainer/stream_setup.py", line 565, in _setup_streaming_transformers
+    source_bytes = source_weight_bytes(weights_dir)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/soup-py312/lib/python3.12/site-packages/soup_cli/utils/layer_shard.py", line 668, in source_weight_bytes
+    return sum(os.path.getsize(path) for path in _discover_safetensors(weights_dir))
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/soup-py312/lib/python3.12/site-packages/soup_cli/utils/layer_shard.py", line 595, in _discover_safetensors
+    raise FileNotFoundError(
+FileNotFoundError: no .safetensors weight files found in /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306 — layer streaming needs a safetensors checkpoint

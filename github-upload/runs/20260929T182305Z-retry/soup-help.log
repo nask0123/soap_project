@@ -1,0 +1,198 @@
+START 2026-09-29T18:23:08.413758+00:00
+COMMAND ['/content/soup-py312/bin/soup', '--help']
+2026-09-29T18:23:09.050048+00:00                                                                                 
+2026-09-29T18:23:09.050087+00:00  Usage: soup [OPTIONS] [COMMAND] [ARGS]...                                      
+2026-09-29T18:23:09.050100+00:00                                                                                 
+2026-09-29T18:23:09.053356+00:00  Fine-tune and post-train LLMs in one command. No SSH, no config hell.          
+2026-09-29T18:23:09.053383+00:00                                                                                 
+2026-09-29T18:23:09.053394+00:00  GitHub: https://github.com/MakazhanAlpamys/Soup                                
+2026-09-29T18:23:09.053404+00:00                                                                                 
+2026-09-29T18:23:09.061677+00:00 ╭─ Options ────────────────────────────────────────────────────────────────────╮
+2026-09-29T18:23:09.061701+00:00 │ --verbose             -V            Show full traceback on errors            │
+2026-09-29T18:23:09.061713+00:00 │ --log-level                   TEXT  Logging tier: quiet | normal | verbose | │
+2026-09-29T18:23:09.061723+00:00 │                                     debug                                    │
+2026-09-29T18:23:09.061740+00:00 │                                     [default: normal]                        │
+2026-09-29T18:23:09.061749+00:00 │ --no-audit-log                      Disable the local HIPAA/SOC2 audit log   │
+2026-09-29T18:23:09.061759+00:00 │                                     for this invocation (also via            │
+2026-09-29T18:23:09.061768+00:00 │                                     SOUP_NO_AUDIT_LOG=1). Default: a         │
+2026-09-29T18:23:09.061777+00:00 │                                     one-line record per command under        │
+2026-09-29T18:23:09.061786+00:00 │                                     ~/.soup/audit.jsonl. v0.71.3.            │
+2026-09-29T18:23:09.061804+00:00 │ --no-telemetry                      Opt-out of anonymous hardware-only       │
+2026-09-29T18:23:09.061814+00:00 │                                     telemetry for this run.                  │
+2026-09-29T18:23:09.061824+00:00 │ --install-completion                Install completion for the current       │
+2026-09-29T18:23:09.061847+00:00 │                                     shell.                                   │
+2026-09-29T18:23:09.061856+00:00 │ --show-completion                   Show completion for the current shell,   │
+2026-09-29T18:23:09.061867+00:00 │                                     to copy it or customize the              │
+2026-09-29T18:23:09.061876+00:00 │                                     installation.                            │
+2026-09-29T18:23:09.061885+00:00 │ --help                              Show this message and exit.              │
+2026-09-29T18:23:09.061895+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-09-29T18:23:09.082917+00:00 ╭─ Commands ───────────────────────────────────────────────────────────────────╮
+2026-09-29T18:23:09.082942+00:00 │ init                        Create a new soup.yaml config interactively or   │
+2026-09-29T18:23:09.082954+00:00 │                             from a template.                                 │
+2026-09-29T18:23:09.082965+00:00 │ train                       Start training from a soup.yaml config.          │
+2026-09-29T18:23:09.082975+00:00 │ chat                        Chat with a fine-tuned model in the terminal.    │
+2026-09-29T18:23:09.082985+00:00 │ cost                        Estimate training cost in USD across cloud       │
+2026-09-29T18:23:09.082994+00:00 │                             providers.                                       │
+2026-09-29T18:23:09.083003+00:00 │ push                        Push a trained model to HuggingFace Hub (or      │
+2026-09-29T18:23:09.083013+00:00 │                             alternate hub).                                  │
+2026-09-29T18:23:09.083023+00:00 │ export                      Export a model to GGUF, ONNX, TensorRT-LLM, AWQ, │
+2026-09-29T18:23:09.083033+00:00 │                             GPTQ, or TorchAO format.                         │
+2026-09-29T18:23:09.083042+00:00 │ merge                       Merge a LoRA adapter with its base model into a  │
+2026-09-29T18:23:09.083051+00:00 │                             full model.                                      │
+2026-09-29T18:23:09.083061+00:00 │ card                        Generate a HuggingFace model card from a         │
+2026-09-29T18:23:09.083070+00:00 │                             registry entry.                                  │
+2026-09-29T18:23:09.083080+00:00 │ migrate                     Import a config from LLaMA-Factory, Axolotl, or  │
+2026-09-29T18:23:09.083090+00:00 │                             Unsloth notebook.                                │
+2026-09-29T18:23:09.083100+00:00 │ serve                       Start a local inference server with              │
+2026-09-29T18:23:09.083109+00:00 │                             OpenAI-compatible API.                           │
+2026-09-29T18:23:09.083127+00:00 │ sweep                       Run hyperparameter sweep: grid or random search  │
+2026-09-29T18:23:09.083138+00:00 │                             over training parameters.                        │
+2026-09-29T18:23:09.083148+00:00 │ diff                        Compare outputs of two models side-by-side on    │
+2026-09-29T18:23:09.083158+00:00 │                             the same prompts.                                │
+2026-09-29T18:23:09.083168+00:00 │ infer                       Run batch inference on a JSONL file of prompts.  │
+2026-09-29T18:23:09.083178+00:00 │ profile                     Estimate memory, speed, and GPU requirements     │
+2026-09-29T18:23:09.083188+00:00 │                             BEFORE training.                                 │
+2026-09-29T18:23:09.083198+00:00 │ bench                       Run an inference benchmark (speed and memory) on │
+2026-09-29T18:23:09.083209+00:00 │                             a loaded model.                                  │
+2026-09-29T18:23:09.083220+00:00 │ doctor                      Check system dependencies, GPU, and              │
+2026-09-29T18:23:09.083230+00:00 │                             compatibility.                                   │
+2026-09-29T18:23:09.083240+00:00 │ quickstart                  Run a complete demo: create sample data, config, │
+2026-09-29T18:23:09.083250+00:00 │                             and train.                                       │
+2026-09-29T18:23:09.083261+00:00 │ ui                          Launch the Soup Web UI.                          │
+2026-09-29T18:23:09.083271+00:00 │ autopilot                   Autopilot: give model+data+goal, Soup picks      │
+2026-09-29T18:23:09.083282+00:00 │                             optimal hyperparameters.                         │
+2026-09-29T18:23:09.083292+00:00 │ history                     Show the lineage tree for all entries with a     │
+2026-09-29T18:23:09.083301+00:00 │                             given name.                                      │
+2026-09-29T18:23:09.083311+00:00 │ why                         Explain training anomalies for a run in plain    │
+2026-09-29T18:23:09.083321+00:00 │                             English.                                         │
+2026-09-29T18:23:09.083331+00:00 │ tui                         Full-screen terminal dashboard: list runs,       │
+2026-09-29T18:23:09.083341+00:00 │                             inspect metrics, tail logs.                      │
+2026-09-29T18:23:09.083399+00:00 │ monitor                     Live GPU monitor: Util / Temp / VRAM / Power per │
+2026-09-29T18:23:09.083411+00:00 │                             GPU.                                             │
+2026-09-29T18:23:09.083421+00:00 │ fetch                       Fetch a ready-to-edit example config from the    │
+2026-09-29T18:23:09.083432+00:00 │                             bundled catalog.                                 │
+2026-09-29T18:23:09.083453+00:00 │ quantize                    Quantize a model - ergonomic alias for `soup     │
+2026-09-29T18:23:09.083463+00:00 │                             export --format <to>`.                           │
+2026-09-29T18:23:09.083473+00:00 │ merge-sharded-fsdp-weights  Consolidate FSDP shard files into a single       │
+2026-09-29T18:23:09.083482+00:00 │                             safetensors file.                                │
+2026-09-29T18:23:09.083492+00:00 │ delinearize-llama4          Delinearize Llama 4 fused expert weights to 3-D  │
+2026-09-29T18:23:09.083511+00:00 │                             form.                                            │
+2026-09-29T18:23:09.083520+00:00 │ diagnose                    Post-training report card: forgetting / refusal  │
+2026-09-29T18:23:09.083529+00:00 │                             / format / mode_collapse / memorization /        │
+2026-09-29T18:23:09.083537+00:00 │                             contamination (v0.56.0).                         │
+2026-09-29T18:23:09.083547+00:00 │ airgap-bundle               Build a signed tarball with model + datasets +   │
+2026-09-29T18:23:09.083556+00:00 │                             wheels + kernels (v0.60.0).                      │
+2026-09-29T18:23:09.083565+00:00 │ ingest                      Universal trace importer: Langfuse / LangSmith / │
+2026-09-29T18:23:09.083574+00:00 │                             Helicone / OpenPipe / OTel / OpenAI Stored       │
+2026-09-29T18:23:09.083584+00:00 │                             Completions (v0.63.0).                           │
+2026-09-29T18:23:09.083592+00:00 │ prune-prompt                Detect + strip a shared system-prompt prefix     │
+2026-09-29T18:23:09.083599+00:00 │                             across training data so the FT model             │
+2026-09-29T18:23:09.083607+00:00 │                             internalises it (v0.63.0).                       │
+2026-09-29T18:23:09.083615+00:00 │ ab                          mSPRT sequential A/B harness on latency /        │
+2026-09-29T18:23:09.083624+00:00 │                             judge_score / retry_rate with early-stop         │
+2026-09-29T18:23:09.083632+00:00 │                             guarantees (v0.63.0).                            │
+2026-09-29T18:23:09.083640+00:00 │ drift-alarm                 Rolling-KL drift alarm on output-token           │
+2026-09-29T18:23:09.083649+00:00 │                             distribution with optional Slack/Discord webhook │
+2026-09-29T18:23:09.083658+00:00 │                             (v0.63.0).                                       │
+2026-09-29T18:23:09.083666+00:00 │ tunability                  Probe-train 6-10 small bases on a held-out slice │
+2026-09-29T18:23:09.083676+00:00 │                             + report Pareto frontier of (eval delta, train   │
+2026-09-29T18:23:09.083684+00:00 │                             cost, license) (v0.64.0).                        │
+2026-09-29T18:23:09.083692+00:00 │ plan                        Render a pre-flight training plan (cost / ETA /  │
+2026-09-29T18:23:09.083700+00:00 │                             SHA / VRAM) and write soup.tfstate for `soup     │
+2026-09-29T18:23:09.083708+00:00 │                             apply` to consult (v0.64.0).                     │
+2026-09-29T18:23:09.083716+00:00 │ apply                       Execute the planned training run, refusing on    │
+2026-09-29T18:23:09.083724+00:00 │                             drift between soup.yaml and soup.tfstate         │
+2026-09-29T18:23:09.083744+00:00 │                             (v0.64.0).                                       │
+2026-09-29T18:23:09.083752+00:00 │ completions                 Emit a bash / zsh / fish completion script. Use  │
+2026-09-29T18:23:09.083761+00:00 │                             with `eval "$(soup completions bash)"`           │
+2026-09-29T18:23:09.083769+00:00 │                             (v0.64.0).                                       │
+2026-09-29T18:23:09.083779+00:00 │ license-advisor             Recommend a license-clean base for a deploy      │
+2026-09-29T18:23:09.083788+00:00 │                             target (b2c / defense / embedded) + flag         │
+2026-09-29T18:23:09.083797+00:00 │                             downstream risk (v0.64.0).                       │
+2026-09-29T18:23:09.083805+00:00 │ compile                     Compile a DSPy / GEPA prompt program against an  │
+2026-09-29T18:23:09.083814+00:00 │                             eval suite (v0.68.0).                            │
+2026-09-29T18:23:09.083823+00:00 │ distill-prompt              Distill prompt-heavy traces into a small FT plan │
+2026-09-29T18:23:09.083847+00:00 │                             (v0.68.0).                                       │
+2026-09-29T18:23:09.083857+00:00 │ compile-tools               Compile / optimize tool schemas + descriptions   │
+2026-09-29T18:23:09.083866+00:00 │                             (v0.68.0).                                       │
+2026-09-29T18:23:09.083874+00:00 │ apple-adapter               Convert / sign HF / MLX / Apple FoundationModels │
+2026-09-29T18:23:09.083888+00:00 │                             adapters (v0.68.0).                              │
+2026-09-29T18:23:09.083896+00:00 │ build                       dbt-for-SFT DAG: validate + plan dataset         │
+2026-09-29T18:23:09.083905+00:00 │                             transforms (v0.69.0 Part A).                     │
+2026-09-29T18:23:09.083914+00:00 │ expect                      Run an expectations suite against a JSONL        │
+2026-09-29T18:23:09.083950+00:00 │                             dataset (v0.69.0 Part B).                        │
+2026-09-29T18:23:09.083960+00:00 │ shrink                      Depth-prune a model (drop the least-important    │
+2026-09-29T18:23:09.083969+00:00 │                             contiguous layer block by residual angular       │
+2026-09-29T18:23:09.083978+00:00 │                             distance) + optional distill-heal (v0.71.29).    │
+2026-09-29T18:23:09.083987+00:00 │ version                     Show Soup CLI version.                           │
+2026-09-29T18:23:09.083996+00:00 │ ci                          Fine-tuning CI: init a PR gate workflow.         │
+2026-09-29T18:23:09.084004+00:00 │ data                        Dataset tools: inspect, convert, merge, dedup,   │
+2026-09-29T18:23:09.084013+00:00 │                             validate, stats.                                 │
+2026-09-29T18:23:09.084022+00:00 │ deploy                      Deploy models: Ollama integration (deploy, list, │
+2026-09-29T18:23:09.084032+00:00 │                             remove).                                         │
+2026-09-29T18:23:09.084041+00:00 │ runs                        Experiment tracking: list, show, compare runs.   │
+2026-09-29T18:23:09.084049+00:00 │ eval                        Evaluate models: benchmarks, custom evals, LLM   │
+2026-09-29T18:23:09.084059+00:00 │                             judge, leaderboard.                              │
+2026-09-29T18:23:09.084069+00:00 │ adapters                    Adapter management: list, info, compare LoRA     │
+2026-09-29T18:23:09.084077+00:00 │                             adapters.                                        │
+2026-09-29T18:23:09.084092+00:00 │ recipes                     Ready-made configs: list, show, use, search      │
+2026-09-29T18:23:09.084101+00:00 │                             recipes for popular models.                      │
+2026-09-29T18:23:09.084137+00:00 │ registry                    Model Registry: push, list, show, diff, search,  │
+2026-09-29T18:23:09.084147+00:00 │                             promote, delete.                                 │
+2026-09-29T18:23:09.084156+00:00 │ spectrum                    Spectrum SNR scan for targeted training          │
+2026-09-29T18:23:09.084166+00:00 │                             (v0.71.23).                                      │
+2026-09-29T18:23:09.084174+00:00 │ can                         Soup Cans: pack/inspect/verify/fork shareable    │
+2026-09-29T18:23:09.084183+00:00 │                             .can artifacts.                                  │
+2026-09-29T18:23:09.084193+00:00 │ llama                       Proxy to llama.cpp binaries (cli / mtmd-cli /    │
+2026-09-29T18:23:09.084201+00:00 │                             gguf-split / server).                            │
+2026-09-29T18:23:09.084211+00:00 │ plugins                     List, enable, disable Soup plugins (v0.45.0).    │
+2026-09-29T18:23:09.084220+00:00 │ agent                       Agent Forge: spec -> tool-calling dataset /      │
+2026-09-29T18:23:09.084229+00:00 │                             train / eval (v0.46.0).                          │
+2026-09-29T18:23:09.084238+00:00 │ tokenizer                   Tokenizer tools: train a BPE tokenizer from      │
+2026-09-29T18:23:09.084247+00:00 │                             JSONL (v0.53.9).                                 │
+2026-09-29T18:23:09.084255+00:00 │ advise                      Pre-flight decision: PROMPT_ENG / RAG / SFT /    │
+2026-09-29T18:23:09.084265+00:00 │                             DPO / GRPO. Run BEFORE you spend 8 hours on a    │
+2026-09-29T18:23:09.084274+00:00 │                             GPU (v0.54.0).                                   │
+2026-09-29T18:23:09.084284+00:00 │ ship                        SHIP / DON'T SHIP verdict after fine-tuning:     │
+2026-09-29T18:23:09.084294+00:00 │                             task win AND no catastrophic forgetting, fused   │
+2026-09-29T18:23:09.084303+00:00 │                             into one decision (v0.71.25).                    │
+2026-09-29T18:23:09.084312+00:00 │ loop                        Data flywheel: traces -> preference pairs -> DPO │
+2026-09-29T18:23:09.084321+00:00 │                             -> gate -> canary deploy -> rollback, all from   │
+2026-09-29T18:23:09.084331+00:00 │                             the CLI (v0.58.0).                               │
+2026-09-29T18:23:09.084340+00:00 │ bom                         CycloneDX ML-BOM + SPDX AI bill-of-materials     │
+2026-09-29T18:23:09.084349+00:00 │                             emitter (v0.59.0).                               │
+2026-09-29T18:23:09.084358+00:00 │ attest                      In-toto + SLSA-3 attestations per Soup Can stage │
+2026-09-29T18:23:09.084368+00:00 │                             (v0.59.0).                                       │
+2026-09-29T18:23:09.084377+00:00 │ audit-log                   HIPAA/SOC2-shaped JSONL audit log: tail + rotate │
+2026-09-29T18:23:09.084387+00:00 │                             (v0.59.0).                                       │
+2026-09-29T18:23:09.084396+00:00 │ edit                        Knowledge editing (ROME / MEMIT / AlphaEdit) -   │
+2026-09-29T18:23:09.084406+00:00 │                             patch facts without re-training (v0.61.0).       │
+2026-09-29T18:23:09.084415+00:00 │ steer                       Activation steering (CAA / ITI / RepE) -         │
+2026-09-29T18:23:09.084424+00:00 │                             inference-time intervention without retraining   │
+2026-09-29T18:23:09.084432+00:00 │                             (v0.62.0).                                       │
+2026-09-29T18:23:09.084441+00:00 │ env                         Hermetic env lockfile + ABI drift detection      │
+2026-09-29T18:23:09.084449+00:00 │                             (v0.64.0).                                       │
+2026-09-29T18:23:09.084458+00:00 │ probe                       Activation probes: sleeper-agent defection /     │
+2026-09-29T18:23:09.084466+00:00 │                             honesty / misuse / pairwise interference / SAE   │
+2026-09-29T18:23:09.084475+00:00 │                             feature diff / probe pack (v0.66.0, truth+harm   │
+2026-09-29T18:23:09.084484+00:00 │                             v0.71.8).                                        │
+2026-09-29T18:23:09.084493+00:00 │ lock                        Shared run lockfile (write / show / check) -     │
+2026-09-29T18:23:09.084502+00:00 │                             v0.67.0 Part E.                                  │
+2026-09-29T18:23:09.084512+00:00 │ local-rl                    Personal-LLM flywheel daemon (init / status /    │
+2026-09-29T18:23:09.084520+00:00 │                             record / harvest / train) (v0.68.0).             │
+2026-09-29T18:23:09.084529+00:00 │ iterative-dpo               Iterative DPO loop driver (v0.70.0 Part E).      │
+2026-09-29T18:23:09.084538+00:00 │ ra-dit                      RA-DIT two-stage orchestrator: retriever ->      │
+2026-09-29T18:23:09.084548+00:00 │                             generator (v0.71.10).                            │
+2026-09-29T18:23:09.084563+00:00 │ mcp                         Model Context Protocol server - drive Soup from  │
+2026-09-29T18:23:09.084573+00:00 │                             any MCP client (v0.71.28).                       │
+2026-09-29T18:23:09.084582+00:00 │ draft                       Train + measure a speculative-decoding draft     │
+2026-09-29T18:23:09.084591+00:00 │                             model: distil your tuned model into a tiny       │
+2026-09-29T18:23:09.084601+00:00 │                             draft, then serve it with --auto-spec            │
+2026-09-29T18:23:09.084610+00:00 │                             (v0.71.33).                                      │
+2026-09-29T18:23:09.084620+00:00 │ reward                      Synthesize a deterministic reward verifier from  │
+2026-09-29T18:23:09.084629+00:00 │                             reference outputs, with a calibration report     │
+2026-09-29T18:23:09.084638+00:00 │                             that refuses degenerate verifiers (v0.71.40).    │
+2026-09-29T18:23:09.084647+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-09-29T18:23:09.084658+00:00 
+
+END exit_code=0

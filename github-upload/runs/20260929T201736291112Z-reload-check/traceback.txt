@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/content/soup_takehome/20260929T201736219919Z-reload-launch/verify_adapter.py", line 80, in <module>
+    main()
+  File "/content/soup_takehome/20260929T201736219919Z-reload-launch/verify_adapter.py", line 73, in main
+    assert report['active_allclose'] and report['disabled_allclose'], 'Resident reload differs from streamed output'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Resident reload differs from streamed output

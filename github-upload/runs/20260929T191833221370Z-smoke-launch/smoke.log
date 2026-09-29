@@ -1,0 +1,53 @@
+START 2026-09-29T19:18:33.222060+00:00
+COMMAND ['/content/soup-py312/bin/python', '-u', '/content/soup_takehome/20260929T191833221370Z-smoke-launch/smoke_dpo.py']
+2026-09-29T19:18:40.153277+00:00 Downloading pinned model snapshot (approximately 3 GB)...
+2026-09-29T19:18:40.432453+00:00 
+2026-09-29T19:18:40.718917+00:00 Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-29T19:18:40.743630+00:00 
+2026-09-29T19:19:00.433617+00:00 Fetching 7 files:  86%|████████▌ | 6/7 [00:00<00:00, 19.29it/s]
+2026-09-29T19:19:05.726055+00:00 Fetching 7 files:  86%|████████▌ | 6/7 [00:20<00:00, 19.29it/s]
+2026-09-29T19:19:05.727189+00:00 Fetching 7 files: 100%|██████████| 7/7 [00:25<00:00,  4.85s/it]
+2026-09-29T19:19:05.727223+00:00 Fetching 7 files: 100%|██████████| 7/7 [00:25<00:00,  3.61s/it]
+2026-09-29T19:19:07.487959+00:00 Loading tokenizer: 
+2026-09-29T19:19:07.487997+00:00 /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa
+2026-09-29T19:19:07.488010+00:00 7980e4cf806f80c7fef2b1adb7bc71aa306
+2026-09-29T19:19:07.854062+00:00 ╭────────────────────── Layer streaming disk pre-flight ───────────────────────╮
+2026-09-29T19:19:07.854100+00:00 │ HF/local source: 3.09 GB                                                     │
+2026-09-29T19:19:07.854114+00:00 │ Soup materialized copy: 0.00 GB (no write required)                          │
+2026-09-29T19:19:07.854126+00:00 │ Layer-shard cache: 3.09 GB (write required)                                  │
+2026-09-29T19:19:07.854136+00:00 │ Projected total on disk: 6.17 GB                                             │
+2026-09-29T19:19:07.854147+00:00 │ Additional writes before training: 3.09 GB                                   │
+2026-09-29T19:19:07.854156+00:00 │ Free on target volume (layer-shard cache): 60.62 GB                          │
+2026-09-29T19:19:07.854167+00:00 ╰──────────────────────────────────────────────────────────────────────────────╯
+2026-09-29T19:19:07.854697+00:00 layer-stream sharder: skipping symlinked shard model.safetensors
+2026-09-29T19:19:07.970607+00:00 {
+2026-09-29T19:19:07.970636+00:00   "status": "FAILED",
+2026-09-29T19:19:07.970648+00:00   "output": "/content/soup_takehome/20260929T191833281265Z-smoke",
+2026-09-29T19:19:07.970662+00:00   "scope": "two optimizer steps; not a ship verdict",
+2026-09-29T19:19:07.970672+00:00   "gpu": "Tesla T4",
+2026-09-29T19:19:07.970682+00:00   "started_utc": "2026-09-29T19:18:39.951716+00:00",
+2026-09-29T19:19:07.970691+00:00   "budget": "Existing memory-budget-before.txt: estimated 3-7 GiB, not a bound. Add frozen ref LoRA (~4.16 MiB FP32).",
+2026-09-29T19:19:07.970703+00:00   "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+2026-09-29T19:19:07.970713+00:00   "train_sha256": "d43f24aebcdfed198dbfe5b7c2264aab13cca5c3e804105abb91a772058bf917",
+2026-09-29T19:19:07.970732+00:00   "test_sha256": "3eed9c45e23455d71dac705d7cac6078df203d1118420a7bbab7c4f3637e0397",
+2026-09-29T19:19:07.970745+00:00   "error": "FileNotFoundError('no .safetensors weight files found in /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306 \u2014 layer streaming needs a safetensors checkpoint')",
+2026-09-29T19:19:07.970756+00:00   "finished_utc": "2026-09-29T19:19:07.970189+00:00"
+2026-09-29T19:19:07.970766+00:00 }
+2026-09-29T19:19:07.970792+00:00 Traceback (most recent call last):
+2026-09-29T19:19:07.970802+00:00   File "/content/soup_takehome/20260929T191833221370Z-smoke-launch/smoke_dpo.py", line 180, in <module>
+2026-09-29T19:19:07.970866+00:00     main()
+2026-09-29T19:19:07.970947+00:00   File "/content/soup_takehome/20260929T191833221370Z-smoke-launch/smoke_dpo.py", line 81, in main
+2026-09-29T19:19:07.971098+00:00     wrapper.setup(dataset)
+2026-09-29T19:19:07.971126+00:00   File "/content/soup-py312/lib/python3.12/site-packages/soup_cli/trainer/dpo.py", line 102, in setup
+2026-09-29T19:19:07.971284+00:00     self._setup_streaming_transformers(cfg, tcfg)
+2026-09-29T19:19:07.971325+00:00   File "/content/soup-py312/lib/python3.12/site-packages/soup_cli/trainer/stream_setup.py", line 565, in _setup_streaming_transformers
+2026-09-29T19:19:07.971625+00:00     source_bytes = source_weight_bytes(weights_dir)
+2026-09-29T19:19:07.971708+00:00                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-29T19:19:07.971732+00:00   File "/content/soup-py312/lib/python3.12/site-packages/soup_cli/utils/layer_shard.py", line 668, in source_weight_bytes
+2026-09-29T19:19:07.972165+00:00     return sum(os.path.getsize(path) for path in _discover_safetensors(weights_dir))
+2026-09-29T19:19:07.972269+00:00                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-29T19:19:07.972284+00:00   File "/content/soup-py312/lib/python3.12/site-packages/soup_cli/utils/layer_shard.py", line 595, in _discover_safetensors
+2026-09-29T19:19:07.972546+00:00     raise FileNotFoundError(
+2026-09-29T19:19:07.972572+00:00 FileNotFoundError: no .safetensors weight files found in /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306 — layer streaming needs a safetensors checkpoint
+
+END exit_code=1

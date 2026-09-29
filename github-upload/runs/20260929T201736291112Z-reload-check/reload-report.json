@@ -1,0 +1,22 @@
+{
+  "status": "FAILED",
+  "source": "/content/soup_takehome/20260929T201018626035Z-smoke",
+  "output": "/content/soup_takehome/20260929T201736291112Z-reload-check",
+  "exact_saved_tensor_matches": 112,
+  "repeat_noise_max": 0.0,
+  "reloaded_adapter_effect_max": 0.05078125,
+  "stream_vs_resident_active_max_error": 0.0576171875,
+  "stream_vs_resident_disabled_max_error": 0.0,
+  "parity_tolerance": {
+    "atol": 0.001,
+    "rtol": 0.001
+  },
+  "active_allclose": false,
+  "disabled_allclose": true,
+  "peak_allocated": 3113825792,
+  "peak_reserved": 3154116608,
+  "effect_threshold": 0.0001,
+  "negative_control_detected": true,
+  "error": "AssertionError('Resident reload differs from streamed output')",
+  "finished_utc": "2026-09-29T20:17:53.584624+00:00"
+}

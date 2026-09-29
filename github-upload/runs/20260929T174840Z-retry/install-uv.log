@@ -1,0 +1,10 @@
+START 2026-09-29T17:48:40.166219+00:00
+COMMAND ['/usr/bin/python3', '-m', 'pip', 'install', 'uv']
+2026-09-29T17:48:43.248811+00:00 Collecting uv
+2026-09-29T17:48:43.265939+00:00   Downloading uv-0.12.20-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+2026-09-29T17:48:43.284054+00:00 Downloading uv-0.12.20-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (20.5 MB)
+2026-09-29T17:48:43.500765+00:00    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.5/20.5 MB 65.9 MB/s eta 0:00:00
+2026-09-29T17:48:45.576266+00:00 Installing collected packages: uv
+2026-09-29T17:48:45.891284+00:00 Successfully installed uv-0.12.20
+
+END exit_code=0
